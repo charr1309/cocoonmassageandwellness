@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style-type: none;
     outline: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
 }
 html{
     font-size: 62.5%;
@@ -71,12 +71,18 @@ a{
     height: 60rem;
     /* background-color: rgb(15, 42, 177); */
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     position: relative;
 }
-.landing img{
-   
-    
+#float-left{
+   object-position: left top;    
+}
+.size{
+    width: 200px;
+    height: 200px;
+}
+#float-right .size{
+    object-position: right bottom;
 }
 /* .sidebar-left{
     width: 30%;
