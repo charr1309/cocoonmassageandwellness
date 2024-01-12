@@ -9,6 +9,7 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #d3ede0;
@@ -56,7 +57,7 @@ a{
 }
 .landing img{
    
-    left: 0;
+    margin-left: -1080px;
 }
 /* .sidebar-left{
     width: 30%;
