@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: rgb(235, 224, 245);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+
+}
+.top{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.logo{
+    width: 5rem;
+    height: 5rem;
+    background-color: aqua;
+}
+.navbar{
+    width: 80rem;
+    height: 5rem;
+    background-color: rgb(235, 224, 245);
+}
+a{
+    font-size: 2rem;
+    word-spacing: 10rem;
+    position: relative;
+    left: 15rem;
+}
+.login{
+    width: 10rem;
+    height: 5rem;
+    font-size: 2rem;
+    background-color: rgb(235, 224, 245);
+}
+.landing{
+    width: 100%;
+    height: 60rem;
+    background-color: rgb(15, 42, 177);
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.sidebar-left{
+    width: 30%;
+    height: 60rem;
+    background-color: beige;
+}
+.main{
+    width: 60%;
+    height: 60rem;
+    background-color: bisque;
+}
+.main-content{
+    width: 100%;
+    height: fit-content;
+}
+.main-content p{
+    text-align: center;
+    font-size: 4rem;
+}
+.about-us{
+    width: 100%;
+    height: 60rem;
+    background-color: rgb(36, 54, 70);
+}
+.services{
+    width: 100%;
+    height: 60rem;
+    background-color: rgb(156, 172, 186);
+}
+.contact{
+    width: 100%;
+    height: 60rem;
+    background-color: rgb(70, 36, 57);
+}
+.footer {
+    width: 100%;
+    height: 15rem;
+    background-color: rgb(157, 179, 97);
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer a{
+    font-size: 2rem;
+    word-spacing: 10rem;
+    position: relative;
+    left: -10rem;
+}
