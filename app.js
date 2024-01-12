@@ -1,3 +1,7 @@
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+});
+
 // Get the button:
 let mybutton = document.getElementById("myBtn");
 
