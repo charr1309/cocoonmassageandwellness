@@ -137,6 +137,7 @@ a{
     flex-direction: column;
     justify-content: center;
     font-size: 3rem;
+    border-radius: 10px;
 }
 
 .card:hover .card-inner{
@@ -145,8 +146,21 @@ a{
 .offerings{
     width: 100%;
     height: 60rem;
+    
+    
     /* background-color: rgb(36, 54, 70); */
 }
+.offerings img{
+    object-fit: contain;
+    width: 180%;
+    height: 100%;
+    
+    
+}
+.imgRight{
+    
+}
+
 .wisdom{
     width: 100%;
     height: 60rem;
@@ -156,6 +170,11 @@ a{
     width: 100%;
     height: 60rem;
     /* background-color: rgb(70, 36, 57); */
+}
+.meet img{
+    object-fit: contain;
+    width: 20%;
+    height: 120%;
 }
 .inspiration{
     width: 100%;
