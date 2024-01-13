@@ -17,12 +17,14 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    width: 100vw;
 }
 body{
     background-color: #d3ede0;
+    width: 100%;
 }
 .container{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
    
 }
@@ -182,7 +184,7 @@ a:hover{
 }
 .offerings img{
     object-fit: contain;
-    width: 180%;
+    /* width: 180%; */
     height: 100%;
     
     
@@ -203,7 +205,7 @@ a:hover{
 }
 .meet img{
     object-fit: contain;
-    width: 180%;
+    /* width: 180%; */
     height: 100%;
 }
 .inspiration{
@@ -244,3 +246,4 @@ a:hover{
     position: relative;
     left: -10rem;
 }
+@media (max-width: 600px){}
