@@ -20,7 +20,7 @@ html{
     width: 100vw;
 }
 body{
-    background-color: #d3ede0;
+    /* background-color: #d3ede0; */
     width: 100%;
 }
 .container{
@@ -49,18 +49,16 @@ body{
   }
 .top{
     width: 100%;
-    height: 5rem;
+    height: 8rem;
     display: flex;
     /* justify-content: space-between; */
     position: relative;
 }
-.logo img{
-    width: 5rem;
-    height: 5rem;   
-}
 .heading{
     width: 100%;
-    height: 5rem;
+    height: 4rem;
+    background-color: var(--primary-color);
+
     position: absolute;
     top: 0;
     right: 0;
@@ -72,22 +70,23 @@ body{
 }
 .navbar{
     width: 100%;
-    height: 2rem;
+    height: 6rem;
     margin-top: 5rem;
-    /* background-color: var(--secondary-color); */
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* justify-content: flex-end; */
+    justify-content: center;
 }
 .navbar a{
-    width: .5rem;
+    width: .1rem;
     /* background-color: var(--primary-color); */
-    font-size: 1.5rem;
+    height: 5rem;
+    font-size: 2rem;
     color: var(--secondary-color);
     z-index: 300;
     position: relative;
-    left: 5rem;
+    /* left: 5rem; */
 }
 a:hover{
     color: white;
@@ -97,10 +96,13 @@ a:hover{
     height: 5rem;
     font-size: 2rem;
     background-color: rgb(235, 224, 245);
-}
+}   
 .landing{
     width: 100%;
     height: 100vh;
+    background-image: url(images/vecteezy_abstract-dark-green-and-blue-liquid-wave-background-ai_25479864.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     /* background-color: rgb(15, 42, 177); */
     display: flex;
     /* justify-content: space-around; */
@@ -303,7 +305,7 @@ form{
     justify-content: space-evenly;
 }
 .footer a{
-    font-size: 2rem;
+    font-size: 2.5rem;
     word-spacing: 1rem;
     position: relative;
     left: -10rem;
