@@ -116,7 +116,7 @@ a:hover{
 #float-right{
     position: relative;
     left: 50%;
-    top: 80%;
+    top: 85%;
     object-position: right bottom;
 }
 /* .sidebar-left{
@@ -127,8 +127,8 @@ a:hover{
 } */
 .main{
     width: 100%;
-    height: 80rem;
-    /* background-color: bisque; */
+    height: 40rem;
+    background-color: rgba(0,0,0,0.2);
     top: 60rem;
 }
 .main-content{
@@ -181,6 +181,7 @@ a:hover{
 .offerings{
     width: 100%;
     height: 80rem;
+    background-color: #69d5c3;
     
     
     /* background-color: rgb(36, 54, 70); */
@@ -197,17 +198,22 @@ a:hover{
     
 }
 
-.wisdom{
+.wisdom-content{
     width: 100%;
     height: 80rem;
     /* background-color: rgb(156, 172, 186); */
 }
-.meet{
+.wisdom-content img{
+    object-fit: contain;
+    width: 100%;
+    /* opacity: 0.2; */
+}
+.meet-content{
     width: 100%;
     height: 80rem;
     /* background-color: rgb(70, 36, 57); */
 }
-.meet img{
+.meet-content img{
     object-fit: contain;
     /* width: 180%; */
     height: 100%;
