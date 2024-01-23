@@ -113,7 +113,7 @@ a:hover{
     width: 200px;
     height: 200px;
 }
-#float-right .size{
+#float-right{
     object-position: right bottom;
 }
 /* .sidebar-left{
