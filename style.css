@@ -191,13 +191,11 @@ a:hover{
     /* width: 180%; */
     height: 100%;
     float: right;
-    
-    
 }
-.imgRight{
-    
+.offerings p{
+    text-align: center;
+    font-size: 4rem;
 }
-
 .wisdom-content{
     width: 100%;
     height: 80rem;
@@ -211,11 +209,9 @@ a:hover{
 .meet-content{
     width: 100%;
     height: 80rem;
-    /* background-color: rgb(70, 36, 57); */
 }
 .meet-content img{
     object-fit: contain;
-    /* width: 180%; */
     height: 100%;
 }
 .inspiration{
@@ -246,7 +242,7 @@ a:hover{
 .footer {
     width: 100%;
     height: 15rem;
-    background-color: #69d5c3;
+    /* background-color: #69d5c3; */
     display: flex;
     justify-content: space-evenly;
 }
