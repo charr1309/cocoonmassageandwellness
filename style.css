@@ -237,6 +237,9 @@ a:hover{
     background-color: var(--secondary-color);
     font-size: large;
 }
+.listStyle .minimize{
+    font-size: small;
+}
 .offerings img{
     object-fit: contain;
     height: 100%;
@@ -265,18 +268,18 @@ a:hover{
     align-items: center;
     flex-wrap: wrap;
     float: left;
+    font-size: 1rem;
 }
 .cards2{
     background-image: url(images/accent.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 350px;
+    width: 200px;
     height: 250px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: small;
     filter: drop-shadow(1px 1px 1px);
 }
 .flex-container p{
