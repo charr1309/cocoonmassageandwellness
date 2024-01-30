@@ -240,23 +240,30 @@ a:hover{
     font-size: 4rem;
 }
 .flex-container{
-    width: 50%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     float: left;
 }
 .cards2{
+    background-image: url(images/accent.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 350px;
     height: 250px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: large;
+    font-size: small;
     filter: drop-shadow(1px 1px 1px);
+}
+.flex-container p{
+    font-size: large;
 }
 .wisdom-content{
     width: 100%;
@@ -387,8 +394,8 @@ form{
     /* background-color: rgb(70, 36, 57); */
 }
 .cards{
-    width: 8rem;
-    height: 8rem;
+    width: 30rem;
+    height: 50rem;
     background-color: white;
     filter: drop-shadow(16px 16px 16px);
 }
