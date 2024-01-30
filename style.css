@@ -242,6 +242,7 @@ a:hover{
 }
 .offerings img{
     object-fit: contain;
+    width: 50%;
     height: 100%;
 }
 .imgRight{
