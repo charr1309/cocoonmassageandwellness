@@ -84,18 +84,21 @@ body{
    
 }
 .navbar a{
-    width: 3rem;
+    width: 11rem;
     /* background-color: var(--primary-color); */
     height: 5rem;
     font-size: 1.5rem;
+    text-align: center;
     color: var(--secondary-color);
-    z-index: 300;
+    /* z-index: 300; */
     position: relative;
     top: -1rem;
     /* left: 5rem; */
 }
 a:hover{
-    color: white;
+    color: rgb(255, 255, 255);
+    background-color: var(--primary-color);
+    
 }
 /* .login{
     width: 10rem;
@@ -280,6 +283,7 @@ a:hover{
     /* background-image: url(images/accent.jpg); */
     background-size: contain;
     background-repeat: no-repeat;
+    border-radius: 50%;
     width: 400px;
     height: 175px;
     background-color: white;
