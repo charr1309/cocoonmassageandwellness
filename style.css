@@ -22,6 +22,7 @@ html{
 body{
     /* background-color: #d3ede0; */
     width: 100%;
+    overflow-x: hidden;
 }
 .container{
     width: 100%;
@@ -70,7 +71,7 @@ body{
 }
 .navbar{
     width: 100%;
-    height: 6rem;
+    height: 5rem;
     margin-top: 5rem;
     /* background-color: var(--primary-color); */
     display: flex;
@@ -102,7 +103,7 @@ a:hover{
     font-size: 2rem;
     background-color: rgb(235, 224, 245);
 }  */
-.large-border{
+/* .large-border{
     width: 100%;
     height: 10rem;
     background-color: var(--primary-color);
@@ -111,7 +112,7 @@ a:hover{
     border-bottom: 1px solid black;
     
    
-}
+} */
 
 .landing{
     width: 100%;
@@ -163,14 +164,16 @@ a:hover{
     background-color: beige;
     top: 60rem;
 } */
-.main{
+/* .main{
     width: 100%;
-    height: 40rem;
-    background-color: rgba(0,0,0,0.2);
-    top: 30rem;
+    height: 40rem; */
+    /* background-color: rgba(0,0,0,0.2); */
+    /* background-image: url(images/mainImage.png); */
+    /* background-repeat: no-repeat;
+    top: 40rem;
     margin: 4rem 0 4rem;
     position: relative;
-}
+} */
 /* .main-content{
     width: 100%;
     height: fit-content;
@@ -180,7 +183,7 @@ a:hover{
     font-size: 4rem;
 } */
 .card{
-    width: 300px;
+    width: 200px;
     perspective: 1000px;
     cursor: pointer;
     position: relative;
@@ -213,7 +216,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 2rem;
     border-radius: 10px;
 }
 
@@ -222,11 +225,12 @@ a:hover{
 }
 .offerings{
     width: 100%;
-    height: 70rem;
+    height: 100rem;
     margin: 4rem 0 4rem;
-    top:30rem;
+    top: 40rem;
     position: relative;
 }
+
 .listStyle{
     /* width: 10rem;
     height: 10rem; */
@@ -249,8 +253,9 @@ a:hover{
     float: right;
 }
 .offerings h2{
-    font-size: 4rem;
+    font-size: 8rem;
     text-align: center;
+    font-weight: 200;
 }
 .offerings p{
     text-align: left;
@@ -261,8 +266,8 @@ a:hover{
     font-weight: bold;
 }
 .flex-container{
-    width: 70%;
-    height: 100%;
+    width: 100%;
+    height: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -272,7 +277,7 @@ a:hover{
     font-size: 1rem;
 }
 .cards2{
-    background-image: url(images/accent.jpg);
+    /* background-image: url(images/accent.jpg); */
     background-size: contain;
     background-repeat: no-repeat;
     width: 400px;
@@ -284,6 +289,14 @@ a:hover{
     filter: drop-shadow(1px 1px 1px);
 }
 .flex-container p{
+    font-size: large;
+}
+.border{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
     font-size: large;
 }
 .wisdom-content{
@@ -311,7 +324,7 @@ a:hover{
     width: 100%;
     height: 80rem;
     position: relative;
-    top: 40rem;
+    top: 60rem;
 }
 .meet-content img{
     object-fit: contain;
