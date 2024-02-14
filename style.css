@@ -286,30 +286,30 @@ a:hover{
 }
 .flex-container{
     width: 100%;
-    height: 30%;
+    height: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     /* align-items: center; */
     flex-wrap: wrap;
-    /* float: left; */
-    font-size: 1rem;
+    
 }
 .cards2{
     display: flex;
     flex-direction: column;
     border: 1px solid var(--secondary-color);
     width: 19%;
-    height: 30rem;
+    height: 60rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
    }
 .cards2 img{
     width: 50%;
     }
 .flex-container p{
-    font-size: large;
+    font-size: 2rem;
 }
 .border{
     display: flex;
@@ -322,26 +322,46 @@ a:hover{
 .wisdom-content{
     width: 100%;
     height: 80rem;
-    background-image: url(images/brandon-green-GEyXGTY2e9w-unsplash\ copy.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 4rem 0 4rem;
     position: relative;
-    top: 35rem;
-    /* opacity: 0.2; */
+    top: 65rem;
 }
 .inner{
-   width: 80%;
-   height: 80%;
+   width: 50%;
+   height: 50%;
    background-color: white;
    position: relative;
    top: 8rem;
-   margin: auto;
+   /* margin: auto; */
    border-radius: 30px;
    opacity: 0.8;
+   /* display: flex; */
+}
+.inner h1{
+    font-size: 5rem;   
+    text-align: center;
+    margin-top: -20px;
+    padding-bottom: 10rem;
+}
+.wisdom-content img{
+    width: 50%;
+    float: right;
+    position: relative;
+    top: 1rem;
 }
 .aboutContainer{
     background-color: var(--primary-color);
+}
+.buttonStyle{
+    width: 10rem;
+    background-color: var(--secondary-color);
+    margin-top: 10px;
+}
+span:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
 }
 .aboutHeading{
     position: relative; 
