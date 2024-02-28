@@ -48,13 +48,7 @@ body{
   #myBtn:hover {
     background-color: #d3ede0; /* Add a dark-grey background on hover */
   }
-/* .top{
-    width: 100%;
-    height: 8rem;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-} */
+
 .home{
     width: 100%;
     height: 50rem;
@@ -62,8 +56,7 @@ body{
 .heading{
     width: 100%;
     height: 33rem;
-    /* background-color: var(--primary-color); */
-
+    
     position: absolute;
     top: 0;
     right: 0;
@@ -76,8 +69,7 @@ body{
 .navbar{
     width: 100%;
     height: 5rem;
-    /* margin-top: 5rem; */
-    /* background-color: var(--primary-color); */
+   
     display: flex;
     flex-direction: row;
     flex-wrap: no-wrap;
@@ -104,22 +96,7 @@ a:hover{
     background-color: var(--primary-color);
     
 }
-/* .login{
-    width: 10rem;
-    height: 5rem;
-    font-size: 2rem;
-    background-color: rgb(235, 224, 245);
-}  */
-/* .large-border{
-    width: 100%;
-    height: 10rem;
-    background-color: var(--primary-color);
-    position: relative;
-    top: 3rem;
-    border-bottom: 1px solid black;
-    
-   
-} */
+
 #landing{
     position: relative;
     top: 5rem;
@@ -156,7 +133,7 @@ a:hover{
     
     
 }
-#float-left{
+/* #float-left{
    object-position: left top;    
 }
 .size{
@@ -168,87 +145,54 @@ a:hover{
     left: 50%;
     top: 75%;
     object-position: right bottom;
-}
-/* .sidebar-left{
-    width: 30%;
-    height: 60rem;
-    background-color: beige;
-    top: 60rem;
 } */
-/* .main{
-    width: 100%;
-    height: 40rem; */
-    /* background-color: rgba(0,0,0,0.2); */
-    /* background-image: url(images/mainImage.png); */
-    /* background-repeat: no-repeat;
-    top: 40rem;
-    margin: 4rem 0 4rem;
-    position: relative;
-} */
-/* .main-content{
-    width: 100%;
-    height: fit-content;
-}
-.main-content p{
-    text-align: center;
-    font-size: 4rem;
-} */
+
 .card{
-    width: 200px;
+    width: 250px;
+    height: 100px;
     perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    border: 1px solid black;
     cursor: pointer;
     position: relative;
-    left: 40rem;
-}
-.card-inner{
-    position: relative;
-    width: 100%;
-    text-align: center;
-    transform-style: preserve-3d;
-    transition: transform 1s;
-}
-.back-face{
-    backface-visibility: hidden;
-    transform: rotateY(180deg);    
-}
-.back-face img{
-    width: 100%;
-    border-radius: 10px;
-}
-.front-face{
-    backface-visibility: hidden;
-    color: #d3ede0;
-    background: #69d5c3;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 2rem;
     border-radius: 10px;
 }
 
-.card:hover .card-inner{
-    transform: rotateY(-180deg);
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
 }
-/* #offerings{
-    position: relative;
-    top: 60rem;
-} */
+.front{
+    background-color: var(--primary-color);
+    transform: rotateY(0deg);
+}
+.back{
+    background-color: var(--secondary-color);
+    overflow-y: scroll;
+    transform: rotateY(180deg);
+}
+
+.card:hover{
+    height: 400px;
+    transform: rotateY(180deg);
+}
+
 .offerings{
     width: 100%;
-    height: 100rem;
+    height: 60rem;
+    
     margin: 4rem 0 4rem;
     top: 40rem;
     position: relative;
 }
 
+
+
 .listStyle{
-    /* width: 10rem;
-    height: 10rem; */
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -278,8 +222,8 @@ a:hover{
 }
 .offerings p{
     text-align: left;
-    font-size: 2rem;
     margin: 1rem;
+    font-size: 1rem;
 }
 .offerings span{
     font-weight: bold;
@@ -290,7 +234,7 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* align-items: center; */
+    
     flex-wrap: wrap;
     
 }
@@ -326,7 +270,7 @@ a:hover{
     background-size: cover;
     margin: 4rem 0 4rem;
     position: relative;
-    top: 65rem;
+    top: 10rem;
 }
 .inner{
    width: 50%;
@@ -352,7 +296,9 @@ a:hover{
     top: 1rem;
 }
 .aboutContainer{
-    background-color: var(--primary-color);
+    background-color: #fff2eb;
+    width: 100%;
+    height: 100%;
 }
 .buttonStyle{
     width: 10rem;
@@ -367,8 +313,9 @@ span:hover {
     position: relative; 
     top: 5rem;
     right: 20rem;
+    text-align: center;
     float: right;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .top{
     width: 100vw;
@@ -382,6 +329,8 @@ span:hover {
 }
 .top img{
     width: 50%;
+    height: 100%;
+    object-fit: cover;
 }
 .toptext {
     width: 50%;
@@ -389,7 +338,8 @@ span:hover {
     justify-content: center;
     font-size: 7rem;
     font-weight: 100;
-    color: var(--secondary-color);
+    color: #a18e78;
+    
 }
 .toptext h1{
     font-size: 5rem;
@@ -397,7 +347,7 @@ span:hover {
     font-weight: 100;
     position: relative;
     top: -10rem;
-    color: white;
+    color: #a18e78;
 }
 .box{
     width: 30rem;
@@ -431,7 +381,7 @@ span:hover {
     width: 100vw;
     height: 60rem;
     position: relative;
-    top: 10rem;
+    top: 25rem;
     display: flex;
     justify-content: space-around;
 }
@@ -439,21 +389,21 @@ span:hover {
     width: 100vw;
     height: 60rem;
     position: relative;
-    top: 10rem;
+    top: 40rem;
     display: flex;
     justify-content: space-around;
 }
 blockquote{
     width: 35%;
     position: relative;
-    top: 20rem;
+    top: 60rem;
     display: flex;
     margin: auto;
 }
 blockquote p{
     padding: 15px;
-    background: var(--secondary-color);
-    border-radius: 5px;
+    background: #a18e78;
+    border-radius: 20px;
     margin: auto;
     font-size: 4rem;
     text-align: center;
