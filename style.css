@@ -196,7 +196,7 @@ a:hover{
 .offerings{
     width: 100%;
     height: 60rem;
-    
+    padding: 40px;
     margin: 4rem 0 4rem;
     top: 40rem;
     position: relative;
@@ -258,7 +258,7 @@ a:hover{
     width: 19%;
     height: 60rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
    }
