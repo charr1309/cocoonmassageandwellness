@@ -13,6 +13,18 @@
     list-style-type: none;
     outline: none;
     font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.back::-webkit-scrollbar{
+    width: 6px;
+}
+.back::-webkit-scrollbar-track{
+    background: var(--primary-color);
+}
+.back::-webkit-scroolbar-thumb{
+    background: var(--secondary-color);
+    border-style: solid;
+    border-radius: 10px;
 }
 html{
     font-size: 62.5%;
@@ -153,7 +165,7 @@ a:hover{
     perspective: 1000px;
     transform-style: preserve-3d;
     transition: transform 1.5s;
-    border: 1px solid black;
+    
     cursor: pointer;
     position: relative;
     border-radius: 10px;
@@ -172,6 +184,7 @@ a:hover{
 .back{
     background-color: var(--secondary-color);
     overflow-y: scroll;
+    
     transform: rotateY(180deg);
 }
 
@@ -521,7 +534,7 @@ form{
 }
 .cards{
     width: 30rem;
-    height: 50rem;
+    height: 40rem;
     background-color: white;
     filter: drop-shadow(16px 16px 16px);
 }
