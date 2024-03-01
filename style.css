@@ -165,7 +165,7 @@ a:hover{
     perspective: 1000px;
     transform-style: preserve-3d;
     transition: transform 1.5s;
-    
+    z-index: 900;
     cursor: pointer;
     position: relative;
     border-radius: 10px;
@@ -202,7 +202,9 @@ a:hover{
     position: relative;
 }
 
-
+.offerings-header{
+    height: 15rem;
+}
 
 .listStyle{
     
@@ -219,8 +221,10 @@ a:hover{
 }
 .offerings img{
     object-fit: contain;
-    width: 30%;
+    width: 100%;
     height: 100%;
+    position: relative;
+    /* top: -20rem; */
 }
 .imgRight{
     float: right;
@@ -240,16 +244,39 @@ a:hover{
 }
 .offerings span{
     font-weight: bold;
+    text-align: center;
+}
+.offerContainer{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+}
+.offerContainer img{
+    width: 50%;
+    float: right;
+}
+.offerContainer p{
+    width: 40%;
+    font-size: large;
+    padding-top: 4rem;
+}
+.addOnContainer{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+}
+.listPosition{
+    position: relative;
+    top: 15rem;
 }
 .flex-container{
     width: 100%;
-    height: 60%;
+    height: 30%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
     flex-wrap: wrap;
-    
 }
 .cards2{
     display: flex;
@@ -276,6 +303,10 @@ a:hover{
     background-color: var(--secondary-color);
     font-size: large;
 }
+/* #wisdom{
+    position: relative;
+    top: 10rem;
+} */
 .wisdom-content{
     width: 100%;
     height: 80rem;
@@ -283,7 +314,7 @@ a:hover{
     background-size: cover;
     margin: 4rem 0 4rem;
     position: relative;
-    top: 10rem;
+    top: 120rem;
 }
 .inner{
    width: 50%;
@@ -447,7 +478,7 @@ blockquote p{
     width: 60%;
     margin: auto;
     position: relative;
-    top: 60px;
+    top: 60rem;
     height: 40%;
 }
 .resource{
@@ -456,7 +487,7 @@ blockquote p{
     border: 2rem solid var(--secondary-color);
     border-radius: 40px;
     position: relative;
-    top: 35rem;
+    top: 80rem;
 
     /* background-color: rgb(156, 172, 186); */
 }
@@ -466,7 +497,7 @@ blockquote p{
     display: flex;
     justify-content: center;
     position: relative;
-    top: 35rem;
+    top: 80rem;
     
     
     /* background-color: rgb(70, 36, 57); */
@@ -487,7 +518,7 @@ blockquote p{
     height: 60rem;
     text-align: center;
     position: relative;
-    top: 35rem;
+    top: 80rem;
 }
 fieldset{
     margin: 2em 0;
@@ -529,7 +560,7 @@ form{
     display: flex;
     justify-content: space-around;
     position: relative;
-    top: 35rem;
+    top: 80rem;
     /* background-color: rgb(70, 36, 57); */
 }
 .cards{
@@ -545,7 +576,7 @@ form{
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    top: 35rem;
+    top: 80rem;
 }
 .footer a{
     font-size: 2rem;
