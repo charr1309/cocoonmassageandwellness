@@ -70,6 +70,7 @@ body{
     height: 33rem;
     
     position: absolute;
+    z-index: 900;
     top: 0;
     right: 0;
 }
@@ -192,13 +193,17 @@ a:hover{
     height: 400px;
     transform: rotateY(180deg);
 }
+#offerings{
+    position: relative;
+    top: 40rem;
+}
 
 .offerings{
     width: 100%;
     height: 60rem;
     padding: 40px;
     margin: 4rem 0 4rem;
-    top: 40rem;
+    /* top: 40rem; */
     position: relative;
     
 }
@@ -264,17 +269,22 @@ a:hover{
     padding-top: 4rem;
 }
 .addOnContainer{
-    width: 100%;
+    width: 100rem;
     height: 20rem;
     display: flex;
     justify-content: center;
+    margin: auto;
+    
+}
+.addOnContainer p{
+    font-size: 1.75rem;
 }
 .resizeJourney{
-    width: 55%;
+    width: 95%;
 }
 .listPosition{
     position: relative;
-    top: 15rem;
+    top: 20rem;
 }
 .flex-container{
     width: 100%;
@@ -309,35 +319,45 @@ a:hover{
     background-color: var(--secondary-color);
     font-size: large;
 }
-/* #wisdom{
+#wisdom{
     position: relative;
-    top: 10rem;
-} */
+    top: 120rem;
+}
 .wisdom-content{
     width: 100%;
-    height: 80rem;
+    height: 70rem;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 4rem 0 4rem;
     position: relative;
-    top: 120rem;
+    /* top: 120rem; */
 }
 .inner{
    width: 50%;
    height: 50%;
    background-color: white;
    position: relative;
-   top: 8rem;
+   /* top: 8rem; */
    /* margin: auto; */
    border-radius: 30px;
-   opacity: 0.8;
+   /* opacity: 0.8; */
    /* display: flex; */
 }
 .inner h1{
-    font-size: 5rem;   
+    font-size: 8rem;   
     text-align: center;
-    margin-top: -20px;
-    padding-bottom: 10rem;
+    /* margin-top: -20px; */
+    padding-bottom: 5rem;
+}
+.inner h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.inner h3{
+    font-size: 2rem;
+}
+.inner p{
+    font-size: 2rem;
 }
 .wisdom-content img{
     width: 50%;
@@ -472,20 +492,28 @@ blockquote p{
     object-fit: contain;
     height: 100%;
 }
+#inspiration{
+    position: relative;
+    top: 125rem;
+}
 .inspiration{
     width: 100%;
     height: 80rem;
     font-size: large;
     position: relative;
-    top: 35rem;
+    /* top: 35rem; */
     /* background-color: rgb(36, 54, 70); */
 }
 .innerText{
     width: 60%;
     margin: auto;
     position: relative;
-    top: 60rem;
+    top: 10rem;
     height: 40%;
+}
+#resource{
+    position: relative;
+    top: 125rem;
 }
 .resource{
     width: 100%;
@@ -493,9 +521,13 @@ blockquote p{
     border: 2rem solid var(--secondary-color);
     border-radius: 40px;
     position: relative;
-    top: 80rem;
+    /* top: 125rem; */
 
     /* background-color: rgb(156, 172, 186); */
+}
+#bloom{
+    position: relative;
+    top: 125rem;
 }
 .bloom{
     width: 100%;
@@ -503,7 +535,7 @@ blockquote p{
     display: flex;
     justify-content: center;
     position: relative;
-    top: 80rem;
+    /* top: 125rem; */
     
     
     /* background-color: rgb(70, 36, 57); */
@@ -518,13 +550,17 @@ blockquote p{
     height: 100%;
     float: right;
 }
+#contact{
+    position: relative;
+    top: 125rem;
+}
 .contact{
     margin: auto;
     width: 30%;
     height: 60rem;
     text-align: center;
     position: relative;
-    top: 80rem;
+    /* top: 125rem; */
 }
 fieldset{
     margin: 2em 0;
@@ -560,13 +596,17 @@ form{
     margin: 4px 2px;
     cursor: pointer;
 }
+#love{
+    position: relative;
+    top: 125rem;
+}
 .love{
     width: 100%;
     height: 40rem;
     display: flex;
     justify-content: space-around;
     position: relative;
-    top: 80rem;
+    /* top: 125rem; */
     /* background-color: rgb(70, 36, 57); */
 }
 .cards{
@@ -582,7 +622,7 @@ form{
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    top: 80rem;
+    top: 125rem;
 }
 .footer a{
     font-size: 2rem;
