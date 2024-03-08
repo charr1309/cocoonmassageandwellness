@@ -61,23 +61,27 @@ body{
     background-color: #d3ede0; /* Add a dark-grey background on hover */
   }
 
-.home{
+/* .home{
     width: 100%;
     height: 50rem;
-}
+} */
 .heading{
     width: 100%;
-    height: 33rem;
-    
-    position: absolute;
+    height: 25rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    /* position: absolute; */
     z-index: 900;
     top: 0;
     right: 0;
+    margin-bottom: 5rem;
 }
 .heading img{
     object-fit: cover;
-    width: 100%;
+    width: 100vw;
     height: 100%;
+    position: relative;
+    z-index: 950;
+    top: 1.5rem;
 }
 .navbar{
     width: 100%;
@@ -89,7 +93,7 @@ body{
     justify-content: space-around;
     margin-bottom: 2rem;
     position: relative;
-    top: 35rem;
+    top: 5rem;
    
 }
 .navbar a{
@@ -112,19 +116,19 @@ a:hover{
 
 #landing{
     position: relative;
-    top: 5rem;
+    /* top: 5rem; */
 }
 
 .landing{
     width: 100%;
     height: 80rem;
     background: url(images/s1.jpg);
-    background-size: cover;
+    /* background-size: cover; */
     animation: slide 25s infinite;
     /* display: flex; */
     /* justify-content: space-around; */
     position: relative;
-    top: 35rem;
+    /* top: 5rem; */
 }
 @keyframes slide {
     25%{
@@ -344,17 +348,17 @@ a:hover{
    /* display: flex; */
 }
 .inner h1{
-    font-size: 8rem;   
+    font-size: 6rem;   
     text-align: center;
     /* margin-top: -20px; */
     padding-bottom: 5rem;
 }
 .inner h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 .inner h3{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .inner p{
     font-size: 2rem;
