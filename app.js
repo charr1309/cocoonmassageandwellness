@@ -44,3 +44,10 @@ function topFunction() {
 function previous(){
   window.history.go(-1);
 }
+const toggleButton = document.getElementsByClassName('toggle-button');
+const navBarLinks = document.getElementsByClassName('navbar-links');
+
+toggleButton.addEventListener('click', () => {
+  navBarLinks.classList.toggle('active')
+});
+
