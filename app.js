@@ -44,10 +44,14 @@ function topFunction() {
 function previous(){
   window.history.go(-1);
 }
-const toggleButton = document.getElementsByClassName('toggle-button');
-const navBarLinks = document.getElementsByClassName('navbar-links');
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+const navBarLinks = document.getElementsByClassName('navbar-links')[0];
+const navbar = document.getElementsByClassName('navbar')
+const offerings = document.getElementsByClassName('offerings')
 
 toggleButton.addEventListener('click', () => {
   navBarLinks.classList.toggle('active')
+  navbar.style.height = "30px";
+  offerings.style.top = "300rem"
 });
 

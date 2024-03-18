@@ -114,7 +114,6 @@ body{
     width: 100vw;
     font-size: 1.75rem;
     text-align: center;
-    
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -144,7 +143,7 @@ body{
 .toggle-button{
     position: absolute;
     top: 0rem;
-    left: 3rem;
+    left: 30rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -241,6 +240,7 @@ body{
 
 .offerings-header{
     height: 15rem;
+    position: relative;
 }
 /* style list of prices */
 .listStyle{
@@ -648,7 +648,7 @@ form{
     filter: drop-shadow(16px 16px 16px);
 }
 .footer {
-    width: 100%;
+    width: 100vw;
     height: 5rem;
     display: flex;
     flex-direction: row;
@@ -656,8 +656,16 @@ form{
     justify-content: space-around;
     margin-bottom: 2rem;
     position: relative;
-    
     top: 125rem;
+}
+.footer ul{
+    height: 5rem;
+    width: 100vw;
+    font-size: 1.75rem;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
 }
 .footer a{
     /* width: 11rem; */
@@ -669,9 +677,13 @@ form{
     top: -1rem;
 }
 @media (max-width: 600px){
-    #mybtn{
-       display: none;
+    .container{
+        max-width: 500px;
+        margin-inline: auto;
+        padding: 8px;
+        overflow: hidden;
     }
+    
     .toggle-button{
         display: flex;
     }
@@ -681,34 +693,57 @@ form{
     }
     .navbar{
         flex-direction: column;
+        display: block;
+        height: auto;
+        width: 25rem;
+        text-align: center;
+        align-items: center;
+        /* justify-content: space-around; */
+        
     }
     .navbar-links ul{
         flex-direction: column;
+        
+        margin-top: 10rem;
     }
     .navbar-links li{
         text-align: center;
+        
     }
     .navbar-links li a{
         padding: 0rem;
+        width: 25px;
+        margin: auto;
     }
     .navbar-links.active{
         display: flex;
+        position: relative;
+        top: 10rem;
+        padding-bottom: 1px;
+        
+    }
+    .navbar.active2{
+        height: 30rem;
     }
     
     .landing{
-        width: 100vw;
-        background-size: contain;
+        width: 100%;
+        background-size: cover;
        
     }
     .landing img{
-        object-fit: cover;
+        object-fit: contain;
     }
     .offerings{
         width: 400px;
         
     }
+    .offerings-header{
+        height: 5rem;
+        top: 5rem;
+    }
     .offerings h2{
-        font-size: 5rem;
+        font-size: 3rem;
         text-align: center;
     }
     .offerings img{
@@ -718,11 +753,16 @@ form{
         width: 100vw;
     }
     .card{
-        width: 50rem;
+        width: 30rem;
         height: 3rem;
+        border: black 1px solid;
+        margin-bottom: 5px;
+    }
+    .front p{
+        font-size: 1.5rem;
     }
     .offerContainer p{
-        width: 100%;
+        width: 80%;
     }
     .addOnContainer{
         width: 100%;
@@ -739,7 +779,7 @@ form{
         display: none;
     }
     .inner{
-        width: 100%;
+        width: 60%;
         margin: auto;
     }
 }
