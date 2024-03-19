@@ -99,9 +99,9 @@ function showSlider(type){
         carouselDom.classList.remove('prev');
     }, timeRunning);
 
-    clearTimeout(runNextAuto);
-    runNextAuto = setTimeout(() => {
-        next.click();
-    }, timeAutoNext)
+    // clearTimeout(runNextAuto);
+    // runNextAuto = setTimeout(() => {
+    //     next.click();
+    // }, timeAutoNext)
 }
 
