@@ -259,13 +259,14 @@ body{
 /* container div for listStyle and minimize above */
 .listPosition{
     position: relative;
-    top: 20rem;
+    top: 5rem;
 }
 .offerings img{
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 30rem;
     position: relative;
+    padding-bottom: 6rem;
 }
 
 .offerings h2{
@@ -350,26 +351,35 @@ body{
 }
 #wisdom{
     position: relative;
-    top: 80rem;
+    top: 60rem;
+    overflow: scroll;
 }
 .wisdom-content{
     width: 100%;
-    height: 70rem;
+    height: 50rem;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 4rem 0 4rem;
     position: relative;
     padding: 3rem;
+    
     /* top: 120rem; */
+}
+.wisdom-content h1{
+    font-size: 5rem;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 2rem;
 }
 .inner{
    width: 50%;
-   height: 50%;
+   height: 100%;
    background-color: white;
    position: relative;
    /* top: 8rem; */
    /* margin: auto; */
    border-radius: 30px;
+   overflow: scroll;
    /* opacity: 0.8; */
    /* display: flex; */
 }
@@ -526,7 +536,7 @@ blockquote p{
 }
 #inspiration{
     position: relative;
-    top: 100rem;
+    top: 85rem;
 }
 #inspiration h2{
     font-size: 8rem;
@@ -829,7 +839,7 @@ blockquote p{
 }
 #contact{
     position: relative;
-    top: 125rem;
+    top: 40rem;
 }
 .contact{
     margin: auto;
@@ -901,7 +911,7 @@ form{
     justify-content: space-around;
     margin-bottom: 2rem;
     position: relative;
-    top: 125rem;
+    top: 50rem;
 }
 .footer ul{
     height: 5rem;
