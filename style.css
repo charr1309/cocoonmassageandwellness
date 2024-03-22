@@ -553,7 +553,7 @@ blockquote p{
 }
 .carousel{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
     position: relative;
 }
@@ -569,18 +569,18 @@ blockquote p{
 .carousel .list .item .content{
     position: absolute;
     top: 10%;
-    left: 15rem;
-    width: 1140px;
+    left: -30rem;
+    width: 70%;
     
     max-width: 80%;
     transform: translateX(-50%);
     padding-left: 30%;
     box-sizing: border-box;
-    color: white;
-    text-shadow: 0 3px 5px black;
+    color: var(--secondary-color);
+    text-shadow: 0 2px 2px black;
 }
 .carousel .list .item .content .text{
-    background-color: rgba(0, 0, 0, 0.6);
+    /* background-color: rgba(0, 0, 0, 0.6); */
 }
 .thumbnail{
     position: absolute;
@@ -592,8 +592,8 @@ blockquote p{
     gap: 20px;
 }
 .thumbnail .item{
-    width: 150px;
-    height: 220px;
+    width: 130px;
+    height: 150px;
     flex-shrink: 0;
     position: relative;
 }
