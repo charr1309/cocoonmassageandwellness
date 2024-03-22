@@ -592,8 +592,8 @@ blockquote p{
     gap: 20px;
 }
 .thumbnail .item{
-    width: 130px;
-    height: 150px;
+    width: 150px;
+    height: 80px;
     flex-shrink: 0;
     position: relative;
 }
