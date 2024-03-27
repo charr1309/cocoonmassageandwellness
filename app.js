@@ -44,16 +44,16 @@ function topFunction() {
 function previous(){
   window.history.go(-1);
 }
-const toggleButton = document.getElementsByClassName('toggle-button')[0];
-const navBarLinks = document.getElementsByClassName('navbar-links')[0];
-const navbar = document.getElementsByClassName('navbar')
-const offerings = document.getElementsByClassName('offerings')
+// const toggleButton = document.getElementsByClassName('toggle-button')[0];
+// const navBarLinks = document.getElementsByClassName('navbar-links')[0];
+// const navbar = document.getElementsByClassName('navbar')
+// const offerings = document.getElementsByClassName('offerings')
 
-toggleButton.addEventListener('click', () => {
-  navBarLinks.classList.toggle('active')
-  navbar.style.height = "30px";
-  offerings.style.top = "300rem"
-});
+// toggleButton.addEventListener('click', () => {
+//   navBarLinks.classList.toggle('active')
+//   navbar.style.height = "30px";
+//   offerings.style.top = "300rem"
+// });
 
 //step 1: get DOM
 let nextDom = document.getElementById('next');
@@ -104,4 +104,11 @@ function showSlider(type){
     //     next.click();
     // }, timeAutoNext)
 }
+const hamMenu = document.querySelector('.ham-menu');
+const navBar = document.querySelector('.navbar');
+
+hamMenu.addEventListener('click', ()=>{
+  hamMenu.classList.toggle('active');
+  navBar.classList.toggle('active');
+});
 
