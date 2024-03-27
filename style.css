@@ -259,7 +259,7 @@ body{
 /* container div for listStyle and minimize above */
 .listPosition{
     position: relative;
-    top: 5rem;
+    top: 25rem;
 }
 .offerings img{
     object-fit: cover;
@@ -322,7 +322,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
 }
 .cards2{
     display: flex;
@@ -351,8 +351,9 @@ body{
 }
 #wisdom{
     position: relative;
-    top: 60rem;
+    top: 100rem;
     overflow: scroll;
+    
 }
 .wisdom-content{
     width: 100%;
@@ -362,6 +363,7 @@ body{
     margin: 4rem 0 4rem;
     position: relative;
     padding: 3rem;
+   
     
     /* top: 120rem; */
 }
@@ -373,19 +375,26 @@ body{
 }
 .inner{
    width: 50%;
-   height: 100%;
+   height: 115%;
    background-color: white;
    position: relative;
    /* top: 8rem; */
    /* margin: auto; */
    border-radius: 30px;
    overflow: scroll;
+   scrollbar-color: var(--secondary-color);
+   scrollbar-width: thin;
+   overflow-x: hidden;
+   color: var(--secondary-color);
+   text-shadow: 0 1px 1px black;
+
    /* opacity: 0.8; */
    /* display: flex; */
 }
 .inner h1{
     font-size: 5rem;   
     text-align: center;
+    
     /* margin-top: -20px; */
     padding-bottom: 3rem;
 }
@@ -536,7 +545,7 @@ blockquote p{
 }
 #inspiration{
     position: relative;
-    top: 85rem;
+    top: 125rem;
 }
 #inspiration h2{
     font-size: 8rem;
@@ -839,7 +848,7 @@ blockquote p{
 }
 #contact{
     position: relative;
-    top: 40rem;
+    top: 10rem;
 }
 .contact{
     margin: auto;
@@ -847,7 +856,7 @@ blockquote p{
     height: 60rem;
     text-align: center;
     position: relative;
-    /* top: 125rem; */
+    top: 50rem;
 }
 fieldset{
     margin: 2em 0;
@@ -858,7 +867,7 @@ fieldset{
     background-color: var(--secondary-color);
 }
 legend{
-    font-size: 3em;
+    font-size: 8em;
     padding: 0 .25;
     color: #999;
     
@@ -911,7 +920,7 @@ form{
     justify-content: space-around;
     margin-bottom: 2rem;
     position: relative;
-    top: 50rem;
+    top: 80rem;
 }
 .footer ul{
     height: 5rem;
