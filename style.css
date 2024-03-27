@@ -1163,8 +1163,8 @@ form {
         right: -450px;
         position: relative; 
         transition: .8s ease;
-        top: -1rem;
-        background-color: rgba(34, 37, 49, 0.8);
+        top: -.5rem;
+        background-color: rgb(34, 37, 49);
         
     }
     
@@ -1253,7 +1253,7 @@ form {
 
     .offerings {
         width: 400px;
-        top: -10rem;
+        /* top: -5rem; */
 
     }
 
