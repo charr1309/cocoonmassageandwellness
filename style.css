@@ -1,11 +1,11 @@
-:root{
+:root {
     --primary-color: #d3ede0;
     --secondary-color: #69d5c3;
 }
 
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,59 +13,80 @@
     list-style-type: none;
     outline: none;
     font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
-    
+
 }
-.back::-webkit-scrollbar{
+
+.back::-webkit-scrollbar {
     width: 6px;
 }
-.back::-webkit-scrollbar-track{
+
+.back::-webkit-scrollbar-track {
     background: var(--primary-color);
 }
-.back::-webkit-scroolbar-thumb{
+
+.back::-webkit-scroolbar-thumb {
     background: var(--secondary-color);
     border-style: solid;
     border-radius: 10px;
 }
-html{
+
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     width: 100vw;
 }
-body{
+
+body {
     /* background-color: #d3ede0; */
     width: 100%;
     overflow-x: hidden;
 }
-.container{
+
+.container {
     width: 100%;
     /* height: 100vh; */
-   
+
 }
+
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #69d5c3; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-  }
-  
-  #myBtn:hover {
-    background-color: #d3ede0; /* Add a dark-grey background on hover */
-  }
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #69d5c3;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #d3ede0;
+    /* Add a dark-grey background on hover */
+}
 
 /* .home{
     width: 100%;
     height: 50rem;
 } */
-.heading{
+.heading {
     width: 100%;
     /* height: 15rem; */
     background-color: rgba(255, 255, 255, 0.3);
@@ -74,14 +95,16 @@ body{
     top: 0;
     right: 0;
 }
-.heading img{
+
+.heading img {
     object-fit: cover;
     width: 100vw;
     max-height: 25rem;
     position: relative;
     /* top: 6rem; */
 }
-.navbar{
+
+.navbar {
     width: 100vw;
     height: 5rem;
     display: flex;
@@ -91,25 +114,29 @@ body{
     position: relative;
     top: 5rem;
 }
-.navbar-links ul{
+
+.navbar-links ul {
     margin: 0;
     padding: 0;
     display: flex;
 }
-.navbar-links li{
+
+.navbar-links li {
     list-style: none;
 }
-.navbar-links li a{
+
+.navbar-links li a {
     text-decoration: none;
     color: var(--secondary-color);
     display: block;
 }
+
 /* .navbar a{
     width: 25rem;
     height: 5rem;
     color: var(--secondary-color);
 } */
-.navbar ul{
+.navbar ul {
     height: 5rem;
     width: 100vw;
     font-size: 1.75rem;
@@ -118,6 +145,7 @@ body{
     display: flex;
     justify-content: space-around;
 }
+
 /* .navbar li{
     width: 25rem;
     height: 5rem;
@@ -131,66 +159,72 @@ body{
     background-color: var(--secondary-color);
     transition: all ease-in-out 500ms;
 } */
-.navbar-links li:hover{
+.navbar-links li:hover {
     color: rgb(255, 255, 255);
     background-color: var(--primary-color);
-    
+
 }
+
 /* .navbar li:hover::after{
     width: 100%;
 } */
 
-.toggle-button{
+.toggle-button {
     position: absolute;
     top: 0rem;
     left: 30rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width:  30px;
+    width: 30px;
     height: 21px;
 }
-.toggle-button .bar{
+
+.toggle-button .bar {
     height: 3px;
     width: 100%;
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
 }
 
-#landing{
+#landing {
     position: relative;
 }
 
-.landing{
+.landing {
     width: 100%;
     height: 80rem;
     background: url(images/s1.jpg);
     animation: slide 25s infinite;
-     position: relative;
+    position: relative;
 }
+
 @keyframes slide {
-    25%{
+    25% {
         background: url(images/s2.jpg);
         background-size: cover;
     }
-    50%{
+
+    50% {
         background: url(images/s3.jpg);
         background-size: cover;
     }
-    75%{
+
+    75% {
         background: url(images/s4.jpg);
         background-size: cover;
     }
-    100%{
+
+    100% {
         background: url(images/s1.jpg);
         background-size: cover;
     }
-    
-    
+
+
 }
 
 
-.card{
+.card {
     width: 250px;
     height: 100px;
     perspective: 1000px;
@@ -202,48 +236,53 @@ body{
     border-radius: 10px;
 }
 
-.front, .back{
+.front,
+.back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
 }
-.front{
+
+.front {
     background-color: var(--primary-color);
     transform: rotateY(0deg);
 }
-.back{
+
+.back {
     background-color: var(--secondary-color);
     overflow-y: scroll;
-    
+
     transform: rotateY(180deg);
 }
 
-.card:hover{
+.card:hover {
     height: 400px;
     transform: rotateY(180deg);
 }
-#offerings{
+
+#offerings {
     position: relative;
     top: 0rem;
 }
 
-.offerings{
+.offerings {
     width: 100%;
     height: 60rem;
     padding: 40px;
     margin: 4rem 0 4rem;
     /* top: 40rem; */
     position: relative;
-    
+
 }
 
-.offerings-header{
+.offerings-header {
     height: 15rem;
     position: relative;
 }
+
 /* style list of prices */
-.listStyle{
+.listStyle {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -252,16 +291,19 @@ body{
     color: white;
     font-size: large;
 }
+
 /* make paragraph tag in prices smaller */
-.listStyle .minimize{
+.listStyle .minimize {
     font-size: small;
 }
+
 /* container div for listStyle and minimize above */
-.listPosition{
+.listPosition {
     position: relative;
     top: 25rem;
 }
-.offerings img{
+
+.offerings img {
     object-fit: cover;
     width: 100%;
     height: 30rem;
@@ -269,54 +311,63 @@ body{
     padding-bottom: 6rem;
 }
 
-.offerings h2{
+.offerings h2 {
     font-size: 8rem;
     text-align: center;
     font-weight: 200;
 }
-.offerings h3{
+
+.offerings h3 {
     color: white;
 }
-.offerings p{
+
+.offerings p {
     text-align: left;
     margin: 1rem;
     font-size: 1rem;
 }
-.offerings span{
+
+.offerings span {
     font-weight: bold;
     text-align: center;
 }
-.offerContainer{
+
+.offerContainer {
     width: 100%;
     height: 30rem;
     display: flex;
     flex-direction: row;
 }
-.offerContainer img{
+
+.offerContainer img {
     width: 50%;
     float: right;
 }
-.offerContainer p{
+
+.offerContainer p {
     width: 40%;
     font-size: large;
     padding-top: 4rem;
 }
-.addOnContainer{
+
+.addOnContainer {
     width: 100rem;
     height: 20rem;
     display: flex;
     justify-content: center;
     margin: auto;
-    
+
 }
-.addOnContainer p{
+
+.addOnContainer p {
     font-size: 1.75rem;
 }
-.resizeJourney{
+
+.resizeJourney {
     width: 95%;
 }
 
-.flex-container{
+.flex-container {
     width: 100%;
     height: 30%;
     display: flex;
@@ -324,7 +375,8 @@ body{
     justify-content: space-between;
     flex-wrap: no-wrap;
 }
-.cards2{
+
+.cards2 {
     display: flex;
     flex-direction: column;
     border: 1px solid var(--secondary-color);
@@ -333,15 +385,18 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-   }
-.cards2 img{
+
+}
+
+.cards2 img {
     width: 50%;
-    }
-.flex-container p{
+}
+
+.flex-container p {
     font-size: 2rem;
 }
-.border{
+
+.border {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -349,13 +404,15 @@ body{
     background-color: var(--secondary-color);
     font-size: large;
 }
-#wisdom{
+
+#wisdom {
     position: relative;
     top: 100rem;
     overflow: scroll;
-    
+
 }
-.wisdom-content{
+
+.wisdom-content {
     width: 100%;
     height: 50rem;
     background-repeat: no-repeat;
@@ -363,82 +420,94 @@ body{
     margin: 4rem 0 4rem;
     position: relative;
     padding: 3rem;
-   
-    
+
+
     /* top: 120rem; */
 }
-.wisdom-content h1{
+
+.wisdom-content h1 {
     font-size: 5rem;
     font-weight: 300;
     text-align: center;
     padding-bottom: 2rem;
 }
-.inner{
-   width: 50%;
-   height: 115%;
-   background-color: white;
-   position: relative;
-   /* top: 8rem; */
-   /* margin: auto; */
-   border-radius: 30px;
-   overflow: scroll;
-   scrollbar-color: var(--secondary-color);
-   scrollbar-width: thin;
-   overflow-x: hidden;
-   color: var(--secondary-color);
-   text-shadow: 0 1px 1px black;
 
-   /* opacity: 0.8; */
-   /* display: flex; */
+.inner {
+    width: 50%;
+    height: 115%;
+    background-color: white;
+    position: relative;
+    /* top: 8rem; */
+    /* margin: auto; */
+    border-radius: 30px;
+    overflow: scroll;
+    scrollbar-color: var(--secondary-color);
+    scrollbar-width: thin;
+    overflow-x: hidden;
+    color: var(--secondary-color);
+    text-shadow: 0 1px 1px black;
+
+    /* opacity: 0.8; */
+    /* display: flex; */
 }
-.inner h1{
-    font-size: 5rem;   
+
+.inner h1 {
+    font-size: 5rem;
     text-align: center;
-    
+
     /* margin-top: -20px; */
     padding-bottom: 3rem;
 }
-.inner h2{
+
+.inner h2 {
     font-size: 2.2rem;
     text-align: center;
     font-weight: bolder;
 }
-.inner h3{
+
+.inner h3 {
     font-size: 1.8rem;
     padding-bottom: 1rem;
 }
-.inner p{
+
+.inner p {
     font-size: 2rem;
 }
-.wisdom-content img{
+
+.wisdom-content img {
     width: 50%;
     float: right;
     position: relative;
     top: 1rem;
 }
-.aboutContainer{
+
+.aboutContainer {
     background-color: #fff2eb;
     width: 100%;
     height: 100%;
 }
-.buttonStyle{
+
+.buttonStyle {
     width: 10rem;
     background-color: var(--secondary-color);
     margin-top: 10px;
 }
+
 span:hover {
     background-color: var(--primary-color);
     cursor: pointer;
 }
-.aboutHeading{
-    position: relative; 
+
+.aboutHeading {
+    position: relative;
     top: 5rem;
     right: 20rem;
     text-align: center;
     float: right;
     font-size: 1.5rem;
 }
-.top{
+
+.top {
     width: 100vw;
     height: 113rem;
     display: flex;
@@ -448,11 +517,13 @@ span:hover {
     text-align: center;
     border-bottom: 20px solid black;
 }
-.top img{
+
+.top img {
     width: 50%;
     height: 100%;
     object-fit: cover;
 }
+
 .toptext {
     width: 50%;
     align-items: center;
@@ -460,9 +531,10 @@ span:hover {
     font-size: 7rem;
     font-weight: 100;
     color: #a18e78;
-    
+
 }
-.toptext h1{
+
+.toptext h1 {
     font-size: 5rem;
     font-style: italic;
     font-weight: 100;
@@ -470,7 +542,8 @@ span:hover {
     top: -10rem;
     color: #a18e78;
 }
-.box{
+
+.box {
     width: 30rem;
     height: 5rem;
     border: 4px solid white;
@@ -480,7 +553,8 @@ span:hover {
     font-size: 3rem;
     text-align: center;
 }
-.part2{
+
+.part2 {
     width: 100vw;
     height: 50rem;
     position: relative;
@@ -488,17 +562,20 @@ span:hover {
     display: flex;
     justify-content: space-between;
 }
-.section-left{
+
+.section-left {
     width: 50%;
     font-size: 2.5rem;
     margin: 50px;
 }
-.section-right{
+
+.section-right {
     width: 50%;
     font-size: 2.5rem;
     margin-top: 5rem;
 }
-.part3{
+
+.part3 {
     width: 100vw;
     height: 60rem;
     position: relative;
@@ -506,7 +583,8 @@ span:hover {
     display: flex;
     justify-content: space-around;
 }
-.part4{
+
+.part4 {
     width: 100vw;
     height: 60rem;
     position: relative;
@@ -514,14 +592,16 @@ span:hover {
     display: flex;
     justify-content: space-around;
 }
-blockquote{
+
+blockquote {
     width: 35%;
     position: relative;
     top: 60rem;
     display: flex;
     margin: auto;
 }
-blockquote p{
+
+blockquote p {
     padding: 15px;
     background: #a18e78;
     border-radius: 20px;
@@ -529,7 +609,8 @@ blockquote p{
     font-size: 4rem;
     text-align: center;
 }
-.meet-content{
+
+.meet-content {
     width: 100%;
     height: 100rem;
     position: relative;
@@ -539,20 +620,24 @@ blockquote p{
     flex-direction: column;
     align-items: center;
 }
-.meet-content img{
+
+.meet-content img {
     object-fit: contain;
     height: 100%;
 }
-#inspiration{
+
+#inspiration {
     position: relative;
     top: 125rem;
 }
-#inspiration h2{
+
+#inspiration h2 {
     font-size: 8rem;
     text-align: center;
     font-weight: 200;
 }
-.inspiration{
+
+.inspiration {
     width: 100%;
     height: 130rem;
     font-size: 2.5rem;
@@ -560,27 +645,31 @@ blockquote p{
     /* top: 35rem; */
     /* background-color: rgb(36, 54, 70); */
 }
-.carousel{
+
+.carousel {
     width: 100vw;
     height: 80vh;
     overflow: hidden;
     position: relative;
 }
-.carousel .list .item{
+
+.carousel .list .item {
     position: absolute;
     inset: 0 0 0 0;
 }
-.carousel .list .item img{
+
+.carousel .list .item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.carousel .list .item .content{
+
+.carousel .list .item .content {
     position: absolute;
     top: 10%;
     left: -30rem;
     width: 70%;
-    
+
     max-width: 80%;
     transform: translateX(-50%);
     padding-left: 30%;
@@ -588,10 +677,12 @@ blockquote p{
     color: var(--secondary-color);
     text-shadow: 0 2px 2px black;
 }
-.carousel .list .item .content .text{
+
+.carousel .list .item .content .text {
     /* background-color: rgba(0, 0, 0, 0.6); */
 }
-.thumbnail{
+
+.thumbnail {
     position: absolute;
     bottom: 50px;
     left: 50%;
@@ -600,13 +691,15 @@ blockquote p{
     display: flex;
     gap: 20px;
 }
-.thumbnail .item{
+
+.thumbnail .item {
     width: 150px;
     height: 80px;
     flex-shrink: 0;
     position: relative;
 }
-.thumbnail .item img{
+
+.thumbnail .item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -614,7 +707,8 @@ blockquote p{
     filter: drop-shadow(16px 16px 16px);
 
 }
-.thumbnail .item .content{
+
+.thumbnail .item .content {
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -623,10 +717,12 @@ blockquote p{
     text-shadow: 0 3px 5px black;
 
 }
-.thumbnail .item .content .title{
+
+.thumbnail .item .content .title {
     font-weight: bold;
 }
-.arrows{
+
+.arrows {
     position: absolute;
     top: 80%;
     right: 52%;
@@ -636,7 +732,8 @@ blockquote p{
     gap: 10px;
     align-items: center;
 }
-.arrows button{
+
+.arrows button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -648,29 +745,33 @@ blockquote p{
     transition: 3s;
     z-index: 100;
 }
-.arrows button:hover{
+
+.arrows button:hover {
     background-color: black;
     color: white;
     cursor: pointer;
 }
-.carousel .list .item:nth-child(1){
+
+.carousel .list .item:nth-child(1) {
     z-index: 1;
 }
-.carousel .list .content{
+
+.carousel .list .content {
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
     animation: showContent 0.5s 1s linear 1 forwards;
 }
-@keyframes showContent{
-    to{
+
+@keyframes showContent {
+    to {
         opacity: 1;
         filter: blur(0);
         transform: translateY(0);
     }
 }
 
-.carousel.next .list .item:nth-child(1) img{
+.carousel.next .list .item:nth-child(1) img {
     width: 150px;
     height: 220px;
     position: absolute;
@@ -679,8 +780,9 @@ blockquote p{
     border-radius: 20px;
     animation: showImage 0.5s linear 1 forwards;
 }
+
 @keyframes showImage {
-    to{
+    to {
         width: 100%;
         height: 100%;
         left: 0;
@@ -688,32 +790,38 @@ blockquote p{
         border-radius: 0;
     }
 }
-.carousel.next .thumbnail .item:nth-last-child(1){
+
+.carousel.next .thumbnail .item:nth-last-child(1) {
     /* width: 0; */
     overflow: hidden;
     animation: showThumbnail .5s linear 1 forwards;
 }
-.carousel.prev .list .item img{
+
+.carousel.prev .list .item img {
     z-index: 100;
 }
+
 @keyframes showThumbnail {
-    from{
+    from {
         width: 0;
         opacity: 0;
     }
 }
-.carousel.next .thumbnail{
+
+.carousel.next .thumbnail {
     /* transform: translateX(150px); */
     animation: effectNext .5s linear 1 forwards;
 }
-@keyframes effectNext{
-    from{
+
+@keyframes effectNext {
+    from {
         transform: translateX(150px);
     }
 }
+
 /* running time */
 
-.carousel .time{
+.carousel .time {
     position: absolute;
     z-index: 1000;
     width: 0%;
@@ -724,29 +832,36 @@ blockquote p{
 }
 
 .carousel.next .time,
-.carousel.prev .time{
+.carousel.prev .time {
     animation: runningTime 3s linear 1 forwards;
 }
-@keyframes runningTime{
-    from{ width: 100%}
-    to{width: 0}
+
+@keyframes runningTime {
+    from {
+        width: 100%
+    }
+
+    to {
+        width: 0
+    }
 }
 
 
 /* prev click */
 
-.carousel.prev .list .item:nth-child(2){
+.carousel.prev .list .item:nth-child(2) {
     z-index: 2;
 }
 
-.carousel.prev .list .item:nth-child(2) img{
+.carousel.prev .list .item:nth-child(2) img {
     animation: outFrame 0.5s linear 1 forwards;
     position: absolute;
     bottom: 0;
     left: 0;
 }
-@keyframes outFrame{
-    to{
+
+@keyframes outFrame {
+    to {
         width: 150px;
         height: 220px;
         bottom: 50px;
@@ -755,63 +870,71 @@ blockquote p{
     }
 }
 
-.carousel.prev .thumbnail .item:nth-child(1){
+.carousel.prev .thumbnail .item:nth-child(1) {
     overflow: hidden;
     opacity: 0;
     animation: showThumbnail .5s linear 1 forwards;
 }
+
 .carousel.next .arrows button,
-.carousel.prev .arrows button{
+.carousel.prev .arrows button {
     pointer-events: none;
 }
 
 
-@keyframes contentOut{
-    to{
+@keyframes contentOut {
+    to {
         transform: translateY(-150px);
         filter: blur(20px);
         opacity: 0;
     }
 }
+
 @media screen and (max-width: 678px) {
-    .carousel .list .item .content{
+    .carousel .list .item .content {
         padding-right: 0;
 
-        
+
     }
-    .carousel .list .item .content .title{
+
+    .carousel .list .item .content .title {
         font-size: 30px;
-        
+
     }
-    .inspiration .text{
+
+    .inspiration .text {
         max-width: 100%;
         max-height: 500px;
         font-size: 2.5rem;
         position: relative;
         /* margin-right: 15rem; */
     }
-    #inspiration h2{
+
+    #inspiration h2 {
         font-size: 5rem;
     }
-    .carousel .list .item .content .text{
+
+    .carousel .list .item .content .text {
         width: 100%;
         height: 500px;
         overflow: scroll;
     }
 }
 
-.innerText{
+.innerText {
     width: 60%;
     margin: auto;
     position: relative;
     top: 10rem;
     height: 40%;
 }
-#resource{
+
+#resource {
     position: relative;
     top: 125rem;
 }
-.resource{
+
+.resource {
     width: 100%;
     height: 80rem;
     border: 2rem solid var(--secondary-color);
@@ -821,36 +944,42 @@ blockquote p{
 
     /* background-color: rgb(156, 172, 186); */
 }
-#bloom{
+
+#bloom {
     position: relative;
     top: 125rem;
 }
-.bloom{
+
+.bloom {
     width: 100%;
     height: 80rem;
     display: flex;
     justify-content: center;
     position: relative;
     /* top: 125rem; */
-    
-    
+
+
     /* background-color: rgb(70, 36, 57); */
 }
-.float-image-left{
+
+.float-image-left {
     position: relative;
     left: -64rem;
 }
-.bloom img{
+
+.bloom img {
     object-fit: contain;
     /* width: 180%; */
     height: 100%;
     float: right;
 }
-#contact{
+
+#contact {
     position: relative;
     top: 10rem;
 }
-.contact{
+
+.contact {
     margin: auto;
     width: 30%;
     height: 60rem;
@@ -858,32 +987,38 @@ blockquote p{
     position: relative;
     top: 50rem;
 }
-fieldset{
+
+fieldset {
     margin: 2em 0;
     padding: 1em 2em;
-    border: solid 1px  #ccc;
+    border: solid 1px #ccc;
     border-radius: 6px;
     min-width: 200px;
     background-color: var(--secondary-color);
 }
-legend{
+
+legend {
     font-size: 8em;
     padding: 0 .25;
     color: #999;
-    
+
 }
-input[type=text], input[type=email], input[type=tel]{
+
+input[type=text],
+input[type=email],
+input[type=tel] {
     padding: 10px;
     margin: 5px 0;
 }
 
-form{
+form {
     display: flex;
     align-content: center;
     justify-content: center;
     flex-direction: column;
 }
-.stlbtn{
+
+.stlbtn {
     background-color: #333a4d;
     border-radius: 10px;
     color: white;
@@ -892,11 +1027,13 @@ form{
     margin: 4px 2px;
     cursor: pointer;
 }
-#love{
+
+#love {
     position: relative;
     top: 125rem;
 }
-.love{
+
+.love {
     width: 100%;
     height: 40rem;
     display: flex;
@@ -905,15 +1042,17 @@ form{
     /* top: 125rem; */
     /* background-color: rgb(70, 36, 57); */
 }
-.cards{
+
+.cards {
     width: 30rem;
     height: 40rem;
     background-color: white;
     filter: drop-shadow(16px 16px 16px);
 }
+
 .footer {
     width: 100vw;
-    height: 5rem;
+    height: 35rem;
     display: flex;
     flex-direction: row;
     flex-wrap: no-wrap;
@@ -922,7 +1061,8 @@ form{
     position: relative;
     top: 80rem;
 }
-.footer ul{
+
+.footer ul {
     height: 5rem;
     width: 100vw;
     font-size: 1.75rem;
@@ -931,7 +1071,8 @@ form{
     display: flex;
     justify-content: space-around;
 }
-.footer a{
+
+.footer a {
     /* width: 11rem; */
     height: 5rem;
     font-size: 1.75rem;
@@ -940,49 +1081,57 @@ form{
     position: relative;
     top: -1rem;
 }
-@media (max-width: 600px){
-    .container{
+
+@media (max-width: 600px) {
+    .container {
         max-width: 500px;
         margin-inline: auto;
         padding: 8px;
         overflow: hidden;
     }
-    .landing{
+
+    .landing {
         width: 100%;
         height: 80rem;
         background: url(images/shannaResize1.jpg);
         animation: slide 25s infinite;
-         position: relative;
+        position: relative;
     }
+
     @keyframes slide {
-        25%{
+        25% {
             background: url(images/shannaResize2.jpg);
             background-size: cover;
         }
-        50%{
+
+        50% {
             background: url(images/shannaResize3.jpg);
             background-size: cover;
         }
-        75%{
+
+        75% {
             background: url(images/shannaResize4.jpg);
             background-size: cover;
         }
-        100%{
+
+        100% {
             background: url(images/shannaResize1.jpg);
             background-size: cover;
         }
-        
-        
+
+
     }
-    
-    .toggle-button{
+
+    .toggle-button {
         display: flex;
     }
-    .navbar-links{
+
+    .navbar-links {
         display: none;
         width: 100%;
     }
-    .navbar{
+
+    .navbar {
         flex-direction: column;
         display: block;
         height: auto;
@@ -990,89 +1139,147 @@ form{
         text-align: center;
         align-items: center;
         /* justify-content: space-around; */
-        
+
     }
-    .navbar-links ul{
+
+    .navbar-links ul {
         flex-direction: column;
-        
+
         margin-top: 10rem;
     }
-    .navbar-links li{
+
+    .navbar-links li {
         text-align: center;
-        
+
     }
-    .navbar-links li a{
+
+    .navbar-links li a {
         padding: 0rem;
         width: 25px;
         margin: auto;
     }
-    .navbar-links.active{
+
+    .navbar-links.active {
         display: flex;
         position: relative;
         top: 10rem;
         padding-bottom: 1px;
-        
+
     }
-    .navbar.active2{
+
+    .navbar.active2 {
         height: 30rem;
     }
-    
-    .landing{
+
+    .landing {
         width: 100%;
         background-size: cover;
-       
+
     }
-    .landing img{
+
+    .landing img {
         object-fit: contain;
     }
-    .offerings{
+
+    .offerings {
         width: 400px;
-        
+
     }
-    .offerings-header{
+
+    .offerings-header {
         height: 5rem;
         top: 5rem;
     }
-    .offerings h2{
+
+    .offerings h2 {
         font-size: 3rem;
         text-align: center;
     }
-    .offerings img{
+
+    .offerings img {
         display: none;
     }
-    .flex-container{
+
+    .flex-container {
         width: 100vw;
+        flex-wrap: wrap;
     }
-    .card{
+
+    .card {
         width: 30rem;
         height: 3rem;
         /* border: black 1px solid; */
-        
+
         margin-bottom: 5px;
     }
-    .front p{
+
+    .front p {
         font-size: 1.5rem;
     }
-    .offerContainer p{
-        width: 80%;
+
+    .offerContainer {
+        height: 200px;
     }
-    .addOnContainer{
+
+    .offerContainer p {
+        width: 80%;
+
+    }
+
+    .addOnContainer {
         width: 100%;
-        height: 500px;
+        height: 200px;
         overflow: scroll;
         display: flex;
         flex-direction: column;
-        
     }
-    .listPosition{
+
+    .listPosition {
         top: 5rem;
     }
-    .wisdom-content img{
+    /* #wisdom{
+        top: -5rem;
+    } */
+
+    .wisdom-content {
+        top: -70rem;
+    }
+
+    .wisdom-content img {
         display: none;
     }
-    .inner{
+
+    .inner {
         width: 100%;
         margin: auto;
         /* border: 3px solid #69d5c3; */
+    }
+
+    .inspiration {
+        top: -70rem;
+    }
+    .inspiration p{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    #inspiration h2{
+       text-align: center;
+       font-size: 5rem;
+       position: relative;
+       top: -75rem;
+    }
+    .inspiration .text{
+        margin-left: 20rem;
+        width: 4rem;
+        
+    }
+
+    .contact {
+        width: 90%;
+        top: -10rem;
+    }
+
+    #footer {
+        top: 50rem;
     }
 }
