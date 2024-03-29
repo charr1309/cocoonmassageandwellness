@@ -164,6 +164,7 @@ body {
     background-color: var(--primary-color);
 
 }
+
 /* .off-screen-menu{
     background-color: rgb(34, 37, 49);
     height: 250px;
@@ -1161,13 +1162,13 @@ form {
         text-align: center;
         align-items: center;
         right: -450px;
-        position: relative; 
+        position: relative;
         transition: .8s ease;
         top: -.5rem;
         background-color: rgb(34, 37, 49);
-        
+
     }
-    
+
     .navbar-links ul {
         flex-direction: column;
         max-width: 450px;
@@ -1175,25 +1176,29 @@ form {
         /* right: -450px; */
         /* margin-top: 10rem; */
     }
-    
+
     .navbar-links li {
         text-align: center;
-        
+
     }
-    .navbar.active{
+
+    .navbar.active {
         right: 0;
     }
+
     .navbar-links li a {
         padding: 0rem;
         width: 25px;
         margin: auto;
     }
-    .navbar{
-    
+
+    .navbar {
+
         padding: 1rem;
         display: flex;
     }
-    .ham-menu{
+
+    .ham-menu {
         height: 50px;
         width: 50px;
         margin-left: 20rem;
@@ -1201,7 +1206,8 @@ form {
         left: 10rem;
         /* top: 5rem; */
     }
-    .ham-menu span{
+
+    .ham-menu span {
         height: 5px;
         width: 100%;
         background-color: var(--secondary-color);
@@ -1212,23 +1218,29 @@ form {
         transform: translate(-50%, -50%);
         transition: .3s ease;
     }
-    .ham-menu span:nth-child(1){
+
+    .ham-menu span:nth-child(1) {
         top: 25%;
     }
-    .ham-menu span:nth-child(3){
+
+    .ham-menu span:nth-child(3) {
         top: 75%;
     }
-    .ham-menu.active span:nth-child(1){
+
+    .ham-menu.active span:nth-child(1) {
         top: 50%;
         transform: translate(-50%, -50%) rotate(45deg);
     }
-    .ham-menu.active span:nth-child(2){
+
+    .ham-menu.active span:nth-child(2) {
         opacity: 0;
     }
-    .ham-menu.active span:nth-child(3){
+
+    .ham-menu.active span:nth-child(3) {
         top: 50%;
         transform: translate(-50%, -50%) rotate(-45deg);
     }
+
     /* .navbar-links.active {
         display: flex;
         position: relative;
@@ -1289,6 +1301,7 @@ form {
     .front p {
         font-size: 1.5rem;
     }
+    
 
     .offerContainer {
         height: 200px;
@@ -1310,6 +1323,7 @@ form {
     .listPosition {
         top: 5rem;
     }
+
     /* #wisdom{
         top: -5rem;
     } */
@@ -1331,20 +1345,23 @@ form {
     .inspiration {
         top: -70rem;
     }
-    .inspiration p{
+
+    .inspiration p {
         font-size: 1.5rem;
         width: 100%;
     }
-    #inspiration h2{
-       text-align: center;
-       font-size: 5rem;
-       position: relative;
-       top: -75rem;
+
+    #inspiration h2 {
+        text-align: center;
+        font-size: 5rem;
+        position: relative;
+        top: -75rem;
     }
-    .inspiration .text{
+
+    .inspiration .text {
         margin-left: 20rem;
         width: 4rem;
-        
+
     }
 
     .contact {
@@ -1355,34 +1372,181 @@ form {
     #footer {
         top: 50rem;
     }
+
+    .aboutHeading {
+        position: relative;
+        top: 5rem;
+        right: 20rem;
+        text-align: center;
+        float: right;
+        font-size: 1.5rem;
+    }
+
+    .top {
+        width: 100vw;
+        height: 113rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 20px solid black;
+    }
+
+    .top img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+    }
+
+    .toptext {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 80rem;
+        font-size: 3rem;
+        font-weight: 100;
+        color: #a18e78;
+
+    }
+
+    .toptext h1 {
+        font-size: 5rem;
+        font-style: italic;
+        font-weight: 100;
+        position: relative;
+        top: -10rem;
+        color: #a18e78;
+    }
+
+    .box {
+        width: 30rem;
+        height: 5rem;
+        border: 4px solid white;
+        margin: auto;
+        position: relative;
+        top: 10rem;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .part2 {
+        width: 800px;
+        height: 50rem;
+        position: relative;
+        top: 50rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-left {
+        width: 100rem;
+        height: 100rem;
+        font-size: 1.5rem;
+        margin: 50px;
+        position: relative;
+        
+
+    }
+    .responsive{
+        position: relative;
+        top: 10rem;
+    }
+
+    .section-right {
+        width: 100rem;
+        font-size: 1.5rem;
+        margin-top: 5rem;
+        position: relative;
+        top: 90rem;
+    }
+
+    .part3 {
+        width: 800px;
+        height: 60rem;
+        position: relative;
+        top: 650rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .part4 {
+        width: 800px;
+        height: 60rem;
+        position: relative;
+        top: 50rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    blockquote {
+        width: 35%;
+        position: relative;
+        top: 160rem;
+        display: flex;
+        margin: auto;
+    }
+
+    blockquote p {
+        padding: 15px;
+        background: #a18e78;
+        border-radius: 20px;
+        margin: auto;
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .meet-content {
+        width: 100%;
+        height: 100rem;
+        position: relative;
+        top: 35rem;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .meet-content img {
+        object-fit: contain;
+        height: 100%;
+    }
 }
+
 @media (min-width: 915px) {
     .container {
-        max-width: 900px;
-        /* margin-inline: auto; */
-        padding: 8px;
+        max-width: 815px;
+        margin-inline: auto;
+        /* padding: 8px; */
         overflow: hidden;
     }
-    .navbar-links ul{
+
+    .navbar-links ul {
         font-size: small;
         width: 800px;
     }
-    .flex-container{
+
+    .flex-container {
         width: 900px;
         height: 50px;
         display: flex;
-        
-        
+
+
     }
-    .flex-container .front p{
+
+    .flex-container .front p {
         font-size: small;
         text-align: center;
-         
+
     }
-    .flex-container .front{
+
+    .flex-container .front {
         width: 130px;
-        
+
     }
+
     .landing {
         width: 100vw;
         height: 80rem;
@@ -1414,6 +1578,7 @@ form {
 
 
     }
+
     .offerings {
         width: 900px;
         /* top: -5rem; */
@@ -1432,7 +1597,7 @@ form {
         top: -10rem;
     }
 
-    
+
 
     .flex-container {
         width: 100%;
@@ -1452,12 +1617,18 @@ form {
     .front p {
         font-size: 1.5rem;
     }
-    .back p{
-        font-size: 1.5rem;
+
+    .back p {
+        font-size: .85rem;
     }
-    .cards{
+    .back{
+        height: 25rem;
+    }
+
+    .cards {
         width: 120px;
     }
+
     .offerContainer {
         height: 200px;
     }
@@ -1466,10 +1637,12 @@ form {
         width: 80%;
 
     }
-    .border{
+
+    .border {
         position: relative;
         top: 5rem;
     }
+
     .addOnContainer {
         width: 100%;
         height: 200px;
@@ -1483,6 +1656,7 @@ form {
     .listPosition {
         top: 15rem;
     }
+
     /* #wisdom{
         top: -5rem;
     } */
@@ -1504,24 +1678,29 @@ form {
     .inspiration {
         top: -60rem;
     }
-    .inspiration p{
+
+    .inspiration p {
         font-size: 1.5rem;
         width: 100%;
     }
-    #inspiration h2{
-       text-align: center;
-       font-size: 5rem;
-       position: relative;
-       top: -60rem;
+
+    #inspiration h2 {
+        text-align: center;
+        font-size: 5rem;
+        position: relative;
+        top: -60rem;
     }
-    .inspiration .text{
-        margin-left: 20rem;
-        width: 4rem;
-        
+
+    .inspiration .text {
+        margin-left: 5rem;
+        width: 6rem;
+
     }
-    .content .text{
-        width: 300px;
-        background-color: rgba(20, 20, 20, 0.5);
+
+    .content .text {
+        width: 600px;
+        color: var(--primary-color);
+        /* background-color: rgba(20, 20, 20, 0.5); */
     }
 
     .contact {
