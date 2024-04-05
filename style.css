@@ -1629,7 +1629,7 @@ form {
     }
 
     .flex-container .front {
-        width: 130px;
+        width: 120px;
 
     }
 
@@ -1666,8 +1666,14 @@ form {
     }
 
     .offerings {
-        width: 900px;
-        /* top: -5rem; */
+        width: 800px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 35rem;
+        margin: 20px;
 
     }
 
@@ -1691,7 +1697,9 @@ form {
         margin: -30px;
         justify-content: space-around;
     }
-
+    .flex-image {
+        width: 100%;
+    }
     .card {
         width: 30rem;
         height: 6rem;
@@ -1797,10 +1805,10 @@ form {
 
     .contact {
         width: 90%;
-        top: -30rem;
+        top: -15rem;
     }
 
     .footer {
-        top: -10rem;
+        top: 10rem;
     }
 }
