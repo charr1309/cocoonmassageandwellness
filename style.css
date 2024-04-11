@@ -439,7 +439,8 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 3rem;
+    top: 9rem;
+    
 }
 
 .glow-on-hover:before {
@@ -501,7 +502,7 @@ body {
 
 #wisdom {
     position: relative;
-    top: 120rem;
+    top: 130rem;
     overflow: scroll;
     
 }
@@ -528,7 +529,7 @@ body {
 
 
 .inner {
-    max-width: 1000px;
+    max-width: 1300px;
     max-height: 140rem;
     margin-inline: auto;
     background-color: white;
@@ -572,6 +573,7 @@ body {
 
 .inner p {
     font-size: 1.5rem;
+    color: var(--primary-color);
 }
 
 .wisdom-content img {
@@ -730,7 +732,7 @@ blockquote p {
 
 #inspiration {
     position: relative;
-    top: 230rem;
+    top: 220rem;
 }
 
 #inspiration h2 {
@@ -741,7 +743,7 @@ blockquote p {
 
 .inspiration {
     width: 100%;
-    height: 130rem;
+    height: 50rem;
     font-size: 2.5rem;
     position: relative;
     /* top: 35rem; */
@@ -1031,7 +1033,7 @@ blockquote p {
     height: 40%;
 }
 
-#resource {
+/* #resource {
     position: relative;
     top: 125rem;
 }
@@ -1042,12 +1044,12 @@ blockquote p {
     border: 2rem solid var(--secondary-color);
     border-radius: 40px;
     position: relative;
-    /* top: 125rem; */
+    top: 125rem;
 
-    /* background-color: rgb(156, 172, 186); */
-}
+    background-color: rgb(156, 172, 186);
+} */
 
-#bloom {
+/* #bloom {
     position: relative;
     top: 125rem;
 }
@@ -1058,10 +1060,10 @@ blockquote p {
     display: flex;
     justify-content: center;
     position: relative;
-    /* top: 125rem; */
+    top: 125rem;
 
 
-    /* background-color: rgb(70, 36, 57); */
+    background-color: rgb(70, 36, 57);
 }
 
 .float-image-left {
@@ -1071,14 +1073,14 @@ blockquote p {
 
 .bloom img {
     object-fit: contain;
-    /* width: 180%; */
+    width: 180%;
     height: 100%;
     float: right;
-}
+} */
 
 #contact {
     position: relative;
-    top: 10rem;
+    top: 240rem;
 }
 
 .contact {
@@ -1087,7 +1089,7 @@ blockquote p {
     height: 60rem;
     text-align: center;
     position: relative;
-    top: 160rem;
+    /* top: 130rem; */
 }
 
 fieldset {
@@ -1130,7 +1132,7 @@ form {
     cursor: pointer;
 }
 
-#love {
+/* #love {
     position: relative;
     top: 125rem;
 }
@@ -1141,8 +1143,8 @@ form {
     display: flex;
     justify-content: space-around;
     position: relative;
-    /* top: 125rem; */
-    /* background-color: rgb(70, 36, 57); */
+    top: 125rem;
+    background-color: rgb(70, 36, 57);
 }
 
 .cards {
@@ -1150,7 +1152,7 @@ form {
     height: 40rem;
     background-color: white;
     filter: drop-shadow(16px 16px 16px);
-}
+} */
 
 .footer {
     width: 100vw;
@@ -1161,7 +1163,7 @@ form {
     justify-content: space-around;
     margin-bottom: 2rem;
     position: relative;
-    top: 180rem;
+    top: 260rem;
     background-color: var(--primary-color);
 }
 
