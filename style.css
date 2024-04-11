@@ -43,7 +43,8 @@ body {
 }
 
 .container {
-    width: 100%;
+    max-width: 1475px;
+    margin-inline: auto;
     /* height: 100vh; */
 
 }
@@ -282,9 +283,9 @@ body {
     height: 400px;
     transform: rotateY(180deg);
 }
-.flex-container{
+/* .flex-container{
     width: 30%;
-}
+} */
 
 #offerings {
     position: relative;
@@ -362,6 +363,7 @@ body {
     height: 30rem;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .offerContainer img {
@@ -426,7 +428,7 @@ body {
     border: none;
     outline: none;
     color: #fff;
-    background: var(--secondary-color);
+    background: black;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -476,7 +478,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: var(--secondary-color);
+    background: black;
     left: 0;
     top: 0;
     border-radius: 10px;
@@ -501,18 +503,18 @@ body {
     position: relative;
     top: 120rem;
     overflow: scroll;
-
+    
 }
 
 .wisdom-content {
     width: 100%;
-    height: 50rem;
+    height: 100rem;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 4rem 0 4rem;
     position: relative;
     padding: 3rem;
-
+    
 
     /* top: 120rem; */
 }
@@ -526,13 +528,14 @@ body {
 
 
 .inner {
-    width: 50%;
-    height: 115%;
+    max-width: 1000px;
+    max-height: 140rem;
+    margin-inline: auto;
     background-color: white;
     position: relative;
     /* top: 8rem; */
     /* margin: auto; */
-    border-radius: 30px;
+    border-radius: 10px;
     overflow: scroll;
     scrollbar-color: var(--secondary-color);
     scrollbar-width: thin;
@@ -559,19 +562,25 @@ body {
 }
 
 .inner h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding-bottom: 1rem;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+
 }
 
 .inner p {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .wisdom-content img {
     width: 50%;
-    float: right;
+    float: center;
+    left: 25%;
     position: relative;
     top: 1rem;
+    padding-bottom: 30px;
 }
 
 .aboutContainer {
@@ -721,7 +730,7 @@ blockquote p {
 
 #inspiration {
     position: relative;
-    top: 150rem;
+    top: 230rem;
 }
 
 #inspiration h2 {
@@ -1074,11 +1083,11 @@ blockquote p {
 
 .contact {
     margin: auto;
-    width: 30%;
+    width: 60%;
     height: 60rem;
     text-align: center;
     position: relative;
-    top: 80rem;
+    top: 160rem;
 }
 
 fieldset {
@@ -1152,7 +1161,8 @@ form {
     justify-content: space-around;
     margin-bottom: 2rem;
     position: relative;
-    top: 115rem;
+    top: 180rem;
+    background-color: var(--primary-color);
 }
 
 .footer ul {
@@ -1161,6 +1171,7 @@ form {
     font-size: 1.75rem;
     text-align: center;
     position: relative;
+    top: 15px;
     display: flex;
     justify-content: space-around;
 }
@@ -1603,7 +1614,7 @@ form {
 
 @media only screen and (max-device-width: 920px) and (orientation: landscape) {
     .container {
-        max-width: 920px;
+        max-width: 900px;
         margin-inline: auto;
         /* padding: 8px; */
         overflow: hidden;
@@ -1618,7 +1629,7 @@ form {
         width: 900px;
         height: 50px;
         display: flex;
-
+        justify-content: space-around;
 
     }
 
@@ -1695,7 +1706,8 @@ form {
         width: 100%;
         align-items: self-start;
         margin: -30px;
-        justify-content: space-around;
+        /* justify-content:right; */
+        /* align-items: center; */
     }
     .flex-image {
         width: 100%;
