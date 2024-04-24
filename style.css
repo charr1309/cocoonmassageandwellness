@@ -343,11 +343,15 @@ body {
 
 .addOnContainer {
     width: 100rem;
-    height: 20rem;
+    height: 30rem;
     display: flex;
     justify-content: center;
     margin: auto;
 
+}
+.addOnContainer img{
+    object-fit: cover;
+    height: 40rem;
 }
 
 .addOnContainer p {
