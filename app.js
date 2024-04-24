@@ -1,5 +1,5 @@
 function storePagePosition() {
-    var page_y = window.pageYOffset;
+    var page_y = window.scrollY;
     localStorage.setItem("page_y", page_y);
   }
   
@@ -111,4 +111,29 @@ hamMenu.addEventListener('click', ()=>{
   hamMenu.classList.toggle('active');
   navBar.classList.toggle('active');
 });
+
+const anims = document.querySelectorAll('.anim');
+const options = {
+  root: null,
+  threshold: 0,
+  rootMargin: "0px"
+ };
+
+const observer = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry =>{
+    if(!entry.isIntersecting){
+      return
+    }
+      console.log(entry);
+      entry.target.classList.add("loaded");
+    
+  });
+},options);
+
+anims.forEach(anim =>{
+  observer.observe(anim);
+
+})
+
+
 

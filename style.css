@@ -37,7 +37,6 @@ html {
 }
 
 body {
-    /* background-color: #d3ede0; */
     width: 100%;
     overflow-x: hidden;
 }
@@ -48,7 +47,7 @@ body {
     /* height: 100vh; */
 
 }
-
+/* Top Button */
 #myBtn {
     display: none;
     /* Hidden by default */
@@ -82,17 +81,15 @@ body {
     background-color: #d3ede0;
     /* Add a dark-grey background on hover */
 }
+/* End of Top Button */
 
-/* .home{
-    width: 100%;
-    height: 50rem;
-} */
 .info{
     width: 100%;
-    height: 5rem;
+    height: 6.5rem;
     background-color: var(--primary-color);
 
 }
+/* Logo Image styles */
 .heading {
     width: 100%;
     /* height: 15rem; */
@@ -105,124 +102,73 @@ body {
 
 .heading img {
     object-fit: cover;
-    width: 100vw;
+    width: 100%;
     max-height: 25rem;
     position: relative;
     /* top: 6rem; */
 }
+/* End of Logo Image styles */
 
+/* Nav Bar */
 .navbar {
     width: 100vw;
     height: 5rem;
+    background: var(--primary-color);
     display: flex;
     flex-direction: row;
     flex-wrap: no-wrap;
     margin-bottom: 2rem;
     position: relative;
     top: 5rem;
+    visibility: hidden;
+    /* opacity: 0; */
+    /* transform: translateY(-100px); */
+    transition: transform 1s, opacity 1s;
+    
+}
+.loaded {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    z-index: 900;
 }
 
-.navbar-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar-links li {
-    list-style: none;
-}
-
+/* color navbar text to secondary color */
 .navbar-links li a {
     text-decoration: none;
     color: var(--secondary-color);
     display: block;
 }
 
-/* .navbar a{
-    width: 25rem;
-    height: 5rem;
-    color: var(--secondary-color);
-} */
+
 .navbar ul {
-    height: 5rem;
+    height: 4rem;
     width: 100vw;
     font-size: 1.75rem;
     text-align: center;
     position: relative;
     display: flex;
+    align-items: center;
     justify-content: space-around;
+    /* background-color: var(--primary-color); */
 }
 
-/* .navbar li{
-    width: 25rem;
-    height: 5rem;
-} */
-/* .navbar li::after{
-    content: "";
-    position: absolute;
-    display: block;
-    height: 1rem;
-    width: 0%;
-    background-color: var(--secondary-color);
-    transition: all ease-in-out 500ms;
-} */
+
 .navbar-links li:hover {
     color: rgb(255, 255, 255);
     background-color: var(--primary-color);
+    transition: .5s linear;
 
 }
+/* End of Nav Bar */
 
-/* .off-screen-menu{
-    background-color: rgb(34, 37, 49);
-    height: 250px;
-    width: 100%;
-    max-width: 450px;
+/* #landing {
     position: relative;
-    right: -450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 3rem;
-    transition: .3s ease;
-}
-.off-screen-menu.active{
-    right: 0;
 } */
-
-
-
-
-/* .navbar li:hover::after{
-    width: 100%;
-} */
-
-/* .toggle-button {
-    position: absolute;
-    top: 0rem;
-    left: 30rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
-} */
-
-#landing {
-    position: relative;
-}
 
 .landing {
     width: 100%;
-    height: 80rem;
+    height: 70rem;
     background: url(images/s1.jpg);
     animation: slide 25s infinite;
     position: relative;
@@ -251,7 +197,10 @@ body {
 
 
 }
-
+/* .anim{
+    transform: translateY(0);
+    opacity: 1;
+} */
 
 .card {
     width: 250px;
@@ -259,7 +208,7 @@ body {
     perspective: 1000px;
     transform-style: preserve-3d;
     transition: transform 1.5s;
-    z-index: 900;
+    z-index: 1900;
     cursor: pointer;
     position: relative;
     border-radius: 10px;
@@ -311,6 +260,7 @@ body {
 .offerings-header {
     height: 15rem;
     position: relative;
+    
 }
 
 /* style list of prices */
@@ -347,6 +297,7 @@ body {
     font-size: 8rem;
     text-align: center;
     font-weight: 200;
+    
 }
 
 .offerings h3 {
@@ -445,7 +396,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 9rem;
+    top: 1rem;
     
 }
 
