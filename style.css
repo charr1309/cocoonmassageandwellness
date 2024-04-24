@@ -124,8 +124,15 @@ body {
     /* opacity: 0; */
     /* transform: translateY(-100px); */
     transition: transform 1s, opacity 1s;
+    z-index: 2000;
     
 }
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .loaded {
     opacity: 1;
     visibility: visible;
@@ -150,14 +157,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* background-color: var(--primary-color); */
+    background-color: white;
 }
 
 
-.navbar-links li:hover {
-    color: rgb(255, 255, 255);
-    background-color: var(--primary-color);
+.navbar-links li a:hover {
+    background-color: var(--secondary-color);
     transition: .5s linear;
+    color: white;
 
 }
 /* End of Nav Bar */
