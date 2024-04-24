@@ -111,7 +111,7 @@ body {
 
 /* Nav Bar */
 .navbar {
-    width: 100vw;
+    max-width: 1500px;
     height: 5rem;
     background: var(--primary-color);
     display: flex;
