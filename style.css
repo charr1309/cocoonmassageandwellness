@@ -477,7 +477,7 @@ body {
 }
 
 .wisdonContainer{
-    width: 100%;
+    max-width: 1500px;
     height: 100vh;
 
 }
@@ -508,7 +508,7 @@ a{
     color: var(--secondary-color);
 }
 .wisdomLanding{
-    width: 100%;
+    max-width: 1500px;
     height: 30rem;
     background-image: url(wisdom/wisdomIMG.jpg);
     background-repeat: no-repeat;
