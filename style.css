@@ -512,6 +512,7 @@ a{
     height: 30rem;
     background-image: url(wisdom/wisdomIMG.jpg);
     background-repeat: no-repeat;
+    object-fit: cover;
     display: flex;
     justify-content: space-around;
     position: relative;
