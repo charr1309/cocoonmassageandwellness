@@ -83,6 +83,13 @@ body {
 }
 /* End of Top Button */
 
+.buttonStyle{
+    position: fixed;
+    z-index: 900;
+    width: 8rem;
+    height: 4rem;
+    border-radius: 10px;
+}
 .info{
     width: 100%;
     height: 6.5rem;
@@ -103,9 +110,9 @@ body {
 .heading img {
     object-fit: cover;
     width: 100%;
-    max-height: 25rem;
+    max-height: 27rem;
     position: relative;
-    /* top: 6rem; */
+    top: 2rem;
 }
 /* End of Logo Image styles */
 
@@ -469,6 +476,205 @@ body {
     font-size: large;
 }
 
+.wisdonContainer{
+    width: 100%;
+    height: 100vh;
+
+}
+.wisdomTop{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    /* justify-content: space-between; */
+    position: relative;
+}
+.wisdomNavbar{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wisdomLogo{
+    width: 5rem;
+    height: 5rem;
+    background-color: aqua;
+}
+a{
+    font-size: 2rem;
+    word-spacing: 10rem;
+    position: relative;
+    left: 15rem;
+    color: var(--secondary-color);
+}
+.wisdomLanding{
+    width: 100%;
+    height: 30rem;
+    background-image: url(wisdom/wisdomIMG.jpg);
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.wisdomLanding p{
+    font-size: 4rem;
+    position: relative;
+    left: 30rem;
+    margin: auto;
+    color: var(--primary-color);
+}
+/* .wisdomSidebar-left{
+    width: 30%;
+    height: 60rem;
+    background-color: beige;
+} */
+.wisdomMain{
+    width: 60%;
+    height: 60rem;
+    /* background-color: bisque; */
+}
+.wisdommain-content{
+    width: 100%;
+    height: fit-content;
+}
+.wisdomMain-content p{
+    text-align: center;
+    font-size: 4rem;
+}
+.wisdomAbout-us{
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    position: relative;
+    top: 5rem;
+    /* background-color: rgb(36, 54, 70); */
+}
+.wisdomAbout-us p{
+    font-size: 1.5rem;
+}
+.wisdomAbout-us img{
+    width: 100%;
+    height: auto;
+}
+.wisdomAbout-us .right-side{
+    width: 50%;
+    height: 60rem;
+    position: relative;
+    /* right: 0; */
+}
+.wisdomAbout-us .left-side{
+    width: 40%;
+    height: 60rem;
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+.wisdomAbout-us h2 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.wisdomServices{
+    width: 100%;
+    height: 60rem;
+    background-color: var(--primary-color)
+}
+.wisdomServices p{
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+.wisdomServices h2{
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.centerImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wisdomContact{
+    width: 100%;
+    height: 60rem;
+    /* background-color: rgb(70, 36, 57); */
+}
+.wisdomContact p{
+    font-size: 2rem;
+    width: 50%;
+    margin: auto;
+}
+.wisdomContact h2{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.wisdomContact img{
+    width: 500px;
+    height: auto;
+}
+.wisdomContact h3{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.doterra{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20rem;
+    /* border: 1px solid var(--primary-color); */
+    margin-bottom: 8rem;
+    background-image: url(wisdom/doterra.png);
+}
+.lotus{
+    width: 100%;
+    height: 30rem;
+    /* border: 1px solid var(--primary-color); */
+    margin-bottom: 3rem;
+    display: flex;
+    
+    
+}
+.aliCramer{
+    width: 100%;
+    height: 40rem;
+    border: 1px solid var(--primary-color);
+    margin-bottom: 3rem;
+    margin-top: 10rem;
+    display: flex;
+}
+.aliCramer img{
+    margin: auto;
+}
+.som{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: var(--primary-color);
+
+}
+.som img{
+    position: relative;
+    left: 30%;
+    
+   
+}
+/* .footer {
+    width: 100%;
+    height: 15rem;
+    background-color: rgb(157, 179, 97);
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer a{
+    font-size: 2rem;
+    word-spacing: 10rem;
+    position: relative;
+    left: -10rem;
+} */
 #wisdom {
     position: relative;
     top: 130rem;
@@ -476,7 +682,7 @@ body {
     
 }
 
-.wisdom-content {
+/* .wisdom-content {
     width: 100%;
     height: 100rem;
     background-repeat: no-repeat;
@@ -486,7 +692,7 @@ body {
     padding: 3rem;
     
 
-    /* top: 120rem; */
+   
 }
 
 .wisdom-content h2 {
@@ -494,17 +700,17 @@ body {
     font-weight: 200;
     text-align: center;
     padding-bottom: 2rem;
-}
+} */
 
 
-.inner {
+/* .inner {
     max-width: 1300px;
     max-height: 140rem;
     margin-inline: auto;
     background-color: white;
     position: relative;
-    /* top: 8rem; */
-    /* margin: auto; */
+    top: 8rem;
+    margin: auto;
     border-radius: 10px;
     overflow: scroll;
     scrollbar-color: var(--secondary-color);
@@ -513,15 +719,14 @@ body {
     color: var(--secondary-color);
     text-shadow: 0 1px 1px black;
 
-    /* opacity: 0.8; */
-    /* display: flex; */
-}
+    
+} */
 
-.inner h1 {
+/* .inner h1 {
     font-size: 5rem;
     text-align: center;
 
-    /* margin-top: -20px; */
+    margin-top: -20px;
     padding-bottom: 3rem;
 }
 
@@ -538,9 +743,9 @@ body {
     padding-bottom: 15px;
     padding-top: 15px;
 
-}
+} */
 
-.inner p {
+/* .inner p {
     font-size: 1.5rem;
     color: var(--primary-color);
 }
@@ -552,7 +757,7 @@ body {
     position: relative;
     top: 1rem;
     padding-bottom: 30px;
-}
+} */
 
 .aboutContainer {
     background-color: #fff2eb;
@@ -701,7 +906,7 @@ blockquote p {
 
 #inspiration {
     position: relative;
-    top: 220rem;
+    top: 140rem;
 }
 
 #inspiration h2 {
@@ -1049,7 +1254,7 @@ blockquote p {
 
 #contact {
     position: relative;
-    top: 240rem;
+    top: 180rem;
 }
 
 .contact {
@@ -1132,7 +1337,7 @@ form {
     justify-content: space-around;
     margin-bottom: 2rem;
     position: relative;
-    top: 260rem;
+    top: 200rem;
     background-color: var(--primary-color);
 }
 
