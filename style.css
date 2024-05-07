@@ -418,6 +418,7 @@ body {
     align-items: center;
     position: relative;
     top: 1rem;
+    left: -170px;
     
 }
 
@@ -482,7 +483,7 @@ body {
 .wisdomContainer{
     max-width: 1500px;
     height: 100vh;
-
+    margin: auto;
 }
 .wisdomTop{
     width: 100%;
@@ -848,13 +849,13 @@ span:hover {
 
 .section-left {
     width: 50%;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin: 50px;
 }
 
 .section-right {
     width: 50%;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-top: 5rem;
 }
 
