@@ -178,6 +178,9 @@ body {
     /* background-color: white; */
     
 }
+.navbar-links{
+    max-width: 1500px;
+}
 .navbar-links li a {
     text-decoration: none;
     color: var(--secondary-color);
