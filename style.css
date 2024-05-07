@@ -96,6 +96,11 @@ body {
     background-color: var(--primary-color);
 
 }
+.info p{
+    font-size: 2rem;
+    position: relative;
+    left: -350px;
+}
 /* Logo Image styles */
 .heading {
     width: 100%;
@@ -849,14 +854,22 @@ span:hover {
 
 .section-left {
     width: 50%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 50px;
 }
-
+.section-left img{
+    width: 80%;
+    position: relative;
+}
 .section-right {
     width: 50%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 5rem;
+}
+.section-right img{
+    width: 60%;
+    position: relative;
+    left: 10rem;
 }
 
 .part3 {
