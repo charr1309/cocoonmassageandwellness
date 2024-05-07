@@ -142,7 +142,7 @@ body {
     margin-bottom: 2rem;
     position: relative;
     top: 5rem;
-    
+    filter: drop-shadow(16px 16px 16px);
     /* visibility: hidden; */
     /* opacity: 0; */
     /* transform: translateY(-100px); */
