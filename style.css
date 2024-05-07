@@ -39,8 +39,18 @@ html {
 body {
     width: 100%;
     overflow-x: hidden;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
-
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 .container {
     max-width: 1475px;
     margin-inline: auto;
@@ -154,12 +164,6 @@ body {
 } */
 
 /* color navbar text to secondary color */
-.navbar-links li a {
-    text-decoration: none;
-    color: var(--secondary-color);
-    display: flex;
-    word-spacing: 5px;
-}
 
 
 .navbar ul {
@@ -173,6 +177,12 @@ body {
     justify-content: space-between;
     /* background-color: white; */
     
+}
+.navbar-links li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    display: flex;
+    word-spacing: 5px;
 }
 
 
