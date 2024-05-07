@@ -127,7 +127,8 @@ body {
     margin-bottom: 2rem;
     position: relative;
     top: 5rem;
-    visibility: hidden;
+    
+    /* visibility: hidden; */
     /* opacity: 0; */
     /* transform: translateY(-100px); */
     transition: transform 1s, opacity 1s;
@@ -140,18 +141,19 @@ body {
     width: 100%;
 }
 
-.loaded {
+/* .loaded {
     opacity: 1;
     visibility: visible;
     transform: translateY(0px);
     z-index: 900;
-}
+} */
 
 /* color navbar text to secondary color */
 .navbar-links li a {
     text-decoration: none;
     color: var(--secondary-color);
-    display: block;
+    display: flex;
+    word-spacing: 5px;
 }
 
 
@@ -163,8 +165,9 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: white;
+    
 }
 
 
@@ -476,7 +479,7 @@ body {
     font-size: large;
 }
 
-.wisdonContainer{
+.wisdomContainer{
     max-width: 1500px;
     height: 100vh;
 
@@ -677,12 +680,12 @@ a{
     position: relative;
     left: -10rem;
 } */
-#wisdom {
+/* #wisdom {
     position: relative;
     top: 130rem;
     overflow: scroll;
     
-}
+} */
 
 /* .wisdom-content {
     width: 100%;
