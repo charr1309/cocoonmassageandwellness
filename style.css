@@ -182,6 +182,11 @@ body {
     color: white;
 
 }
+.navbar-links li a:not(:hover){
+    background-color: var(--primary-color);
+    transition: .5s linear;
+    color: var(--secondary-color);
+}
 /* End of Nav Bar */
 
 /* #landing {
