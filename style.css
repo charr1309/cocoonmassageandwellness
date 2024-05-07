@@ -772,7 +772,7 @@ a{
 
 .aboutContainer {
     background-color: #fff2eb;
-    width: 100%;
+    max-width: 1500px;
     height: 100%;
 }
 
