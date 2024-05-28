@@ -13,6 +13,7 @@
     list-style-type: none;
     outline: none;
     font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
 
 }
 
@@ -65,9 +66,17 @@ body {
     border-radius: 10px;
 }
 
-.centerButton .number p{
-    font-size: 1.5rem;
+.centerButton{
+    float: left;
+    margin-left: 20px;
 
+}
+.moveCenter{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 15rem;
+    top: 5px;
 }
 .info{
     width: 100%;
@@ -118,8 +127,9 @@ body {
     /* transform: translateY(-100px); */
     transition: transform 1s, opacity 1s;
     z-index: 2000;
-    
+    text-shadow: 1px 1px #000;
 }
+
 .sticky{
     position: fixed;
     top: 0;
@@ -146,21 +156,25 @@ body {
     align-items: center;
     justify-content: space-between;
     /* background-color: white; */
-    
 }
 
 .navbar-links li a {
+    
     width: 20rem;
-    text-decoration: none;
-    color: var(--secondary-color);
+    /* text-decoration: none; */
+    
     display: flex;
     word-spacing: 5px;
     align-items: center;
     justify-content: center;
 }
 
+.black{
+    color: black;
 
+}
 .navbar-links li a:hover {
+    
     background-color: var(--secondary-color);
     transition: .5s linear;
     color: white;
@@ -221,6 +235,7 @@ body {
     cursor: pointer;
     position: relative;
     border-radius: 10px;
+    
 }
 
 .front,
@@ -234,10 +249,13 @@ body {
 .front {
     background-color: var(--primary-color);
     transform: rotateY(0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .back {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     overflow-y: scroll;
 
     transform: rotateY(-180deg);
@@ -254,6 +272,7 @@ body {
 #offerings {
     position: relative;
     top: 0rem;
+    color: black;
 }
 
 .offerings {
@@ -263,9 +282,10 @@ body {
     margin: 4rem 0 4rem;
     top: 20rem;
     position: relative;
-
+    
 }
-
+.offerings a{
+}
 .offerings-header {
     height: 15rem;
     position: relative;
@@ -278,8 +298,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-color);
-    color: white;
+    background-color: var(--primary-color);
+    color: black;
     font-size: large;
 }
 
@@ -305,18 +325,20 @@ body {
 .offerings h2 {
     font-size: 8rem;
     text-align: center;
-    font-weight: 200;
+    font-weight: 100;
     
 }
 
 .offerings h3 {
-    color: white;
+    color: black;
+    
 }
 
 .offerings p {
     text-align: left;
     margin: 1rem;
     font-size: 1rem;
+    
 }
 
 .offerings span {
@@ -468,8 +490,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     font-size: large;
+    
 }
 
 .wisdomContainer{
@@ -844,6 +867,9 @@ span:hover {
     font-size: 2rem;
     margin: 50px;
 }
+.section-left, .section-right p{
+    text-indent: 6%;
+}
 .section-left img{
     width: 80%;
     position: relative;
@@ -887,10 +913,10 @@ blockquote {
 
 blockquote p {
     padding: 15px;
-    background: #a18e78;
+    background: #f3e4d2;
     border-radius: 20px;
     margin: auto;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -928,6 +954,7 @@ blockquote p {
     position: relative;
     /* top: 35rem; */
     /* background-color: rgb(36, 54, 70); */
+    font-weight: 100;
 }
 
     .inspiration .text {
