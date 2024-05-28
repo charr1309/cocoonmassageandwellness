@@ -57,42 +57,6 @@ body {
     /* height: 100vh; */
 
 }
-/* Top Button */
-#myBtn {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Fixed/sticky position */
-    bottom: 20px;
-    /* Place the button at the bottom of the page */
-    right: 30px;
-    /* Place the button 30px from the right */
-    z-index: 99;
-    /* Make sure it does not overlap */
-    border: none;
-    /* Remove borders */
-    outline: none;
-    /* Remove outline */
-    background-color: #69d5c3;
-    /* Set a background color */
-    color: white;
-    /* Text color */
-    cursor: pointer;
-    /* Add a mouse pointer on hover */
-    padding: 15px;
-    /* Some padding */
-    border-radius: 10px;
-    /* Rounded corners */
-    font-size: 18px;
-    /* Increase font size */
-}
-
-#myBtn:hover {
-    background-color: #d3ede0;
-    /* Add a dark-grey background on hover */
-}
-/* End of Top Button */
-
 .buttonStyle{
     position: fixed;
     z-index: 900;
@@ -100,9 +64,15 @@ body {
     height: 4rem;
     border-radius: 10px;
 }
+
+.centerButton .number p{
+    font-size: 1.5rem;
+
+}
 .info{
     width: 100%;
     height: 6.5rem;
+    position: relative;
     background-color: var(--primary-color);
 
 }
@@ -142,7 +112,7 @@ body {
     margin-bottom: 2rem;
     position: relative;
     top: 5rem;
-    filter: drop-shadow(16px 16px 16px);
+    filter: drop-shadow(1px 1px 1px);
     /* visibility: hidden; */
     /* opacity: 0; */
     /* transform: translateY(-100px); */
@@ -178,8 +148,7 @@ body {
     /* background-color: white; */
     
 }
-.navbar-links{
-}
+
 .navbar-links li a {
     max-width: 1500px;
     text-decoration: none;
@@ -202,9 +171,7 @@ body {
 }
 /* End of Nav Bar */
 
-/* #landing {
-    position: relative;
-} */
+
 
 .landing {
     width: 100%;
@@ -961,262 +928,6 @@ blockquote p {
     /* background-color: rgb(36, 54, 70); */
 }
 
-.carousel {
-    max-width: 1500px;
-    height: 80vh;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel .list .item {
-    position: absolute;
-    inset: 0 0 0 0;
-}
-
-.carousel .list .item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.carousel .list .item .content {
-    position: absolute;
-    top: 10%;
-    left: -30rem;
-    width: 70%;
-
-    max-width: 80%;
-    transform: translateX(-50%);
-    padding-left: 30%;
-    box-sizing: border-box;
-    color: var(--secondary-color);
-    text-shadow: 0 2px 2px black;
-}
-
-.carousel .list .item .content .text {
-    /* background-color: rgba(0, 0, 0, 0.6); */
-}
-
-.thumbnail {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    width: max-content;
-    z-index: 100;
-    display: flex;
-    gap: 20px;
-}
-
-.thumbnail .item {
-    width: 150px;
-    height: 80px;
-    flex-shrink: 0;
-    position: relative;
-}
-
-.thumbnail .item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    filter: drop-shadow(16px 16px 16px);
-
-}
-
-.thumbnail .item .content {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    color: var(--primary-color);
-    text-shadow: 0 3px 5px black;
-
-}
-
-.thumbnail .item .content .title {
-    font-weight: bold;
-}
-
-.arrows {
-    position: absolute;
-    top: 80%;
-    right: 52%;
-    width: 300px;
-    max-width: 30%;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.arrows button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #eee;
-    border: none;
-    color: black;
-    font-weight: bold;
-    font-size: large;
-    transition: 3s;
-    z-index: 100;
-}
-
-.arrows button:hover {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
-
-.carousel .list .item:nth-child(1) {
-    z-index: 1;
-}
-
-.carousel .list .content {
-    transform: translateY(50px);
-    filter: blur(20px);
-    opacity: 0;
-    animation: showContent 0.5s 1s linear 1 forwards;
-}
-
-@keyframes showContent {
-    to {
-        opacity: 1;
-        filter: blur(0);
-        transform: translateY(0);
-    }
-}
-
-.carousel.next .list .item:nth-child(1) img {
-    width: 150px;
-    height: 220px;
-    position: absolute;
-    left: 50%;
-    bottom: 50px;
-    border-radius: 20px;
-    animation: showImage 0.5s linear 1 forwards;
-}
-
-@keyframes showImage {
-    to {
-        width: 100%;
-        height: 100%;
-        left: 0;
-        bottom: 0;
-        border-radius: 0;
-    }
-}
-
-.carousel.next .thumbnail .item:nth-last-child(1) {
-    /* width: 0; */
-    overflow: hidden;
-    animation: showThumbnail .5s linear 1 forwards;
-}
-
-.carousel.prev .list .item img {
-    z-index: 100;
-}
-
-@keyframes showThumbnail {
-    from {
-        width: 0;
-        opacity: 0;
-    }
-}
-
-.carousel.next .thumbnail {
-    /* transform: translateX(150px); */
-    animation: effectNext .5s linear 1 forwards;
-}
-
-@keyframes effectNext {
-    from {
-        transform: translateX(150px);
-    }
-}
-
-/* running time */
-
-.carousel .time {
-    position: absolute;
-    z-index: 1000;
-    width: 0%;
-    height: 3px;
-    background-color: #f1683a;
-    left: 0;
-    top: 0;
-}
-
-.carousel.next .time,
-.carousel.prev .time {
-    animation: runningTime 3s linear 1 forwards;
-}
-
-@keyframes runningTime {
-    from {
-        width: 100%
-    }
-
-    to {
-        width: 0
-    }
-}
-
-
-/* prev click */
-
-.carousel.prev .list .item:nth-child(2) {
-    z-index: 2;
-}
-
-.carousel.prev .list .item:nth-child(2) img {
-    animation: outFrame 0.5s linear 1 forwards;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-@keyframes outFrame {
-    to {
-        width: 150px;
-        height: 220px;
-        bottom: 50px;
-        left: 50%;
-        border-radius: 20px;
-    }
-}
-
-.carousel.prev .thumbnail .item:nth-child(1) {
-    overflow: hidden;
-    opacity: 0;
-    animation: showThumbnail .5s linear 1 forwards;
-}
-
-.carousel.next .arrows button,
-.carousel.prev .arrows button {
-    pointer-events: none;
-}
-
-
-@keyframes contentOut {
-    to {
-        transform: translateY(-150px);
-        filter: blur(20px);
-        opacity: 0;
-    }
-}
-
-@media screen and (max-width: 678px) {
-    .carousel .list .item .content {
-        padding-right: 0;
-
-
-    }
-
-    .carousel .list .item .content .title {
-        font-size: 30px;
-
-    }
-
     .inspiration .text {
         max-width: 100%;
         max-height: 500px;
@@ -1228,14 +939,6 @@ blockquote p {
     #inspiration h2 {
         font-size: 5rem;
     }
-
-    .carousel .list .item .content .text {
-        width: 100%;
-        height: 500px;
-        overflow: scroll;
-    }
-}
-
 .innerText {
     width: 60%;
     margin: auto;
@@ -1243,7 +946,12 @@ blockquote p {
     top: 10rem;
     height: 40%;
 }
-
+.inspiration .innerText img{
+    width: 50%;
+    float: right;
+    margin-left: 10px;
+    object-fit: cover;
+}
 /* #resource {
     position: relative;
     top: 125rem;
@@ -1290,17 +998,19 @@ blockquote p {
 } */
 
 #contact {
+    
     position: relative;
-    top: 180rem;
-}
+    top: 90rem;
+    }
 
 .contact {
     margin: auto;
-    width: 60%;
+    width: 100%;
     height: 60rem;
     text-align: center;
     position: relative;
-    /* top: 130rem; */
+    top: 20rem;
+    left: 25%;
 }
 
 fieldset {
@@ -1308,12 +1018,12 @@ fieldset {
     padding: 1em 2em;
     border: solid 1px #ccc;
     border-radius: 6px;
-    min-width: 200px;
+    /* max-width: 700px; */
     background-color: var(--secondary-color);
 }
 
 legend {
-    font-size: 8em;
+    font-size: 4em;
     padding: 0 .25;
     color: #999;
 
@@ -1374,7 +1084,7 @@ form {
     justify-content: space-around;
     margin-bottom: 2rem;
     position: relative;
-    top: 200rem;
+    top: 130rem;
     background-color: var(--primary-color);
 }
 
