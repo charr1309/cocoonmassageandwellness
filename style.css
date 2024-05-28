@@ -785,7 +785,9 @@ a{
     max-width: 1500px;
     height: 100%;
 }
-
+.aboutContainer p{
+    
+}
 .buttonStyle {
     width: 10rem;
     background-color: var(--secondary-color);
@@ -830,7 +832,7 @@ span:hover {
     font-size: 7rem;
     font-weight: 100;
     color: #a18e78;
-
+    
 }
 
 .toptext h1 {
@@ -860,14 +862,17 @@ span:hover {
     /* top: 10rem; */
     display: flex;
     justify-content: space-between;
+    font-size: 2rem;
 }
-
+.part2 p{
+    font-weight: 100;
+}
 .section-left {
     width: 50%;
-    font-size: 2rem;
     margin: 50px;
 }
 .section-left, .section-right p{
+    
     text-indent: 6%;
 }
 .section-left img{
@@ -897,10 +902,12 @@ span:hover {
 .part4 {
     width: 100vw;
     height: 60rem;
+    font-size: 2rem;
     position: relative;
     top: 40rem;
     display: flex;
     justify-content: space-around;
+    
 }
 
 blockquote {
@@ -1048,7 +1055,7 @@ fieldset {
     border: solid 1px #ccc;
     border-radius: 6px;
     /* max-width: 700px; */
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 legend {
