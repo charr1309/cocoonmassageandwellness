@@ -785,6 +785,9 @@ a{
     max-width: 1475px;
     height: 100%;
     font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttonStyle {
