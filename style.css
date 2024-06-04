@@ -785,9 +785,7 @@ a{
     max-width: 1475px;
     height: 100%;
     font-weight: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
 }
 
 .buttonStyle {
@@ -1432,6 +1430,10 @@ form {
     #footer {
         top: 50rem;
     }
+    /* .footer img{
+        width: 50px;
+        height: 50px;
+    } */
 
     .aboutHeading {
         position: relative;
