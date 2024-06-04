@@ -782,7 +782,7 @@ a{
 
 .aboutContainer {
     background-color: #fff2eb;
-    max-width: 1500px;
+    max-width: 1475px;
     height: 100%;
     font-weight: 100;
 }
@@ -808,7 +808,7 @@ span:hover {
 }
 
 .top {
-    width: 100vw;
+    max-width: 1475px;
     height: 113rem;
     display: flex;
     flex-direction: row;
@@ -855,7 +855,7 @@ span:hover {
 }
 
 .part2 {
-    width: 100vw;
+    max-width: 1475px;
     height: 50rem;
     position: relative;
     /* top: 10rem; */
@@ -890,7 +890,7 @@ span:hover {
 }
 
 .part3 {
-    width: 100vw;
+    max-width: 1475px;
     height: 60rem;
     position: relative;
     top: 25rem;
@@ -899,7 +899,7 @@ span:hover {
 }
 
 .part4 {
-    width: 100vw;
+    max-width: 1475px;
     height: 60rem;
     font-size: 2rem;
     position: relative;
