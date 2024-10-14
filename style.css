@@ -1147,9 +1147,9 @@ form {
     top: -1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     .container {
-        max-width: 500px;
+        max-width: 400px;
         margin-inline: auto;
         padding: 8px;
         overflow: hidden;
@@ -1208,15 +1208,15 @@ form {
         position: relative;
         transition: .8s ease;
         top: -.5rem;
-        background-color: rgb(34, 37, 49);
+        background-color: rgb(34, 37, 49,0.5);
 
     }
 
     .navbar-links ul {
         flex-direction: column;
         max-width: 450px;
-        top: 5rem;
-        /* right: -450px; */
+        top: 2rem;
+        right: 125px;
         /* margin-top: 10rem; */
     }
 
