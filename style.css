@@ -231,7 +231,7 @@ body {
     perspective: 1000px;
     transform-style: preserve-3d;
     transition: transform 1.5s;
-    z-index: 1900;
+    z-index: 100;
     cursor: pointer;
     position: relative;
     border-radius: 10px;
@@ -257,13 +257,15 @@ body {
 .back {
     background-color: var(--primary-color);
     overflow-y: scroll;
-
+    /* position: absolute; */
     transform: rotateY(-180deg);
+    
 }
 
 .card:hover {
     height: 400px;
     transform: rotateY(180deg);
+    
 }
 /* .flex-container{
     width: 30%;
@@ -284,8 +286,7 @@ body {
     position: relative;
     
 }
-.offerings a{
-}
+
 .offerings-header {
     height: 15rem;
     position: relative;
@@ -1149,10 +1150,10 @@ form {
 
 @media (max-width: 400px) {
     .container {
-        max-width: 400px;
+        width: 400px;
         margin-inline: auto;
         padding: 8px;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .landing {
@@ -1204,7 +1205,7 @@ form {
         width: 100%;
         text-align: center;
         align-items: center;
-        right: -450px;
+        right: -580px;
         position: relative;
         transition: .8s ease;
         top: -.5rem;
@@ -1214,22 +1215,18 @@ form {
 
     .navbar-links ul {
         flex-direction: column;
-        max-width: 450px;
+        max-width: 300px;
         top: 2rem;
         right: 125px;
         /* margin-top: 10rem; */
     }
 
-    .navbar-links li {
-        text-align: center;
-
-    }
-
+    
     .navbar.active {
         right: 0;
     }
 
-    .navbar-links li a {
+    .navbar-links a {
         padding: 0rem;
         width: 25px;
         margin: auto;
@@ -1308,7 +1305,8 @@ form {
 
     .offerings {
         width: 400px;
-        /* top: -5rem; */
+        height: 350px;
+        top: -2rem;
 
     }
 
@@ -1322,49 +1320,115 @@ form {
         text-align: center;
         position: relative;
         top: -10rem;
+        left: 3rem;
     }
 
     .offerings img {
-        display: none;
+        /* display: none; */
+        float: left;
+        top: -270px;
     }
 
     .flex-container {
-        width: 100vw;
-        flex-wrap: wrap;
+        display: flex;
+        width: 350px;
+        height: 300px;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        /* justify-content: flex-start; */
+        /* align-items: center; */
+        margin-left: 42rem;
+        
     }
+    /* .flex-container img {
+        float: left;
+        width: 100px;
+        height: 100px;
+    } */
 
     .card {
-        width: 30rem;
-        height: 3rem;
-        /* border: black 1px solid; */
+        width: 13rem;
+        height: 6rem;
+     
+        right: 15rem;
 
         margin-bottom: 5px;
     }
-
-    .front p {
-        font-size: 1.5rem;
+    .front {
+        width: 12rem;
+        align-items: center;
+        margin-bottom: 5rem;
     }
-    
+    .front p {
+        font-size: 1rem;
+    }
+    .back {
+        width: 300px;
+        height: 10rem;
+        
+        
+    }
+    .back p{
+        font-size: 1rem;
+    }
 
     .offerContainer {
+        width: 300px;
         height: 200px;
+        position: relative;
+        top: -200px;
+        /* margin-left: 12rem; */
     }
-
+    .offerContainer img{
+        float: left;
+        margin-top: 20rem;
+        padding-right: 50px;
+    }
     .offerContainer p {
-        width: 80%;
+        float: right;
+        margin-top: -600px;
+        margin-right: -30px;
+        
+        width: 60%;
 
     }
 
     .addOnContainer {
-        width: 100%;
-        height: 200px;
-        overflow: scroll;
+        width: 300px;
+        height: 600px;
+        /* overflow: scroll; */
         display: flex;
         flex-direction: column;
+        /* margin-left: 9rem; */
     }
+    .addOnContainer p{
+        position: relative;
+        top: -8rem;
+    }
+    .addOnContainer img{
+        width: 400px;
+        height: 300px;
+        position: relative;
+        top: -13rem;
+        float: right;
+    }
+    .border {
+        position: relative;
+        top: -15rem
+    };
 
     .listPosition {
-        top: 5rem;
+        width: 300px;
+        height: 200px;
+        position: relative;
+        /* top: -500rem; */
+        /* margin-left: 8rem; */
+    }
+    .listStyle{
+        width: 300px;
+        height: 200px;
+        position: relative;
+        top: -40rem;
     }
 
     /* #wisdom{
