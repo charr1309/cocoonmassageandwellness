@@ -417,7 +417,7 @@ body {
 }
 .glow-on-hover {
     width: 220px;
-    height: 50px;
+    height: 30px;
     border: none;
     outline: none;
     color: #fff;
@@ -1410,7 +1410,8 @@ form {
         height: 300px;
         position: relative;
         top: -13rem;
-        float: right;
+        margin: auto;
+        right: 55px;
     }
     .border {
         position: relative;
@@ -1421,14 +1422,23 @@ form {
         width: 300px;
         height: 200px;
         position: relative;
-        /* top: -500rem; */
-        /* margin-left: 8rem; */
+        
+        
     }
     .listStyle{
         width: 300px;
         height: 200px;
         position: relative;
-        top: -40rem;
+        top: -45rem;
+    }
+    .listStyle p{
+        position: relative;
+        top: 1rem;
+    }
+    .moveCenter{
+        position: relative;
+        top: -45rem;
+       
     }
 
     /* #wisdom{
@@ -1459,9 +1469,12 @@ form {
     }
 
     .inspiration {
-        top: -70rem;
+        top: -80rem;
     }
-
+    #inspiration h2{
+        position: relative;
+        
+    }
     .inspiration p {
         font-size: 1.5rem;
         width: 100%;
@@ -1477,7 +1490,7 @@ form {
         text-align: center;
         font-size: 5rem;
         position: relative;
-        top: -75rem;
+        top: -70rem;
     }
 
     .inspiration .text {
@@ -1487,11 +1500,12 @@ form {
     }
 
     .contact {
-        width: 90%;
-        top: -10rem;
+        width: 400px;
+        margin-left: -10rem;
     }
 
     #footer {
+        width: 400px;
         top: 50rem;
     }
     /* .footer img{
