@@ -44,6 +44,12 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+.container {
+    max-width: 1500px;
+    margin-inline: auto;
+    height: 100vh;
+
+}
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -52,12 +58,7 @@ body {
         opacity: 1;
     }
 }
-.container {
-    max-width: 2500px;
-    margin-inline: auto;
-    /* height: 100vh; */
 
-}
 .buttonStyle{
     position: fixed;
     z-index: 900;
@@ -315,7 +316,8 @@ body {
 /* container div for listStyle and minimize above */
 .listPosition {
     position: relative;
-    top: 25rem;
+    top: 55rem;
+    
 }
 
 .offerings img {
@@ -371,7 +373,7 @@ body {
 
 .addOnContainer {
     width: 100rem;
-    height: 30rem;
+    height: 50rem;
     display: flex;
     justify-content: center;
     margin: auto;
