@@ -813,10 +813,13 @@ span:hover {
     float: right;
     font-size: 1.5rem;
 }
-
+p.aboutHeading{
+    align-items: center;
+    text-align: center;
+}
 .top {
-    max-width: 1475px;
-    height: 113rem;
+    width: 100vw;
+    height: 120rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -832,11 +835,15 @@ span:hover {
 }
 
 .toptext {
-    width: 50%;
+    width: 40%;
+    height: 25rem;
+    position: relative;
+    top: -20rem;
     align-items: center;
     justify-content: center;
-    font-size: 7rem;
+    font-size: 4rem;
     font-weight: 100;
+    /* padding-left: 20rem; */
     color: #a18e78;
     
 }
