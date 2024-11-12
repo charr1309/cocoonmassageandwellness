@@ -1382,6 +1382,8 @@ form {
     .card:hover {
         height: 6rem;
         transform: rotateY(180deg);
+        z-index: 900;
+    }
     .front {
         width: 12rem;
         align-items: center;
