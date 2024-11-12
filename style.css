@@ -316,7 +316,8 @@ body {
 /* container div for listStyle and minimize above */
 .listPosition {
     position: relative;
-    top: 55rem;
+    /* top: 55rem; */
+    /* right: 40rem; */
     
 }
 
@@ -374,8 +375,9 @@ body {
 .addOnContainer {
     width: 100rem;
     height: 50rem;
-    display: flex;
+    /* display: flex;
     justify-content: center;
+    align-items: center; */
     margin: auto;
 
 }
@@ -535,12 +537,16 @@ a{
 .wisdomLanding{
     max-width: 1500px;
     height: 30rem;
-    /* background-image: url(wisdom/wisdomIMG.jpg); */
+    /* background-image: url(wisdom/shannaEyesClosed.jpeg); */
     /* background-repeat: no-repeat; */
-    /* object-fit: cover; */
+    /* object-fit: contain; */
     display: flex;
     justify-content: space-around;
     position: relative;
+}
+.wisdomLanding img{
+    /* object-fit: contain; */
+    width: 350px;
 }
 .wisdomLanding p{
     font-size: 4rem;
@@ -580,13 +586,16 @@ a{
 }
 .wisdomAbout-us img{
     width: 100%;
-    height: auto;
+    height: 90%;
 }
 .wisdomAbout-us .right-side{
     width: 50%;
     height: 60rem;
     position: relative;
     /* right: 0; */
+}
+.wisdomAbout-us .right-side img{
+    object-fit: cover;
 }
 .wisdomAbout-us .left-side{
     width: 40%;
@@ -645,6 +654,7 @@ a{
     text-align: center;
     padding-bottom: 3rem;
 }
+
 .doterra{
     display: flex;
     flex-direction: column;
