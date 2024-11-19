@@ -1687,216 +1687,344 @@ form {
         height: 100%;
     }
 }
-@media only screen and (max-device-width: 920px) and (orientation: landscape) {
+@media only screen and (max-device-width: 915px) and (orientation: landscape) {
+    html,body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     .container {
-        max-width: 900px;
-        margin-inline: auto;
-        /* padding: 8px; */
-        overflow: hidden;
-    }
-
-    .navbar-links ul {
-        font-size: small;
-        width: 800px;
-    }
-
-    .flex-container {
         width: 900px;
-        height: 50px;
+        /* margin-inline: auto; */
+        padding: 8px;
+        overflow-X: hidden;
+    }
+    .info{
+        display: none;
+        /* width: 80%;
+        height: 5rem; */
+    }
+    .landing{
+        width: 80%;
+        height: 35rem;
+        background-color: rgb(15, 42, 177);
         display: flex;
         justify-content: space-around;
-
-    }
-
-    .flex-container .front p {
-        font-size: small;
-        text-align: center;
-
-    }
-
-    .flex-container .front {
-        width: 120px;
-
-    }
-
-    .landing {
-        width: 100vw;
-        height: 80rem;
-        background: url(images/shannaResize1.jpg);
-        animation: slide 25s infinite;
         position: relative;
     }
-
-    @keyframes slide {
-        25% {
-            background: url(images/shannaResize2.jpg);
-            background-size: cover;
-        }
-
-        50% {
-            background: url(images/shannaResize3.jpg);
-            background-size: cover;
-        }
-
-        75% {
-            background: url(images/shannaResize4.jpg);
-            background-size: cover;
-        }
-
-        100% {
-            background: url(images/shannaResize1.jpg);
-            background-size: cover;
-        }
-
-
+    .navbar{
+        height: 4rem;
+        max-width: 80%;
     }
-
-    .offerings {
-        width: 800px;
-        height: 600px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        top: 35rem;
-        margin: 20px;
-
-    }
-
-    .offerings-header {
-        height: 5rem;
-        top: 5rem;
-    }
-
-    .offerings-header h2 {
-        font-size: 5rem;
-        text-align: center;
-        position: relative;
-        top: -10rem;
-    }
-
-
-
-    .flex-container {
-        width: 100%;
-        align-items: self-start;
-        margin: -30px;
-        /* justify-content:right; */
+    .navbar-links li a{
+        width: 10rem;
+        /* display: flex; */
+        word-spacing: 2px;
         /* align-items: center; */
+        font-size: 1rem;
     }
-    .flex-image {
-        width: 100%;
+    .offerings{
+        width: 70%;
+        height: 20rem;
+        top: 8rem;
+    }
+    .offerings h2 {
+        font-size: 4rem;
+        /* text-align: center; */
+        font-weight: 100;
+        
+        
+    }
+    .card p{
+        font-size: .75rem;
     }
     .card {
-        width: 30rem;
-        height: 6rem;
-        /* border: black 1px solid; */
-
-        margin-bottom: 5px;
-    }
-
-    .front p {
-        font-size: 1.5rem;
-    }
-
-    .back p {
-        font-size: .85rem;
+        width: 100px;
+        height: 50px;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transition: transform 1.5s;
+        z-index: 100;
+        cursor: pointer;
+        position: relative;
+        border-radius: 10px;
+        font-size: 1rem;
     }
     .back{
-        height: 25rem;
+        height: 20rem;
     }
-
-    .cards {
-        width: 120px;
+    .offerings img{
+        width: 100%;
+        height: 20rem;
     }
-
-    .offerContainer {
-        height: 200px;
+    .offerings p{
+        font-size: 1rem;
     }
-
-    .offerContainer p {
-        width: 80%;
-
-    }
-
-    .border {
-        position: relative;
-        top: 5rem;
-    }
-
     .addOnContainer {
         width: 100%;
-        height: 200px;
-        /* overflow: hidden; */
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top: 16rem;
-    }
-
-    .listPosition {
-        top: 15rem;
-    }
-
-    /* #wisdom{
-        top: -5rem;
-    } */
-
-    .wisdom-content {
-        top: -50rem;
-        background-color: var(--secondary-color);
-    }
-    .wisdom-content h2{
-        font-size: 5rem;
-    }
-    .wisdom-content img {
-        display: none;
-    }
-
-    .inner {
-        width: 100%;
+        height: 50rem;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
         margin: auto;
-        border: 3px solid #69d5c3;
-        border-radius: 0%;
-        padding: 5px;
+    
     }
-
-    .inspiration {
-        top: -60rem;
+    .inspiration{
+        width: 80%;
+        height: 60rem;
+        top: -30rem;
     }
-
-    .inspiration p {
-        font-size: 1.5rem;
-        width: 100%;
-    }
-
     #inspiration h2 {
-        text-align: center;
         font-size: 5rem;
+        /* text-align: center; */
+        font-weight: 200;
+        margin-left: -20rem;
         position: relative;
+        top: -30rem;
+    }
+    #inspiration p{
+        font-size: 1rem;
+    }
+    .contact{
+        width: 80%;
         top: -60rem;
+        left: -5rem;
     }
-
-    .inspiration .text {
-        margin-left: 5rem;
-        width: 6rem;
-
+    legend{
+        font-size: 4rem;
     }
-
-    .content .text {
-        width: 500px;
-        color: var(--primary-color);
-        margin-left: 10rem;
-        /* background-color: rgba(20, 20, 20, 0.5); */
+    .footer{
+        top: 30rem;
+        width: 50%;
     }
-
-    .contact {
-        width: 90%;
-        top: -15rem;
-    }
-
-    .footer {
-        top: 10rem;
-    }
-    }
+    
+    
+    
+    
 }
+
+/* .container {
+    max-width: 800px;
+    height: 100vh;
+    margin-inline: auto;
+    padding: 8px;
+    overflow: hidden;
+}
+.navbar{
+    flex-direction: column;
+    display: block;
+    height: 20rem;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    right: -580px;
+    position: relative;
+    transition: .8s ease;
+    top: -.5rem;
+    background-color: rgb(34, 37, 49,0.5);
+}
+
+.navbar-links {
+    font-size: small;
+    width: 80px;
+}
+
+.flex-container {
+    width: 900px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.flex-container .front p {
+    font-size: small;
+    text-align: center;
+
+}
+
+.flex-container .front {
+    width: 120px;
+
+}
+
+.landing {
+    width: 100vw;
+    height: 80rem;
+    background: url(images/shannaResize1.jpg);
+    animation: slide 25s infinite;
+    position: relative;
+}
+
+@keyframes slide {
+    25% {
+        background: url(images/shannaResize2.jpg);
+        background-size: cover;
+    }
+
+    50% {
+        background: url(images/shannaResize3.jpg);
+        background-size: cover;
+    }
+
+    75% {
+        background: url(images/shannaResize4.jpg);
+        background-size: cover;
+    }
+
+    100% {
+        background: url(images/shannaResize1.jpg);
+        background-size: cover;
+    }
+
+
+}
+
+.offerings {
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 35rem;
+    margin: 20px;
+
+}
+
+.offerings-header {
+    height: 5rem;
+    top: 5rem;
+}
+
+.offerings-header h2 {
+    font-size: 5rem;
+    text-align: center;
+    position: relative;
+    top: -10rem;
+}
+
+
+
+.flex-container {
+    width: 100%;
+    align-items: self-start;
+    margin: -30px;
+    justify-content:right;
+    align-items: center;
+}
+.flex-image {
+    width: 100%;
+}
+.card {
+    width: 30rem;
+    height: 6rem;
+    border: black 1px solid;
+
+    margin-bottom: 5px;
+}
+
+.front p {
+    font-size: 1.5rem;
+}
+
+.back p {
+    font-size: .85rem;
+}
+.back{
+    height: 25rem;
+}
+
+.cards {
+    width: 120px;
+}
+
+.offerContainer {
+    height: 200px;
+}
+
+.offerContainer p {
+    width: 80%;
+
+}
+
+.border {
+    position: relative;
+    top: 5rem;
+}
+
+.addOnContainer {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 16rem;
+}
+
+.listPosition {
+    top: 15rem;
+}
+
+#wisdom{
+    top: -5rem;
+}
+
+.wisdom-content {
+    top: -50rem;
+    background-color: var(--secondary-color);
+}
+.wisdom-content h2{
+    font-size: 5rem;
+}
+.wisdom-content img {
+    display: none;
+}
+
+.inner {
+    width: 100%;
+    margin: auto;
+    border: 3px solid #69d5c3;
+    border-radius: 0%;
+    padding: 5px;
+}
+
+.inspiration {
+    top: -60rem;
+}
+
+.inspiration p {
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+#inspiration h2 {
+    text-align: center;
+    font-size: 5rem;
+    position: relative;
+    top: -60rem;
+}
+
+.inspiration .text {
+    margin-left: 5rem;
+    width: 6rem;
+
+}
+
+.content .text {
+    width: 500px;
+    color: var(--primary-color);
+    margin-left: 10rem;
+    background-color: rgba(20, 20, 20, 0.5);
+}
+
+.contact {
+    width: 90%;
+    top: -15rem;
+}
+
+.footer {
+    top: 10rem;
+} */
+
