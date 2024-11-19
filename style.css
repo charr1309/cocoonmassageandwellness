@@ -1182,10 +1182,11 @@ form {
 .iframe{
     width: 40rem;
     display: flex;
-    flex-wrap: wrap;
+    
+    float: right;
 }
 iframe{
-    float: righr;
+    float: right;
 }
 
 
@@ -1843,12 +1844,14 @@ iframe{
         font-size: 10rem;
     }
     .iframe{
-        float: right;
+        width: 25rem;
+        /* float: right; */
         margin-bottom: 5px;
+        margin-right: -200px;
     }
     iframe{
-        width: 10rem;
-        height: 4rem;
+        width: 15rem;
+        height: 7rem;
     }
     
     
