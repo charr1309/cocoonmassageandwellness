@@ -957,11 +957,14 @@ p.aboutHeading{
 
 .part3 {
     width: 100%;
-    height: 60rem;
+    height: 50rem;
     position: relative;
     top: 40rem;
     display: flex;
     justify-content: space-around;
+}
+.part3 .section-right{
+    width: 70%;
 }
 
 .part4 {
@@ -969,10 +972,13 @@ p.aboutHeading{
     height: 60rem;
     font-size: 2rem;
     position: relative;
-    top: 60rem;
+    top: 75rem;
     display: flex;
     justify-content: space-around;
     
+}
+.part4 .section-left{
+    width: 60%;
 }
 
 blockquote {
