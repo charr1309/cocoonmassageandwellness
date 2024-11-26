@@ -826,7 +826,7 @@ a{
 
 .aboutContainer {
     background-color: #fff2eb;
-    max-width: 1700px;
+    max-width: 100%;
     height: 100%;
     font-weight: 100;
     margin: auto;
@@ -856,7 +856,7 @@ p.aboutHeading{
     text-align: center;
 }
 .top {
-    width: 100vw;
+    width: 100%;
     height: 120rem;
     display: flex;
     flex-direction: row;
@@ -867,17 +867,18 @@ p.aboutHeading{
 }
 
 .top img {
-    width: 50%;
+    width: 60%;
     height: 100%;
     object-fit: cover;
     margin-left: -15rem;
 }
 
 .toptext {
-    width: 40%;
+    width: 50%;
     height: 25rem;
     position: relative;
     top: -20rem;
+    padding-left: 50px;
     align-items: center;
     justify-content: center;
     font-size: 4rem;
