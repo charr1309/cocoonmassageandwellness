@@ -654,7 +654,10 @@ a{
     position: relative;
     top: 100rem;
 }
-.wisdomContact .left-side img{
+.wisdomPage .part2 img{
+    object-fit: contain;
+}
+.wisdomContact .section-right img{
     object-fit: cover;
 }
 .wisdomContact .right-side{
@@ -1545,7 +1548,7 @@ iframe{
     /* #wisdom{
         top: -5rem;
     } */
-
+    
     .wisdom-content {
         top: -70rem;
         background-color: var(--secondary-color);
