@@ -909,12 +909,13 @@ p.aboutHeading{
 }
 
 .part2 {
-    max-width: 1475px;
+    width: 100%;
     height: 50rem;
     position: relative;
-    /* top: 10rem; */
+    top: 10rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     font-size: 2rem;
 }
 .part2, .part3, .part4, p{
@@ -924,6 +925,9 @@ p.aboutHeading{
 .part2, .part3, .part4, h2{
     color: var(--secondary-color);
     text-align: center;
+}
+.part2 img{
+    object-fit: contain;
 }
 /* .part3, .section-left, img{
     float: right;
@@ -946,7 +950,7 @@ p.aboutHeading{
     margin-top: 5rem;
 }
 .section-right img{
-    width: 60%;
+    width: 70%;
     position: relative;
     left: 10rem;
 }
@@ -955,7 +959,7 @@ p.aboutHeading{
     max-width: 1475px;
     height: 60rem;
     position: relative;
-    top: 20rem;
+    top: 25rem;
     display: flex;
     justify-content: space-around;
 }
@@ -965,7 +969,7 @@ p.aboutHeading{
     height: 60rem;
     font-size: 2rem;
     position: relative;
-    top: 40rem;
+    top: 50rem;
     display: flex;
     justify-content: space-around;
     
