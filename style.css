@@ -949,11 +949,10 @@ p.aboutHeading{
     font-size: 2rem;
     margin-top: 5rem;
 }
-.section-right img{
-    width: 70%;
-    position: relative;
-    left: 10rem;
+.part2 .section-right img{
+   object-fit: contain;
 }
+
 
 .part3 {
     width: 100%;
@@ -981,6 +980,9 @@ p.aboutHeading{
 }
 .part4 .section-left{
     width: 60%;
+}
+.part4 .section-right img{
+    object-fit: contain;
 }
 
 blockquote {
