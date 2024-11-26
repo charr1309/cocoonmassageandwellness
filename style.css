@@ -870,6 +870,7 @@ p.aboutHeading{
     width: 50%;
     height: 100%;
     object-fit: cover;
+    margin-left: -15rem;
 }
 
 .toptext {
