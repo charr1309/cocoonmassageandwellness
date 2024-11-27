@@ -221,11 +221,78 @@ body {
 
 
 }
+.main h2{
+    font-size: 6rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.main-content p{
+    width: 100rem;
+    font-size: 4rem;
+    position: relative;
+    top: 10rem;
+    margin: auto;
+    text-align: center;
+}
+.card3{
+    width: 300px;
+    perspective: 1000px;
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+    top: 10rem;
+}
+.card-inner{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.back-face{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);    
+}
+.back-face img{
+    width: 100%;
+    border-radius: 10px;
+}
+.front-face{
+    backface-visibility: hidden;
+    color: #d3ede0;
+    background: #69d5c3;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.card3:hover .card-inner{
+    transform: rotateY(-180deg);
+}
+
 /* .anim{
     transform: translateY(0);
     opacity: 1;
 } */
-
+.flex-container {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: no-wrap;
+}
+.flex-container .card .front p {
+    font-size: 2rem;
+    margin-top: -20rem;
+    text-align: center;
+}  
 .card {
     width: 275px;
     height: 100px;
@@ -264,6 +331,12 @@ body {
     /* position: absolute; */
     transform: rotateY(-180deg);
     
+}
+.flex-container .card .back p{
+    font-size: 1.5rem;
+    width: 250px;
+    height: 300px;
+    margin-left: 20px;
 }
 
 .card:hover {
@@ -361,6 +434,8 @@ body {
     justify-content: center;
 }
 
+
+
 .offerContainer img {
     width: 50%;
     float: right;
@@ -394,14 +469,7 @@ body {
     width: 95%;
 }
 
-.flex-container {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: no-wrap;
-}
+
 
 .cards2 {
     display: flex;
@@ -419,9 +487,7 @@ body {
     width: 50%;
 }
 
-.flex-container p {
-    font-size: 2rem;
-}
+
 .glow-on-hover {
     width: 220px;
     height: 30px;
@@ -1167,9 +1233,14 @@ form {
     cursor: pointer;
 }
 
-/* #love {
+ #love {
     position: relative;
     top: 125rem;
+}
+#love p{
+    text-align: center;
+    font-size: 6rem;
+    color: var(--secondary-color);
 }
 
 .love {
@@ -1178,8 +1249,8 @@ form {
     display: flex;
     justify-content: space-around;
     position: relative;
-    top: 125rem;
-    background-color: rgb(70, 36, 57);
+    top: 1rem;
+    /* background-color: rgb(70, 36, 57); */
 }
 
 .cards {
@@ -1187,7 +1258,7 @@ form {
     height: 40rem;
     background-color: white;
     filter: drop-shadow(16px 16px 16px);
-} */
+} 
 #footer{
     width: 100%;
 }
