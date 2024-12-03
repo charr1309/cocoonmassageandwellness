@@ -1565,7 +1565,7 @@ form {
     }
 
     .inspiration {
-        width: 400px;
+        max-width: 400px;
         top: -60rem;
     }
     #inspiration h2{
@@ -1574,10 +1574,10 @@ form {
         font-size: 1rem;
         
     }
-    .inspiration p {
+    .inspiration .innerText p {
         font-size: 1rem;
         width: 375px;
-        margin-left: -8rem;
+        margin-left: -4rem;
     }
     .content .text {
         width: 600px;
