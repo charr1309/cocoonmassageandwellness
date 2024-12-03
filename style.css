@@ -991,7 +991,7 @@ blockquote p {
     height: 60rem;
     text-align: center;
     position: relative;
-    top: 20rem;
+    top: 30rem;
     left: 25%;
 }
 
@@ -1054,6 +1054,12 @@ form {
     top: 1rem;
     /* background-color: rgb(70, 36, 57); */
 }
+.card4 {
+    width: 30rem;
+    height: 40rem;
+    background-color: white;
+    filter: drop-shadow(16px 16px 16px);
+} 
 .cardContainer{
     position: relative;
     left: -5rem;
@@ -1885,6 +1891,7 @@ form {
     
     .card p{
         font-size: .75rem;
+        
     }
     .card {
         width: 125px;
@@ -1897,10 +1904,18 @@ form {
         position: relative;
         border-radius: 10px;
         font-size: 1rem;
+        
+    }
+    .limit{
+        width: 5rem;
+        
     }
     .back{
+        display: inline-block;
+        overflow-wrap: break-word;
         width: 25rem;
         height: 15rem;
+        overflow: hidden;
         margin-left: -35px;
         z-index: 900;
     }
@@ -1911,6 +1926,7 @@ form {
     
     .flex-container .card .back p{
         font-size: .75rem;
+        
     }
     .flex-container .card .front p{
         font-size: 1.2rem;
@@ -1984,12 +2000,19 @@ form {
     }
     #love p{
         font-size: 5rem;
+        position: relative;
+        top: -15rem;
+    }
+    .card4{
+        width: 50rem;
+        margin-bottom: 10px;
     }
     .cards{
-        width: 60rem;
+        width: 20rem;
         /* height: 40rem; */
         margin-bottom: 5px;
     }
+    
     .main-content{
         width: 100%;
     }
@@ -2004,6 +2027,9 @@ form {
     .card3{
         position: relative;
         left: 10rem;
+    }
+    .footer{
+        width: 100%;
     }
     
     .footer{
