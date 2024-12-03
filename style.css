@@ -1566,7 +1566,7 @@ form {
 
     .inspiration {
         max-width: 400px;
-        top: -60rem;
+        top: -50rem;
     }
     #inspiration h2{
         position: relative;
@@ -1574,10 +1574,16 @@ form {
         font-size: 1rem;
         
     }
+    .inspiration .innerText{
+        width: 300px;
+        padding-right: 50px;
+        position: relative;
+        top: -1rem;
+    }
     .inspiration .innerText p {
         font-size: 1rem;
-        width: 375px;
-        margin-left: -2rem;
+        /* width: 375px; */
+        margin-left: -4rem;
     }
     .content .text {
         width: 600px;
@@ -1590,7 +1596,7 @@ form {
         text-align: center;
         font-size: 4rem;
         position: relative;
-        top: -50rem;
+        top: -53rem;
     }
 
     .inspiration .text {
