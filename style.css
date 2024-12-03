@@ -221,60 +221,7 @@ body {
 
 
 }
-.main h2{
-    font-size: 6rem;
-    color: var(--secondary-color);
-    text-align: center;
-}
-.main-content p{
-    width: 100rem;
-    font-size: 4rem;
-    position: relative;
-    top: 10rem;
-    margin: auto;
-    text-align: center;
-}
-.card3{
-    width: 300px;
-    perspective: 1000px;
-    cursor: pointer;
-    margin: auto;
-    position: relative;
-    top: 10rem;
-}
-.card-inner{
-    position: relative;
-    width: 100%;
-    text-align: center;
-    transform-style: preserve-3d;
-    transition: transform 1s;
-}
-.back-face{
-    backface-visibility: hidden;
-    transform: rotateY(180deg);    
-}
-.back-face img{
-    width: 100%;
-    border-radius: 10px;
-}
-.front-face{
-    backface-visibility: hidden;
-    color: #d3ede0;
-    background: #69d5c3;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 3rem;
-}
 
-.card3:hover .card-inner{
-    transform: rotateY(-180deg);
-}
 
 /* .anim{
     transform: translateY(0);
@@ -1027,7 +974,7 @@ blockquote p {
 #contact {
     
     position: relative;
-    top: 90rem;
+    top: 60rem;
     }
 
 .contact {
@@ -1082,7 +1029,7 @@ form {
 
  #love {
     position: relative;
-    top: 125rem;
+    top: 100rem;
 }
 #love p{
     text-align: center;
@@ -1099,6 +1046,10 @@ form {
     top: 1rem;
     /* background-color: rgb(70, 36, 57); */
 }
+.cardContainer{
+    position: relative;
+    left: -5rem;
+}
 
 .cards {
     width: 30rem;
@@ -1106,6 +1057,60 @@ form {
     background-color: white;
     filter: drop-shadow(16px 16px 16px);
 } 
+.main h2{
+    font-size: 6rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.main-content p{
+    width: 100rem;
+    font-size: 4rem;
+    position: relative;
+    top: 140rem;
+    margin: auto;
+    text-align: center;
+}
+.card3{
+    width: 300px;
+    perspective: 1000px;
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+    top: 100rem;
+}
+.card-inner{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.back-face{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);    
+}
+.back-face img{
+    width: 100%;
+    border-radius: 10px;
+}
+.front-face{
+    backface-visibility: hidden;
+    color: #d3ede0;
+    background: #69d5c3;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.card3:hover .card-inner{
+    transform: rotateY(-180deg);
+}
 #footer{
     width: 100%;
 }
@@ -1118,8 +1123,23 @@ form {
     justify-content: space-around;
     margin-bottom: 2rem;
     position: relative;
-    top: 130rem;
+    top: 140rem;
     background-color: var(--primary-color);
+}
+.footer .left{
+    width: 30%;
+    height: 35rem;
+    border-right:1px solid black ;
+}
+.footer .middle{
+    width: 30%;
+    height: 35rem;
+    
+}
+.footer .right{
+    width: 30%;
+    height: 35rem;
+    border-left:1px solid black ;
 }
 
 .footer ul {
@@ -1145,22 +1165,28 @@ form {
 .iframe p{
     font-size: 1.25rem;
     width: 25rem;
-    /* background-color: var(--secondary-color); */
+    
     /* border-radius: 6px; */
     float: right;
+    position: relative;
+    top: 1rem;
 }
 .footer span{
     font-weight: bold;
 }
+.borderiframe{
+    background-color: var(--secondary-color);
+    width: 40rem;
+    height: 35rem;
+}
 .iframe{
     width: 40rem;
     display: flex;
-    
-    float: right;
+    /* float: right; */
 }
-iframe{
+/* iframe{
     float: right;
-}
+} */
 
 
 
