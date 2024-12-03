@@ -1850,8 +1850,8 @@ form {
         height: 5rem; */
     }
     .landing{
-        width: 80%;
-        height: 35rem;
+        width: 100%;
+        height: 45rem;
         background-color: rgb(15, 42, 177);
         display: flex;
         justify-content: space-around;
@@ -1859,7 +1859,7 @@ form {
     }
     .navbar{
         height: 4rem;
-        max-width: 80%;
+        max-width: 100%;
     }
     .navbar-links li a{
         width: 10rem;
@@ -1869,7 +1869,7 @@ form {
         font-size: 1rem;
     }
     .offerings{
-        width: 70%;
+        width: 100%;
         height: 20rem;
         top: 8rem;
     }
@@ -1879,7 +1879,7 @@ form {
         font-weight: 100;
     }
     .offerContainer{
-        width: 100%;
+        width: 80%;
         height: 30rem;
     }
     
@@ -1887,8 +1887,8 @@ form {
         font-size: .75rem;
     }
     .card {
-        width: 100px;
-        height: 50px;
+        width: 125px;
+        height: 80px;
         perspective: 1000px;
         transform-style: preserve-3d;
         transition: transform 1.5s;
@@ -1899,7 +1899,21 @@ form {
         font-size: 1rem;
     }
     .back{
-        height: 20rem;
+        width: 25rem;
+        height: 15rem;
+        margin-left: -35px;
+        z-index: 900;
+    }
+    .flex-container{
+        width: 90%;
+        margin: auto;
+    }
+    
+    .flex-container .card .back p{
+        font-size: .75rem;
+    }
+    .flex-container .card .front p{
+        font-size: 1.2rem;
     }
     .offerings img{
         width: 100%;
@@ -1929,36 +1943,73 @@ form {
         top: -8rem;
     
     }
+    .addOnContainer img{
+        /* object-fit: cover; */
+        height: 40rem;
+    }
     
     .inspiration{
-        width: 80%;
+        width: 100%;
         height: 60rem;
-        top: -50rem;
+        top: -20rem;
     }
     #inspiration h2 {
         font-size: 5rem;
         /* text-align: center; */
         font-weight: 200;
-        margin-left: -20rem;
+        /* margin-left: -20rem; */
         position: relative;
-        top: -45rem;
+        top: -15rem;
     }
     #inspiration p{
         font-size: 1rem;
     }
     .contact{
-        width: 80%;
+        width: 100%;
         height: 20rem;
-        top: -60rem;
-        left: -5rem;
+        top: -30rem;
+        left: -2rem;
     }
     legend{
         font-size: 4rem;
     }
-    .footer{
-        top: 70rem;
+    .love{
         width: 100%;
-        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        
+        top: -10rem;
+    }
+    #love p{
+        font-size: 5rem;
+    }
+    .cards{
+        width: 60rem;
+        /* height: 40rem; */
+        margin-bottom: 5px;
+    }
+    .main-content{
+        width: 100%;
+    }
+    .main-content .giftText p{
+        font-size: 4rem;
+    }
+    .main-content .giftText{
+        position: relative;
+        top: -12rem;
+        /* width: 200rem; */
+    }
+    .card3{
+        position: relative;
+        left: 10rem;
+    }
+    
+    .footer{
+        top: 110rem;
+        width: 100%;
+        height: 400px;
     }
     .footer p{
         font-size: 10rem;
