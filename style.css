@@ -883,6 +883,11 @@ blockquote p {
     object-fit: contain;
     height: 100%;
 }
+.aboutContainer .footer{
+    top: 100rem;
+    background-color: #fbe5da;
+
+}
 
 #inspiration {
     position: relative;
@@ -1201,7 +1206,6 @@ form {
 .iframe{
     width: 40rem;
     display: flex;
-    /* float: right; */
 }
 /* iframe{
     float: right;
