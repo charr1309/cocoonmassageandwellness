@@ -1742,9 +1742,8 @@ form {
         font-size: 1.5rem;
         margin: 50px;
         position: relative;
-        
-
     }
+    
     .responsive{
         position: relative;
         top: 10rem;
@@ -1808,9 +1807,88 @@ form {
         object-fit: contain;
         height: 100%;
     }
+    .wisdomContainer{
+        width: 100vw;
+        height: 100vh;
+    }
+    .wisdomPage{
+        max-width: 40rem;
+    }
+    .right-side{
+        width: 15rem;
+        height: 30rem;
+        margin-left: -15px;
+    }
+    .part2 .section-left{
+        width: 20rem;
+        height: 20rem;
+        position: relative;
+        top: -70rem;
+    }
+    .section-left img{
+        position: relative;
+        left: -35rem;
+    }
+    .part2 .right-side p{
+        font-size: 1rem;
+    }
+    .part2 .right-side h2{
+        font-size: 1.5rem;
+    }
+     /* .part3 .section-left{
+        position: relative;
+        top: -570rem;
+    } */
+    /* .part3 .section-right p{
+        font-size: 1rem;
+    } */
+    /* .part3 .section-right h2{
+        font-size: 1.5rem;
+    } */
     
-    .footer{
-        top: 120rem;
+    .part3 .section-right{
+        width: 100%;
+        height: 20rem;
+        position: relative;
+        top: -665rem;
+        left: -45rem;
+        
+    }
+    .part3 .section-left img{
+        display: none;
+         /* position: relative;
+        top: -665rem;
+        width: 40%;
+         left: -25rem; 
+        float: left;  */
+        
+    }
+    .part4{
+        height: 1rem;
+    }
+    .part4 .section-left img{
+        position: relative;
+        width: 40%;
+        top: -35rem;
+        margin-left: 27rem;
+        
+    }
+    .part4 .section-left{
+       height: 3rem;
+    }
+    .part4 .section-right{
+        width: 20rem;
+        height: 40rem;
+        overflow: scroll;
+        position: relative;
+        top: -40rem;
+    } 
+    .wisdomPage .footer{
+        position: relative;
+        top: 50rem;
+    }
+    .footer .wisdome{
+        top: -420rem;
         width: 100%;
         height: 30rem;
     }
@@ -2028,10 +2106,21 @@ form {
         position: relative;
         left: 10rem;
     }
+    .part2 .right-side p{
+        font-size: 1.5rem;
+    }
+    .part3 .section-right{
+        font-size: 1.5rem;
+    }
+    .part4 .section-right{
+        font-size: 1.5rem;
+    }
     .footer{
         width: 100%;
     }
-    
+    .middle .iframe p{
+        font-size: 1rem;
+    }
     .footer{
         top: 110rem;
         width: 100%;
