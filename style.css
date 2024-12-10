@@ -1812,10 +1812,10 @@ form {
         height: 100vh;
     }
     .wisdomPage{
-        max-width: 40rem;
+        width: 60rem;
     }
     .right-side{
-        width: 15rem;
+        width: 30rem;
         height: 30rem;
         margin-left: -15px;
     }
