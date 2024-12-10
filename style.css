@@ -44,22 +44,25 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
 .container {
     max-width: 1500px;
     margin-inline: auto;
     height: 100vh;
 
 }
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
 
-.buttonStyle{
+.buttonStyle {
     position: fixed;
     z-index: 900;
     width: 8rem;
@@ -67,30 +70,34 @@ body {
     border-radius: 10px;
 }
 
-.centerButton{
+.centerButton {
     float: left;
     margin-left: 20px;
 
 }
-.moveCenter{
+
+.moveCenter {
     display: flex;
     justify-content: center;
     position: relative;
     right: 15rem;
     top: 5px;
 }
-.info{
+
+.info {
     width: 100%;
     height: 6.5rem;
     position: relative;
     background-color: var(--primary-color);
 
 }
-.info p{
+
+.info p {
     font-size: 2rem;
     position: relative;
     left: -350px;
 }
+
 /* Logo Image styles */
 .heading {
     width: 100%;
@@ -109,6 +116,7 @@ body {
     position: relative;
     top: 2rem;
 }
+
 /* End of Logo Image styles */
 
 /* Nav Bar */
@@ -131,7 +139,7 @@ body {
     text-shadow: 1px 1px #000;
 }
 
-.sticky{
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
@@ -160,32 +168,35 @@ body {
 }
 
 .navbar-links li a {
-    
+
     width: 20rem;
     /* text-decoration: none; */
-    
+
     display: flex;
     word-spacing: 5px;
     align-items: center;
     justify-content: center;
 }
 
-.black{
+.black {
     color: black;
 
 }
+
 .navbar-links li a:hover {
-    
+
     background-color: var(--secondary-color);
     transition: .5s linear;
     color: white;
 
 }
-.navbar-links li a:not(:hover){
+
+.navbar-links li a:not(:hover) {
     background-color: var(--primary-color);
     transition: .5s linear;
     color: var(--secondary-color);
 }
+
 /* End of Nav Bar */
 
 
@@ -235,11 +246,13 @@ body {
     justify-content: space-between;
     flex-wrap: no-wrap;
 }
+
 .flex-container .card .front p {
     font-size: 2rem;
     margin-top: -20rem;
     text-align: center;
-}  
+}
+
 .card {
     width: 275px;
     height: 100px;
@@ -250,7 +263,7 @@ body {
     cursor: pointer;
     position: relative;
     border-radius: 10px;
-    
+
 }
 
 .front,
@@ -268,7 +281,8 @@ body {
     align-items: center;
     justify-content: center;
 }
-.front p{
+
+.front p {
     text-align: center;
     position: relative;
     top: 10rem;
@@ -279,9 +293,10 @@ body {
     overflow-y: scroll;
     /* position: absolute; */
     transform: rotateY(-180deg);
-    
+
 }
-.flex-container .card .back p{
+
+.flex-container .card .back p {
     font-size: 1.5rem;
     width: 250px;
     height: 300px;
@@ -291,8 +306,9 @@ body {
 .card:hover {
     height: 400px;
     transform: rotateY(180deg);
-    
+
 }
+
 /* .flex-container{
     width: 30%;
 } */
@@ -310,13 +326,13 @@ body {
     margin: 4rem 0 4rem;
     top: 20rem;
     position: relative;
-    
+
 }
 
 .offerings-header {
     height: 15rem;
     position: relative;
-    
+
 }
 
 /* style list of prices */
@@ -335,19 +351,19 @@ body {
     font-size: 8rem;
     text-align: center;
     font-weight: 100;
-    
+
 }
 
 .offerings h3 {
     color: black;
-    
+
 }
 
 .offerings p {
     text-align: left;
     margin: 1rem;
     font-size: 1rem;
-    
+
 }
 
 .offerings span {
@@ -385,7 +401,8 @@ body {
     margin: auto;
 
 }
-.addOnContainer img{
+
+.addOnContainer img {
     object-fit: cover;
     height: 40rem;
 }
@@ -405,12 +422,14 @@ body {
     color: black;
     font-size: large;
 }
-.listPosition p{
+
+.listPosition p {
     text-align: center;
     position: relative;
     top: -1rem;
     font-size: 3rem;
 }
+
 /* make paragraph tag in prices smaller */
 .listStyle .minimize {
     font-size: small;
@@ -447,14 +466,15 @@ body {
     z-index: 0;
     border-radius: 10px;
 }
-.centerButton{
+
+.centerButton {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     top: 1rem;
     left: -170px;
-    
+
 }
 
 
@@ -463,7 +483,7 @@ body {
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
     top: -2px;
-    left:-2px;
+    left: -2px;
     background-size: 400%;
     z-index: -1;
     filter: blur(5px);
@@ -473,7 +493,7 @@ body {
     opacity: 0;
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
-    
+
 }
 
 .glow-on-hover:active {
@@ -501,9 +521,17 @@ body {
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
 
 .border {
@@ -513,182 +541,12 @@ body {
     align-items: center;
     background-color: var(--primary-color);
     font-size: large;
-    
+
 }
 
-.wisdomContainer{
-    max-width: 1500px;
-    height: 100vh;
-    margin: auto;
-}
-.wisdomTop{
-    width: 100%;
-    height: 5rem;
-    display: flex;
-    /* justify-content: space-between; */
-    position: relative;
-}
-.wisdomNavbar{
-    width: 100%;
-    height: 6rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.wisdomLogo{
-    width: 5rem;
-    height: 5rem;
-    background-color: aqua;
-}
-a{
-    font-size: 2rem;
-    word-spacing: 10rem;
-    position: relative;
-    left: 15rem;
-    color: var(--secondary-color);
-}
-.wisdomLanding{
-    max-width: 1500px;
-    height: 30rem;
-    /* background-image: url(wisdom/shannaEyesClosed.jpeg); */
-    /* background-repeat: no-repeat; */
-    /* object-fit: contain; */
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    top: 10rem;
-}
-.wisdomLanding img{
-    /* object-fit: contain; */
-    width: 350px;
-}
-.wisdomLanding p{
-    font-size: 4rem;
-    position: relative;
-    /* left: 30rem; */
-    margin: auto;
-    color: var(--secondary-color);
-}
-.wisdomLanding h1{
-    font-size: 8rem;
-    font-weight: 300;
-    color: var(--secondary-color);
-}
 
-.wisdomMain{
-    width: 100%;
-    height: 60rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.wisdomMain-content{
-    width: 100%;
-    height: fit-content;
-    
-}
-.wisdomMain-content p{
-    text-align: center;
-    font-size: 4rem;
-}
-.wisdomAbout-us{
-    width: 100%;
-    height: 60rem;
-    position: relative;
-    top: 5rem;
-}
-.wisdomAbout-us p{
-    font-size: 1.5rem;
-}
-.wisdomAbout-us img{
-    width: 100%;
-    height: 90%;
-}
-.wisdomAbout-us .right-side{
-    width: 50%;
-    height: 60rem;
-    position: relative;
-}
-.wisdomAbout-us .right-side img{
-    object-fit: cover;
-}
-.wisdomAbout-us .left-side{
-    width: 40%;
-    height: 60rem;
-    position: relative;
-    text-align: center;
-    margin: auto;
-}
-.wisdomAbout-us h2 {
-    font-size: 2.5rem;
-    font-weight: 200;
-    text-align: center;
-    padding-bottom: 2rem;
-}
-.wisdomServices{
-    width: 50%;
-    height: 30rem;
-    position: relative;
-    top: 15rem;
-    background-color: var(--primary-color)
-}
-.wisdomServices p{
-    font-size: 1.5rem;
-    padding-bottom: 3rem;
-}
-.wisdomServices h2{
-    font-size: 2.5rem;
-    font-weight: 200;
-    text-align: center;
-    padding-bottom: 2rem;
-}
-.centerImage{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.wisdomContact{
-    width: 50%;
-    height: 30rem;
-    /* background-color: rgb(70, 36, 57); */
-}
-.wisdomServices .left-side{
-    width: 50%;
-    height: 60rem;
-    position: relative;
-    top: 100rem;
-}
-.wisdomPage .part2 img{
-    object-fit: contain;
-}
-.wisdomContact .section-right img{
-    object-fit: cover;
-}
-.wisdomContact .right-side{
-    width: 50%;
-    height: 60rem;
-    position: relative;
-    top: 100rem;
-}
-.wisdomContact p{
-    font-size: 1.5rem;
-    width: 50%;
-    margin: auto;
-}
-.wisdomContact h2{
-    font-size: 4rem;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-.wisdomContact img{
-    width: 500px;
-    height: auto;
-}
-.wisdomContact h3{
-    font-size: 3rem;
-    text-align: center;
-    padding-bottom: 3rem;
-}
+
+
 .aboutContainer {
     background-color: #fff2eb;
     max-width: 100%;
@@ -717,10 +575,12 @@ span:hover {
     float: right;
     font-size: 1.5rem;
 }
-p.aboutHeading{
+
+p.aboutHeading {
     align-items: center;
     text-align: center;
 }
+
 .top {
     width: 100%;
     height: 120rem;
@@ -751,7 +611,7 @@ p.aboutHeading{
     font-weight: 100;
     /* padding-left: 20rem; */
     color: #a18e78;
-    
+
 }
 
 .toptext h1 {
@@ -784,17 +644,27 @@ p.aboutHeading{
     align-items: center;
     font-size: 2rem;
 }
-.part2, .part3, .part4, p{
+
+.part2,
+.part3,
+.part4,
+p {
     font-weight: 100;
     color: black;
 }
-.part2, .part3, .part4, h2{
+
+.part2,
+.part3,
+.part4,
+h2 {
     color: var(--secondary-color);
     text-align: center;
 }
-.part2 img{
+
+.part2 img {
     object-fit: contain;
 }
+
 /* .part3, .section-left, img{
     float: right;
 } */
@@ -802,21 +672,26 @@ p.aboutHeading{
     width: 50%;
     margin: 50px;
 }
-.section-left, .section-right p{
-    
+
+.section-left,
+.section-right p {
+
     text-indent: 6%;
 }
-.section-left img{
+
+.section-left img {
     width: 80%;
     position: relative;
 }
+
 .section-right {
     width: 50%;
     font-size: 2rem;
     margin-top: 5rem;
 }
-.part2 .section-right img{
-   object-fit: contain;
+
+.part2 .section-right img {
+    object-fit: contain;
 }
 
 
@@ -828,12 +703,15 @@ p.aboutHeading{
     display: flex;
     justify-content: space-around;
 }
-.part3 .section-right{
+
+.part3 .section-right {
     width: 70%;
 }
-.part3 .section-left img{
+
+.part3 .section-left img {
     object-fit: contain;
 }
+
 .part4 {
     width: 100%;
     height: 60rem;
@@ -842,12 +720,14 @@ p.aboutHeading{
     top: 75rem;
     display: flex;
     justify-content: space-around;
-    
+
 }
-.part4 .section-left{
+
+.part4 .section-left {
     width: 60%;
 }
-.part4 .section-right img{
+
+.part4 .section-right img {
     object-fit: contain;
 }
 
@@ -883,7 +763,8 @@ blockquote p {
     object-fit: contain;
     height: 100%;
 }
-.aboutContainer .footer{
+
+.aboutContainer .footer {
     top: 100rem;
     background-color: #fbe5da;
 
@@ -910,17 +791,18 @@ blockquote p {
     font-weight: 100;
 }
 
-    .inspiration .text {
-        max-width: 100%;
-        max-height: 500px;
-        font-size: 2.5rem;
-        position: relative;
-        /* margin-right: 15rem; */
-    }
+.inspiration .text {
+    max-width: 100%;
+    max-height: 500px;
+    font-size: 2.5rem;
+    position: relative;
+    /* margin-right: 15rem; */
+}
 
-    #inspiration h2 {
-        font-size: 5rem;
-    }
+#inspiration h2 {
+    font-size: 5rem;
+}
+
 .innerText {
     width: 80%;
     margin: auto;
@@ -928,12 +810,14 @@ blockquote p {
     top: 10rem;
     height: 40%;
 }
-.inspiration .innerText img{
+
+.inspiration .innerText img {
     width: 50%;
     float: right;
     margin-left: 10px;
     object-fit: cover;
 }
+
 /* #resource {
     position: relative;
     top: 125rem;
@@ -980,10 +864,10 @@ blockquote p {
 } */
 
 #contact {
-    
+
     position: relative;
     top: 60rem;
-    }
+}
 
 .contact {
     margin: auto;
@@ -1035,11 +919,12 @@ form {
     cursor: pointer;
 }
 
- #love {
+#love {
     position: relative;
     top: 100rem;
 }
-#love p{
+
+#love p {
     text-align: center;
     font-size: 6rem;
     color: var(--secondary-color);
@@ -1054,13 +939,15 @@ form {
     top: 1rem;
     /* background-color: rgb(70, 36, 57); */
 }
+
 .card4 {
     width: 30rem;
     height: 40rem;
     background-color: white;
     filter: drop-shadow(16px 16px 16px);
-} 
-.cardContainer{
+}
+
+.cardContainer {
     position: relative;
     left: -5rem;
 }
@@ -1070,13 +957,15 @@ form {
     height: 40rem;
     background-color: white;
     filter: drop-shadow(16px 16px 16px);
-} 
-.main h2{
+}
+
+.main h2 {
     font-size: 6rem;
     color: var(--secondary-color);
     text-align: center;
 }
-.main-content p{
+
+.main-content p {
     width: 100rem;
     font-size: 4rem;
     position: relative;
@@ -1084,7 +973,8 @@ form {
     margin: auto;
     text-align: center;
 }
-.card3{
+
+.card3 {
     width: 300px;
     perspective: 1000px;
     cursor: pointer;
@@ -1092,22 +982,26 @@ form {
     position: relative;
     top: 100rem;
 }
-.card-inner{
+
+.card-inner {
     position: relative;
     width: 100%;
     text-align: center;
     transform-style: preserve-3d;
     transition: transform 1s;
 }
-.back-face{
+
+.back-face {
     backface-visibility: hidden;
-    transform: rotateY(180deg);    
+    transform: rotateY(180deg);
 }
-.back-face img{
+
+.back-face img {
     width: 100%;
     border-radius: 10px;
 }
-.front-face{
+
+.front-face {
     backface-visibility: hidden;
     color: #d3ede0;
     background: #69d5c3;
@@ -1122,12 +1016,14 @@ form {
     font-size: 3rem;
 }
 
-.card3:hover .card-inner{
+.card3:hover .card-inner {
     transform: rotateY(-180deg);
 }
-#footer{
+
+#footer {
     width: 100%;
 }
+
 .footer {
     width: 100%;
     height: 35rem;
@@ -1140,7 +1036,8 @@ form {
     top: 140rem;
     background-color: var(--primary-color);
 }
-.left .footerNav{
+
+.left .footerNav {
     width: 20rem;
     height: 30rem;
     display: flex;
@@ -1149,26 +1046,31 @@ form {
     align-items: center;
     margin-left: -6rem;
 }
-.left .footerNav a{
+
+.left .footerNav a {
     color: black;
 }
-.footer .left{
+
+.footer .left {
     width: 30%;
     height: 35rem;
-    
-    border-right:1px solid black ;
+
+    border-right: 1px solid black;
 }
-.footer .middle{
+
+.footer .middle {
     width: 30%;
     height: 35rem;
-    
+
 }
-.footer .right{
+
+.footer .right {
     width: 30%;
     height: 35rem;
-    border-left:1px solid black ;
+    border-left: 1px solid black;
 }
-.footer .right img{
+
+.footer .right img {
     width: 100%;
 }
 
@@ -1192,27 +1094,32 @@ form {
     position: relative;
     top: -1rem;
 }
-.iframe p{
+
+.iframe p {
     font-size: 1.25rem;
     width: 25rem;
-    
+
     /* border-radius: 6px; */
     float: right;
     position: relative;
     top: 1rem;
 }
-.footer span{
+
+.footer span {
     font-weight: bold;
 }
-.borderiframe{
+
+.borderiframe {
     background-color: var(--secondary-color);
     width: 40rem;
     height: 35rem;
 }
-.iframe{
+
+.iframe {
     width: 40rem;
     display: flex;
 }
+
 /* iframe{
     float: right;
 } */
@@ -1221,6 +1128,7 @@ form {
 
 
 @media screen and (max-width: 600px) {
+
     /* html{
         width: 400px;
         overflow: hidden;
@@ -1238,7 +1146,7 @@ form {
         background: url(images/shannaResize1.jpg);
         animation: slide 25s infinite;
         position: relative;
-        
+
     }
 
     @keyframes slide {
@@ -1286,7 +1194,7 @@ form {
         position: relative;
         transition: .8s ease;
         top: -.5rem;
-        background-color: rgb(34, 37, 49,0.5);
+        background-color: rgb(34, 37, 49, 0.5);
 
     }
 
@@ -1298,7 +1206,7 @@ form {
         /* margin-top: 10rem; */
     }
 
-    
+
     .navbar.active {
         right: 50;
     }
@@ -1405,7 +1313,7 @@ form {
         float: left;
         top: -270px;
     }
-    
+
     .flex-container {
         display: flex;
         width: 350px;
@@ -1415,25 +1323,30 @@ form {
         /* justify-content: flex-start; */
         /* align-items: center; */
         margin-left: 42rem;
-        
+
     }
-    .flex-container .card .front{
+
+    .flex-container .card .front {
         position: relative;
         left: -8rem;
     }
-    .flex-container .card .back{
+
+    .flex-container .card .back {
         position: relative;
         left: 8rem;
         top: -14rem;
     }
-    .flex-container .card .front p{
-        font-size: 1rem;
-       
-    }
-    .flex-container .card .back p{
+
+    .flex-container .card .front p {
         font-size: 1rem;
 
     }
+
+    .flex-container .card .back p {
+        font-size: 1rem;
+
+    }
+
     /* .flex-container img {
         float: left;
         width: 100px;
@@ -1443,31 +1356,36 @@ form {
     .card {
         width: 13rem;
         height: 6rem;
-     
+
         right: 15rem;
 
         margin-bottom: 5px;
     }
+
     .card:hover {
         height: 6rem;
         transform: rotateY(180deg);
         z-index: 900;
     }
+
     .front {
         width: 12rem;
         align-items: center;
         margin-bottom: 5rem;
     }
+
     .front p {
         font-size: 1rem;
     }
+
     .back {
         width: 300px;
         height: 10rem;
-        
-        
+
+
     }
-    .back p{
+
+    .back p {
         font-size: 1rem;
     }
 
@@ -1478,24 +1396,28 @@ form {
         top: -200px;
         /* margin-left: 12rem; */
     }
-    .offerContainer img{
+
+    .offerContainer img {
         float: left;
         margin-top: 20rem;
         padding-right: 50px;
     }
+
     .offerContainer p {
         float: right;
         margin-top: -600px;
         margin-right: -10px;
-        
+
         width: 60%;
 
     }
-    .border{
+
+    .border {
         position: relative;
         left: -5rem;
         top: -15rem
     }
+
     .addOnContainer {
         width: 300px;
         height: 600px;
@@ -1504,12 +1426,14 @@ form {
         flex-direction: column;
         /* margin-left: 9rem; */
     }
-    .addOnContainer p{
+
+    .addOnContainer p {
         position: relative;
         top: -8rem;
         right: 5rem;
     }
-    .addOnContainer img{
+
+    .addOnContainer img {
         width: 400px;
         height: 300px;
         position: relative;
@@ -1517,48 +1441,53 @@ form {
         margin: auto;
         right: 55px;
     }
-    
+
 
     .listPosition {
         width: 300px;
         height: 200px;
         position: relative;
         left: -4rem;
-        
-        
+
+
     }
-    .listStyle{
+
+    .listStyle {
         width: 300px;
         height: 150px;
         position: relative;
         top: -20rem;
     }
-    .listStyle p{
+
+    .listStyle p {
         position: relative;
         top: 1rem;
     }
-    .moveCenter{
+
+    .moveCenter {
         position: relative;
         top: -20rem;
-       
+
     }
 
     /* #wisdom{
         top: -5rem;
     } */
-    
+
     .wisdom-content {
         top: -70rem;
         background-color: var(--secondary-color);
     }
-    .wisdom-content p{
+
+    .wisdom-content p {
         font-size: 1rem;
     }
 
     .wisdom-content img {
         display: none;
     }
-    .wisdom-content h2{
+
+    .wisdom-content h2 {
         font-size: 5rem;
     }
 
@@ -1574,23 +1503,27 @@ form {
         max-width: 400px;
         top: -50rem;
     }
-    #inspiration h2{
+
+    #inspiration h2 {
         position: relative;
         left: -4rem;
         font-size: 1rem;
-        
+
     }
-    .inspiration .innerText{
+
+    .inspiration .innerText {
         width: 300px;
         padding-right: 50px;
         position: relative;
         top: -1rem;
     }
+
     .inspiration .innerText p {
         font-size: 1rem;
         /* width: 375px; */
         margin-left: -4rem;
     }
+
     .content .text {
         width: 600px;
         color: var(--primary-color);
@@ -1617,31 +1550,36 @@ form {
         position: relative;
         top: -30rem;
     }
-    .love{
+
+    .love {
         width: 300px;
         margin-left: 5rem;
         display: flex;
         flex-direction: column;
-        
-        
+
+
         position: relative;
         top: -40rem;
         left: -4rem;
     }
-    #love p{
+
+    #love p {
         font-size: 4rem;
-        
+
         /* margin: auto; */
     }
-    .cards{
+
+    .cards {
         margin-bottom: 5px;
         width: 30rem;
         height: 10rem;
     }
-    #main{
+
+    #main {
         width: 400px;
     }
-    .main-content{
+
+    .main-content {
         position: relative;
         top: -35rem;
         /* width: 300rem;  */
@@ -1649,20 +1587,24 @@ form {
         /* display: flex; */
         /* justify-content: center; */
     }
-    .main-content p{
-        position: relative; 
-        
+
+    .main-content p {
+        position: relative;
+
     }
-    .main-content .giftText{
+
+    .main-content .giftText {
         position: relative;
         top: -12rem;
         /* width: 200rem; */
-        
+
     }
-    .main-content .giftText p{
+
+    .main-content .giftText p {
         font-size: 1.5rem;
         margin-left: -345px;
     }
+
     /* .footer img{
         width: 50px;
         height: 50px;
@@ -1743,8 +1685,8 @@ form {
         margin: 50px;
         position: relative;
     }
-    
-    .responsive{
+
+    .responsive {
         position: relative;
         top: 10rem;
     }
@@ -1807,35 +1749,43 @@ form {
         object-fit: contain;
         height: 100%;
     }
-    .wisdomContainer{
+
+    .wisdomContainer {
         width: 100vw;
         height: 100vh;
     }
-    .wisdomPage{
+
+    .wisdomPage {
         width: 60rem;
     }
-    .right-side{
+
+    .right-side {
         width: 30rem;
         height: 30rem;
         margin-left: -15px;
     }
-    .part2 .section-left{
+
+    .part2 .section-left {
         width: 20rem;
         height: 20rem;
         position: relative;
         top: -70rem;
     }
-    .section-left img{
+
+    .section-left img {
         position: relative;
         left: -35rem;
     }
-    .part2 .right-side p{
+
+    .part2 .right-side p {
         font-size: 1rem;
     }
-    .part2 .right-side h2{
+
+    .part2 .right-side h2 {
         font-size: 1.5rem;
     }
-     /* .part3 .section-left{
+
+    /* .part3 .section-left{
         position: relative;
         top: -570rem;
     } */
@@ -1845,73 +1795,88 @@ form {
     /* .part3 .section-right h2{
         font-size: 1.5rem;
     } */
-    
-    .part3 .section-right{
+
+    .part3 .section-right {
         width: 100%;
         height: 20rem;
         position: relative;
         top: -665rem;
         left: -45rem;
-        
+
     }
-    .part3 .section-left img{
+
+    .part3 .section-left img {
         display: none;
-         /* position: relative;
+        /* position: relative;
         top: -665rem;
         width: 40%;
          left: -25rem; 
         float: left;  */
-        
+
     }
-    .part4{
+
+    .part4 {
         height: 1rem;
     }
-    .part4 .section-left img{
+
+    .part4 .section-left img {
         position: relative;
         width: 40%;
         top: -35rem;
         margin-left: 27rem;
-        
+
     }
-    .part4 .section-left{
-       height: 3rem;
+
+    .part4 .section-left {
+        height: 3rem;
     }
-    .part4 .section-right{
+
+    .part4 .section-right {
         width: 20rem;
         height: 40rem;
         overflow: scroll;
         position: relative;
         top: -40rem;
-    } 
-    .wisdomPage .footer{
+    }
+
+    .wisdomPage .footer {
         position: relative;
         top: 50rem;
     }
-    .footer .wisdome{
+
+    .footer .wisdome {
         top: -420rem;
         width: 100%;
         height: 30rem;
     }
-    .footer p{
+
+    .footer p {
         font-size: .75rem;
     }
-    .footer .right{
+
+    .footer .right {
         display: none;
     }
-    .footer .left{
+
+    .footer .left {
         display: none;
     }
-    .iframe{
+
+    .iframe {
         width: 18rem;
         /* padding-left: 20rem; */
     }
-    iframe{
+
+    iframe {
         height: 88;
     }
-    
+
 }
+
 @media only screen and (max-device-width: 915px) and (orientation: landscape) {
-    html,body{
+
+    html,
+    body {
         max-width: 100%;
         overflow-x: hidden;
         margin: 0;
@@ -1925,15 +1890,18 @@ form {
         padding: 8px;
         overflow-X: hidden;
     }
-    .heading{
+
+    .heading {
         height: 15rem;
     }
-    .info{
+
+    .info {
         display: none;
         /* width: 80%;
         height: 5rem; */
     }
-    .landing{
+
+    .landing {
         width: 100%;
         height: 45rem;
         background-color: rgb(15, 42, 177);
@@ -1941,36 +1909,42 @@ form {
         justify-content: space-around;
         position: relative;
     }
-    .navbar{
+
+    .navbar {
         height: 4rem;
         max-width: 100%;
     }
-    .navbar-links li a{
+
+    .navbar-links li a {
         width: 10rem;
         /* display: flex; */
         word-spacing: 2px;
         /* align-items: center; */
         font-size: 1rem;
     }
-    .offerings{
+
+    .offerings {
         width: 100%;
         height: 20rem;
         top: 8rem;
     }
+
     .offerings h2 {
         font-size: 4rem;
         /* text-align: center; */
         font-weight: 100;
     }
-    .offerContainer{
+
+    .offerContainer {
         width: 80%;
         height: 30rem;
     }
-    
-    .card p{
+
+    .card p {
         font-size: .75rem;
-        
+
     }
+
     .card {
         width: 125px;
         height: 80px;
@@ -1982,13 +1956,15 @@ form {
         position: relative;
         border-radius: 10px;
         font-size: 1rem;
-        
+
     }
-    .limit{
+
+    .limit {
         width: 5rem;
-        
+
     }
-    .back{
+
+    .back {
         display: inline-block;
         overflow-wrap: break-word;
         width: 25rem;
@@ -1997,35 +1973,42 @@ form {
         margin-left: -35px;
         z-index: 900;
     }
-    .flex-container{
+
+    .flex-container {
         width: 90%;
         margin: auto;
     }
-    
-    .flex-container .card .back p{
+
+    .flex-container .card .back p {
         font-size: .75rem;
-        
+
     }
-    .flex-container .card .front p{
+
+    .flex-container .card .front p {
         font-size: 1.2rem;
     }
-    .offerings img{
+
+    .offerings img {
         width: 100%;
         height: 20rem;
     }
-    .offerings p{
+
+    .offerings p {
         font-size: 1rem;
     }
-    .offerContainer .pregnant{
+
+    .offerContainer .pregnant {
         width: 50%;
         float: right;
-        
+
     }
-    .border{
+
+    .border {
         width: 100%;
         position: relative;
         top: -8rem;
     }
+
     .addOnContainer {
         width: 100%;
         height: 50rem;
@@ -2035,18 +2018,20 @@ form {
         margin: auto;
         position: relative;
         top: -8rem;
-    
+
     }
-    .addOnContainer img{
+
+    .addOnContainer img {
         /* object-fit: cover; */
         height: 40rem;
     }
-    
-    .inspiration{
+
+    .inspiration {
         width: 100%;
         height: 60rem;
         top: -20rem;
     }
+
     #inspiration h2 {
         font-size: 5rem;
         /* text-align: center; */
@@ -2055,97 +2040,116 @@ form {
         position: relative;
         top: -15rem;
     }
-    #inspiration p{
+
+    #inspiration p {
         font-size: 1rem;
     }
-    .contact{
+
+    .contact {
         width: 100%;
         height: 20rem;
         top: -30rem;
         left: -2rem;
     }
-    legend{
+
+    legend {
         font-size: 4rem;
     }
-    .love{
+
+    .love {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
-        
+
         top: -10rem;
     }
-    #love p{
+
+    #love p {
         font-size: 5rem;
         position: relative;
         top: -15rem;
     }
-    .card4{
+
+    .card4 {
         width: 50rem;
         margin-bottom: 10px;
     }
-    .cards{
+
+    .cards {
         width: 20rem;
         /* height: 40rem; */
         margin-bottom: 5px;
     }
-    
-    .main-content{
+
+    .main-content {
         width: 100%;
     }
-    .main-content .giftText p{
+
+    .main-content .giftText p {
         font-size: 4rem;
     }
-    .main-content .giftText{
+
+    .main-content .giftText {
         position: relative;
         top: -12rem;
         /* width: 200rem; */
     }
-    .card3{
+
+    .card3 {
         position: relative;
         left: 10rem;
     }
-    .part2 .right-side p{
+
+    .part2 .right-side p {
         font-size: 1.5rem;
     }
-    .part3 .section-right{
+
+    .part3 .section-right {
         font-size: 1.5rem;
     }
-    .part4 .section-right{
+
+    .part4 .section-right {
         font-size: 1.5rem;
     }
-    .footer{
+
+    .footer {
         width: 100%;
     }
-    .middle .iframe p{
+
+    .middle .iframe p {
         font-size: 1rem;
     }
-    .footer{
+
+    .footer {
         top: 110rem;
         width: 100%;
         height: 400px;
     }
-    .footer p{
+
+    .footer p {
         font-size: 10rem;
     }
-    .iframe{
+
+    .iframe {
         width: 25rem;
         /* float: right; */
         margin-bottom: 5px;
         margin-right: -200px;
     }
-    iframe{
+
+    iframe {
         width: 15rem;
         height: 7rem;
     }
-    
-    
-    
-    
 
 
-/* .container {
+
+
+
+
+    /* .container {
     max-width: 800px;
     height: 100vh;
     margin-inline: auto;
@@ -2369,4 +2373,3 @@ form {
 .footer {
     top: 10rem;
 } */
-
