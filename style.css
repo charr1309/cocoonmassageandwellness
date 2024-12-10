@@ -1474,22 +1474,7 @@ form {
         top: -5rem;
     } */
 
-    .wisdom-content {
-        top: -70rem;
-        background-color: var(--secondary-color);
-    }
-
-    .wisdom-content p {
-        font-size: 1rem;
-    }
-
-    .wisdom-content img {
-        display: none;
-    }
-
-    .wisdom-content h2 {
-        font-size: 5rem;
-    }
+    
 
     .inner {
         width: 100%;
@@ -1750,41 +1735,7 @@ form {
         height: 100%;
     }
 
-    .wisdomContainer {
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .wisdomPage {
-        width: 60rem;
-    }
-
-    .right-side {
-        width: 30rem;
-        height: 30rem;
-        margin-left: -15px;
-    }
-
-    .part2 .section-left {
-        width: 20rem;
-        height: 20rem;
-        position: relative;
-        top: -70rem;
-    }
-
-    .section-left img {
-        position: relative;
-        left: -35rem;
-    }
-
-    .part2 .right-side p {
-        font-size: 1rem;
-    }
-
-    .part2 .right-side h2 {
-        font-size: 1.5rem;
-    }
-
+    
     /* .part3 .section-left{
         position: relative;
         top: -570rem;
@@ -1796,59 +1747,9 @@ form {
         font-size: 1.5rem;
     } */
 
-    .part3 .section-right {
-        width: 100%;
-        height: 20rem;
-        position: relative;
-        top: -665rem;
-        left: -45rem;
+    
 
-    }
-
-    .part3 .section-left img {
-        display: none;
-        /* position: relative;
-        top: -665rem;
-        width: 40%;
-         left: -25rem; 
-        float: left;  */
-
-    }
-
-    .part4 {
-        height: 1rem;
-    }
-
-    .part4 .section-left img {
-        position: relative;
-        width: 40%;
-        top: -35rem;
-        margin-left: 27rem;
-
-    }
-
-    .part4 .section-left {
-        height: 3rem;
-    }
-
-    .part4 .section-right {
-        width: 20rem;
-        height: 40rem;
-        overflow: scroll;
-        position: relative;
-        top: -40rem;
-    }
-
-    .wisdomPage .footer {
-        position: relative;
-        top: 50rem;
-    }
-
-    .footer .wisdome {
-        top: -420rem;
-        width: 100%;
-        height: 30rem;
-    }
+    
 
     .footer p {
         font-size: .75rem;
