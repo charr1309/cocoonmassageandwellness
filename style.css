@@ -234,10 +234,7 @@ body {
 }
 
 
-/* .anim{
-    transform: translateY(0);
-    opacity: 1;
-} */
+
 .flex-container {
     width: 100%;
     height: 30%;
@@ -291,7 +288,6 @@ body {
 .back {
     background-color: var(--primary-color);
     overflow-y: scroll;
-    /* position: absolute; */
     transform: rotateY(-180deg);
 
 }
@@ -309,9 +305,7 @@ body {
 
 }
 
-/* .flex-container{
-    width: 30%;
-} */
+
 
 #offerings {
     position: relative;
@@ -395,9 +389,7 @@ body {
 .addOnContainer {
     width: 100rem;
     height: 50rem;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    
     margin: auto;
 
 }
@@ -567,208 +559,6 @@ span:hover {
     cursor: pointer;
 }
 
-.aboutHeading {
-    position: relative;
-    top: 5rem;
-    right: 20rem;
-    text-align: center;
-    float: right;
-    font-size: 1.5rem;
-}
-
-p.aboutHeading {
-    align-items: center;
-    text-align: center;
-}
-
-.top {
-    width: 100%;
-    height: 120rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-bottom: 20px solid black;
-}
-
-.top img {
-    width: 60%;
-    height: 100%;
-    object-fit: cover;
-    margin-left: -15rem;
-}
-
-.toptext {
-    width: 50%;
-    height: 25rem;
-    position: relative;
-    top: -20rem;
-    padding-left: 50px;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-    font-weight: 100;
-    /* padding-left: 20rem; */
-    color: #a18e78;
-
-}
-
-.toptext h1 {
-    font-size: 5rem;
-    font-style: italic;
-    font-weight: 100;
-    position: relative;
-    top: -10rem;
-    color: #a18e78;
-}
-
-.box {
-    width: 30rem;
-    height: 5rem;
-    border: 4px solid white;
-    margin: auto;
-    position: relative;
-    top: 10rem;
-    font-size: 3rem;
-    text-align: center;
-}
-
-.part2 {
-    width: 100%;
-    height: 50rem;
-    position: relative;
-    top: 20rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-}
-
-.part2,
-.part3,
-.part4,
-p {
-    font-weight: 100;
-    color: black;
-}
-
-.part2,
-.part3,
-.part4,
-h2 {
-    color: var(--secondary-color);
-    text-align: center;
-}
-
-.part2 img {
-    object-fit: contain;
-}
-
-/* .part3, .section-left, img{
-    float: right;
-} */
-.section-left {
-    width: 50%;
-    margin: 50px;
-}
-
-.section-left,
-.section-right p {
-
-    text-indent: 6%;
-}
-
-.section-left img {
-    width: 80%;
-    position: relative;
-}
-
-.section-right {
-    width: 50%;
-    font-size: 2rem;
-    margin-top: 5rem;
-}
-
-.part2 .section-right img {
-    object-fit: contain;
-}
-
-
-.part3 {
-    width: 100%;
-    height: 50rem;
-    position: relative;
-    top: 40rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-.part3 .section-right {
-    width: 70%;
-}
-
-.part3 .section-left img {
-    object-fit: contain;
-}
-
-.part4 {
-    width: 100%;
-    height: 60rem;
-    font-size: 2rem;
-    position: relative;
-    top: 75rem;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.part4 .section-left {
-    width: 60%;
-}
-
-.part4 .section-right img {
-    object-fit: contain;
-}
-
-blockquote {
-    width: 35%;
-    position: relative;
-    top: 90rem;
-    display: flex;
-    margin: auto;
-}
-
-blockquote p {
-    padding: 15px;
-    background: #f3e4d2;
-    border-radius: 20px;
-    margin: auto;
-    font-size: 3rem;
-    text-align: center;
-}
-
-.meet-content {
-    width: 100%;
-    height: 100rem;
-    position: relative;
-    top: 35rem;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-}
-
-.meet-content img {
-    object-fit: contain;
-    height: 100%;
-}
-
-.aboutContainer .footer {
-    top: 100rem;
-    background-color: #fbe5da;
-
-}
 
 #inspiration {
     position: relative;
@@ -786,8 +576,7 @@ blockquote p {
     height: 50rem;
     font-size: 2.5rem;
     position: relative;
-    /* top: 35rem; */
-    /* background-color: rgb(36, 54, 70); */
+    
     font-weight: 100;
 }
 
@@ -796,7 +585,6 @@ blockquote p {
     max-height: 500px;
     font-size: 2.5rem;
     position: relative;
-    /* margin-right: 15rem; */
 }
 
 #inspiration h2 {
@@ -884,7 +672,6 @@ fieldset {
     padding: 1em 2em;
     border: solid 1px #ccc;
     border-radius: 6px;
-    /* max-width: 700px; */
     background-color: var(--primary-color);
 }
 
@@ -1086,7 +873,6 @@ form {
 }
 
 .footer a {
-    /* width: 11rem; */
     height: 5rem;
     font-size: 1.75rem;
     text-align: center;
@@ -1099,7 +885,6 @@ form {
     font-size: 1.25rem;
     width: 25rem;
 
-    /* border-radius: 6px; */
     float: right;
     position: relative;
     top: 1rem;
@@ -1119,14 +904,6 @@ form {
     width: 40rem;
     display: flex;
 }
-
-/* iframe{
-    float: right;
-} */
-
-
-
-
 @media screen and (max-width: 600px) {
 
     /* html{
@@ -1266,18 +1043,7 @@ form {
         transform: translate(-50%, -50%) rotate(-45deg);
     }
 
-    /* .navbar-links.active {
-        display: flex;
-        position: relative;
-        top: 10rem;
-        padding-bottom: 1px;
-
-    } */
-
-    /* .navbar.active2 {
-        height: 30rem;
-    } */
-
+    
     .landing {
         width: 100%;
         background-size: cover;
@@ -1318,10 +1084,8 @@ form {
         display: flex;
         width: 350px;
         height: 300px;
-        /* flex-wrap: wrap; */
         flex-direction: column;
-        /* justify-content: flex-start; */
-        /* align-items: center; */
+        
         margin-left: 42rem;
 
     }
@@ -1347,12 +1111,7 @@ form {
 
     }
 
-    /* .flex-container img {
-        float: left;
-        width: 100px;
-        height: 100px;
-    } */
-
+    
     .card {
         width: 13rem;
         height: 6rem;
@@ -1394,7 +1153,6 @@ form {
         height: 200px;
         position: relative;
         top: -200px;
-        /* margin-left: 12rem; */
     }
 
     .offerContainer img {
@@ -1421,10 +1179,8 @@ form {
     .addOnContainer {
         width: 300px;
         height: 600px;
-        /* overflow: scroll; */
         display: flex;
         flex-direction: column;
-        /* margin-left: 9rem; */
     }
 
     .addOnContainer p {
@@ -1470,12 +1226,7 @@ form {
 
     }
 
-    /* #wisdom{
-        top: -5rem;
-    } */
-
     
-
     .inner {
         width: 100%;
         margin: auto;
@@ -1505,7 +1256,6 @@ form {
 
     .inspiration .innerText p {
         font-size: 1rem;
-        /* width: 375px; */
         margin-left: -4rem;
     }
 
@@ -1550,8 +1300,6 @@ form {
 
     #love p {
         font-size: 4rem;
-
-        /* margin: auto; */
     }
 
     .cards {
@@ -1567,10 +1315,7 @@ form {
     .main-content {
         position: relative;
         top: -35rem;
-        /* width: 300rem;  */
-        /* width: 50%; */
-        /* display: flex; */
-        /* justify-content: center; */
+        
     }
 
     .main-content p {
@@ -1581,7 +1326,6 @@ form {
     .main-content .giftText {
         position: relative;
         top: -12rem;
-        /* width: 200rem; */
 
     }
 
@@ -1590,167 +1334,7 @@ form {
         margin-left: -345px;
     }
 
-    /* .footer img{
-        width: 50px;
-        height: 50px;
-    } */
-
-    .aboutHeading {
-        position: relative;
-        top: 5rem;
-        right: 20rem;
-        text-align: center;
-        float: right;
-        font-size: 1.5rem;
-    }
-
-    .top {
-        width: 100vw;
-        height: 113rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        border-bottom: 20px solid black;
-    }
-
-    .top img {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        object-fit: cover;
-    }
-
-    .toptext {
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        top: 80rem;
-        font-size: 3rem;
-        font-weight: 100;
-        color: #a18e78;
-
-    }
-
-    .toptext h1 {
-        font-size: 5rem;
-        font-style: italic;
-        font-weight: 100;
-        position: relative;
-        top: -10rem;
-        color: #a18e78;
-    }
-
-    .box {
-        width: 30rem;
-        height: 5rem;
-        border: 4px solid white;
-        margin: auto;
-        position: relative;
-        top: 10rem;
-        font-size: 3rem;
-        text-align: center;
-    }
-
-    .part2 {
-        width: 800px;
-        height: 50rem;
-        position: relative;
-        top: 50rem;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .section-left {
-        width: 100rem;
-        height: 100rem;
-        font-size: 1.5rem;
-        margin: 50px;
-        position: relative;
-    }
-
-    .responsive {
-        position: relative;
-        top: 10rem;
-    }
-
-    .section-right {
-        width: 100rem;
-        font-size: 1.5rem;
-        margin-top: 5rem;
-        position: relative;
-        top: 90rem;
-    }
-
-    .part3 {
-        width: 800px;
-        height: 60rem;
-        position: relative;
-        top: 650rem;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .part4 {
-        width: 800px;
-        height: 60rem;
-        position: relative;
-        top: 50rem;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    blockquote {
-        width: 35%;
-        position: relative;
-        top: 160rem;
-        display: flex;
-        margin: auto;
-    }
-
-    blockquote p {
-        padding: 15px;
-        background: #a18e78;
-        border-radius: 20px;
-        margin: auto;
-        font-size: 4rem;
-        text-align: center;
-    }
-
-    .meet-content {
-        width: 100%;
-        height: 100rem;
-        position: relative;
-        top: 35rem;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .meet-content img {
-        object-fit: contain;
-        height: 100%;
-    }
-
     
-    /* .part3 .section-left{
-        position: relative;
-        top: -570rem;
-    } */
-    /* .part3 .section-right p{
-        font-size: 1rem;
-    } */
-    /* .part3 .section-right h2{
-        font-size: 1.5rem;
-    } */
-
-    
-
-    
-
     .footer p {
         font-size: .75rem;
     }
@@ -1765,7 +1349,6 @@ form {
 
     .iframe {
         width: 18rem;
-        /* padding-left: 20rem; */
     }
 
     iframe {
@@ -1787,7 +1370,6 @@ form {
     .container {
         width: 900px;
         height: vh;
-        /* margin-inline: auto; */
         padding: 8px;
         overflow-X: hidden;
     }
@@ -1798,8 +1380,7 @@ form {
 
     .info {
         display: none;
-        /* width: 80%;
-        height: 5rem; */
+       
     }
 
     .landing {
@@ -1818,9 +1399,7 @@ form {
 
     .navbar-links li a {
         width: 10rem;
-        /* display: flex; */
         word-spacing: 2px;
-        /* align-items: center; */
         font-size: 1rem;
     }
 
@@ -1832,7 +1411,6 @@ form {
 
     .offerings h2 {
         font-size: 4rem;
-        /* text-align: center; */
         font-weight: 100;
     }
 
@@ -1913,9 +1491,6 @@ form {
     .addOnContainer {
         width: 100%;
         height: 50rem;
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
         margin: auto;
         position: relative;
         top: -8rem;
@@ -1923,7 +1498,6 @@ form {
     }
 
     .addOnContainer img {
-        /* object-fit: cover; */
         height: 40rem;
     }
 
@@ -1935,9 +1509,7 @@ form {
 
     #inspiration h2 {
         font-size: 5rem;
-        /* text-align: center; */
         font-weight: 200;
-        /* margin-left: -20rem; */
         position: relative;
         top: -15rem;
     }
@@ -1980,7 +1552,6 @@ form {
 
     .cards {
         width: 20rem;
-        /* height: 40rem; */
         margin-bottom: 5px;
     }
 
@@ -1995,7 +1566,6 @@ form {
     .main-content .giftText {
         position: relative;
         top: -12rem;
-        /* width: 200rem; */
     }
 
     .card3 {
@@ -2035,7 +1605,6 @@ form {
 
     .iframe {
         width: 25rem;
-        /* float: right; */
         margin-bottom: 5px;
         margin-right: -200px;
     }
@@ -2044,372 +1613,6 @@ form {
         width: 15rem;
         height: 7rem;
     }
-    .aboutHeading {
-        position: relative;
-        top: 5rem;
-        right: 20rem;
-        text-align: center;
-        float: right;
-        font-size: 1.5rem;
-    }
-
-    .top {
-        width: 100vw;
-        height: 113rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        border-bottom: 20px solid black;
-    }
-
-    .top img {
-        width: 70%;
-        height: 100%;
-        /* position: absolute; */
-        object-fit: cover;
-    }
-
-    .toptext {
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        top: -20rem;
-        font-size: 3rem;
-        font-weight: 100;
-        color: #a18e78;
-
-    }
-
-    .toptext h1 {
-        font-size: 5rem;
-        font-style: italic;
-        font-weight: 100;
-        position: relative;
-        top: -10rem;
-        color: #a18e78;
-    }
-
-    .box {
-        width: 30rem;
-        height: 5rem;
-        border: 4px solid white;
-        margin: auto;
-        position: relative;
-        top: 10rem;
-        font-size: 3rem;
-        text-align: center;
-    }
-
-    .part2 {
-        width: 800px;
-        height: 50rem;
-        position: relative;
-        top: 50rem;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .section-left {
-        width: 100rem;
-        height: 100rem;
-        font-size: 1.5rem;
-        margin: 50px;
-        position: relative;
-    }
-
-    .responsive {
-        position: relative;
-        top: 10rem;
-    }
-
-    .section-right {
-        width: 50rem;
-        font-size: 1.5rem;
-        margin-top: 5rem;
-        position: relative;
-        top: 90rem;
-    }
-
-    .part3 {
-        width: 800px;
-        height: 60rem;
-        position: relative;
-        top: 650rem;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .part4 {
-        width: 800px;
-        height: 60rem;
-        position: relative;
-        top: 50rem;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    blockquote {
-        width: 35%;
-        position: relative;
-        top: 160rem;
-        display: flex;
-        margin: auto;
-    }
-
-    blockquote p {
-        padding: 15px;
-        background: #a18e78;
-        border-radius: 20px;
-        margin: auto;
-        font-size: 4rem;
-        text-align: center;
-    }
-
-    .meet-content {
-        width: 100%;
-        height: 100rem;
-        position: relative;
-        top: 35rem;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .meet-content img {
-        object-fit: contain;
-        height: 100%;
-    }
-}
-
-/* .container {
-    max-width: 800px;
-    height: 100vh;
-    margin-inline: auto;
-    padding: 8px;
-    overflow: hidden;
-}
-.navbar{
-    flex-direction: column;
-    display: block;
-    height: 20rem;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    right: -580px;
-    position: relative;
-    transition: .8s ease;
-    top: -.5rem;
-    background-color: rgb(34, 37, 49,0.5);
-}
-
-.navbar-links {
-    font-size: small;
-    width: 80px;
-}
-
-.flex-container {
-    width: 900px;
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
+    
 
 }
-
-.flex-container .front p {
-    font-size: small;
-    text-align: center;
-
-}
-
-.flex-container .front {
-    width: 120px;
-
-}
-
-.landing {
-    width: 100vw;
-    height: 80rem;
-    background: url(images/shannaResize1.jpg);
-    animation: slide 25s infinite;
-    position: relative;
-}
-
-@keyframes slide {
-    25% {
-        background: url(images/shannaResize2.jpg);
-        background-size: cover;
-    }
-
-    50% {
-        background: url(images/shannaResize3.jpg);
-        background-size: cover;
-    }
-
-    75% {
-        background: url(images/shannaResize4.jpg);
-        background-size: cover;
-    }
-
-    100% {
-        background: url(images/shannaResize1.jpg);
-        background-size: cover;
-    }
-
-
-}
-
-.offerings {
-    width: 800px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 35rem;
-    margin: 20px;
-
-}
-
-.offerings-header {
-    height: 5rem;
-    top: 5rem;
-}
-
-.offerings-header h2 {
-    font-size: 5rem;
-    text-align: center;
-    position: relative;
-    top: -10rem;
-}
-
-
-
-.flex-container {
-    width: 100%;
-    align-items: self-start;
-    margin: -30px;
-    justify-content:right;
-    align-items: center;
-}
-.flex-image {
-    width: 100%;
-}
-.card {
-    width: 30rem;
-    height: 6rem;
-    border: black 1px solid;
-
-    margin-bottom: 5px;
-}
-
-.front p {
-    font-size: 1.5rem;
-}
-
-.back p {
-    font-size: .85rem;
-}
-.back{
-    height: 25rem;
-}
-
-.cards {
-    width: 120px;
-}
-
-.offerContainer {
-    height: 200px;
-}
-
-.offerContainer p {
-    width: 80%;
-
-}
-
-.border {
-    position: relative;
-    top: 5rem;
-}
-
-.addOnContainer {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 16rem;
-}
-
-.listPosition {
-    top: 15rem;
-}
-
-#wisdom{
-    top: -5rem;
-}
-
-.wisdom-content {
-    top: -50rem;
-    background-color: var(--secondary-color);
-}
-.wisdom-content h2{
-    font-size: 5rem;
-}
-.wisdom-content img {
-    display: none;
-}
-
-.inner {
-    width: 100%;
-    margin: auto;
-    border: 3px solid #69d5c3;
-    border-radius: 0%;
-    padding: 5px;
-}
-
-.inspiration {
-    top: -60rem;
-}
-
-.inspiration p {
-    font-size: 1.5rem;
-    width: 100%;
-}
-
-#inspiration h2 {
-    text-align: center;
-    font-size: 5rem;
-    position: relative;
-    top: -60rem;
-}
-
-.inspiration .text {
-    margin-left: 5rem;
-    width: 6rem;
-
-}
-
-.content .text {
-    width: 500px;
-    color: var(--primary-color);
-    margin-left: 10rem;
-    background-color: rgba(20, 20, 20, 0.5);
-}
-
-.contact {
-    width: 90%;
-    top: -15rem;
-}
-
-.footer {
-    top: 10rem;
-}
-} */
-
-
-
