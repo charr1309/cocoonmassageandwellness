@@ -297,8 +297,7 @@ html,
     width: 40rem;
     display: flex;
 }
-}
-}
+
 
 #footer {
     width: 100%;
@@ -619,7 +618,7 @@ blockquote p {
     width: 50%;
     height: 50rem;
     position: relative;
-    top: -17rem;
+    /* top: -17rem; */
     /* left: -20rem; */
     overflow: scroll;
 }
@@ -631,7 +630,7 @@ blockquote p {
 }
 .part2 .section-right img{
     position: relative;
-    top: -20rem;
+    /* top: -20rem; */
 }
 .part3{
     width: 100%;
@@ -644,17 +643,17 @@ blockquote p {
     height: 50rem;
     /* border: 1px solid black; */
     position: relative;
-    top: -19rem;
+    /* top: -19rem; */
 }
 .part3 .section-left img{
     position: relative;
-    top: 5rem;
+    top: 15rem;
 }
 .part3 .section-right{
     width: 50%;
     height: 50rem;
     position: relative;
-    top: -20rem;
+    /* top: -20rem; */
 }
 .part3 .section-right p{
     font-size: 2rem;
@@ -670,7 +669,7 @@ blockquote p {
     width: 50%;
     height: 50rem;
     position: relative;
-    top: 110rem;
+    /* top: 110rem; */
     overflow: scroll;
 }
 .part4 .section-right {
@@ -684,11 +683,11 @@ blockquote p {
     height: 50rem;
     object-fit: cover;
     position: relative;
-    top: 110rem;
+    /* top: 110rem; */
 }
 #footer{
     position: relative;
-    top: -50rem;
+    /* top: -50rem; */
 }
 .footer {
     width: 100%;
