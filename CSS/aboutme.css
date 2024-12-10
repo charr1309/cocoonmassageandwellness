@@ -348,6 +348,14 @@ blockquote p {
     display: flex;
 }
 @media screen and (max-width: 600px) {
+.html{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
 .aboutHeading {
     position: relative;
     top: 5rem;
@@ -416,13 +424,13 @@ blockquote p {
     justify-content: space-between;
 }
 
-.section-left {
+/* .section-left {
     width: 100rem;
     height: 100rem;
     font-size: 1.5rem;
     margin: 50px;
     position: relative;
-}
+} */
 
 .responsive {
     position: relative;
@@ -490,6 +498,14 @@ blockquote p {
 }
 
 @media only screen and (max-device-width: 915px) and (orientation: landscape) {
+.html{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}   
 .aboutContainer{
     width: 100vw;
     height: 100vh;
@@ -742,6 +758,5 @@ blockquote p {
 .iframe {
     width: 40rem;
     display: flex;
-}
 }
 }
