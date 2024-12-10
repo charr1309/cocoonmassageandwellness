@@ -498,18 +498,18 @@ blockquote p {
 }
 
 @media only screen and (max-device-width: 915px) and (orientation: landscape) {
-.html{
-    width: 100vw;
-    height: 100vh;
-}
-body{
-    width: 100vw;
-    height: 100vh;
-}   
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
 .aboutContainer{
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
+    width: 900px;
+        height: vh;
+        padding: 8px;
+        overflow-X: hidden;
 }
 .aboutHeading {
     position: relative;
