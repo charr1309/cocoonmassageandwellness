@@ -507,159 +507,137 @@ blockquote p {
     }
 .aboutContainer{
     width: 900px;
-        height: vh;
-        padding: 8px;
-        overflow-X: hidden;
-}
-.aboutHeading {
+    height: 100vh;
+    padding: 8px;
+    overflow-X: hidden;
     position: relative;
-    top: 5rem;
-    right: 20rem;
-    text-align: center;
-    float: right;
-    font-size: 1.5rem;
 }
-p.aboutHeading{
+.centerHeading{
     width: 40%;
-    position: relative;
-    left: 1rem;
+    
 }
 .top {
     width: 100vw;
-    height: 113rem;
+    height: 60rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-bottom: 20px solid black;
+    /* border-bottom: 20px solid black; */
 }
-
-.top img {
+.top .left-side{
     width: 70%;
-    height: 100%;
-    /* position: absolute; */
+
+}
+.top .left-side img{
+    width: 100%;
+    height: 55rem;
     object-fit: cover;
 }
-
-.toptext {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: -20rem;
-    font-size: 3rem;
-    font-weight: 100;
-    color: #a18e78;
-
+.right-side{
+    width: 50%;
 }
-
-.toptext h1 {
-    font-size: 5rem;
-    font-style: italic;
-    font-weight: 100;
-    position: relative;
-    top: -10rem;
-    color: #a18e78;
+.top .right-side .header h2{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
 }
-
-.box {
-    width: 30rem;
-    height: 5rem;
-    border: 4px solid white;
-    margin: auto;
-    position: relative;
-    top: 10rem;
-    font-size: 3rem;
+.right-side h1{
+    font-size: 6rem;
     text-align: center;
+    /* padding-top: 4rem; */
 }
-
-.part2 {
-    width: 800px;
+.right-side p{
+    font-size: 2rem;
+}
+.right-side span {
+    font-size: 4rem;
+    font-weight: bold;
+}
+.part2{
+    width: 100%;
     height: 50rem;
     position: relative;
-    top: 50rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    /* top: 40rem; */
 }
-
-.section-left {
-    width: 100rem;
-    height: 100rem;
-    font-size: 1.5rem;
-    margin: 50px;
+.part2 .section-left{
+    width: 50%;
+    height: 50rem;
     position: relative;
+    top: -17rem;
+    /* left: -20rem; */
+    overflow: scroll;
 }
-
-.responsive {
+.part2 .section-right{
+    width: 50%;
+    height: 50rem;
     position: relative;
-    top: 10rem;
+    
 }
-
-.section-right {
-    width: 50rem;
-    font-size: 1.5rem;
-    margin-top: 5rem;
+.part2 .section-right img{
     position: relative;
-    top: 90rem;
+    top: -20rem;
 }
-
-.part3 {
-    width: 800px;
-    height: 60rem;
-    position: relative;
-    top: 650rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-.part4 {
-    width: 800px;
-    height: 60rem;
-    position: relative;
-    top: 50rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-blockquote {
-    width: 55%;
-    position: relative;
-    top: 50rem;
-    display: flex;
-    margin: auto;
-}
-
-blockquote p {
-    padding: 15px;
-    background: #a18e78;
-    border-radius: 20px;
-    margin: auto;
-    font-size: 4rem;
-    text-align: center;
-}
-
-.meet-content {
+.part3{
     width: 100%;
-    height: 100rem;
-    position: relative;
-    top: 35rem;
+    height: 50rem;
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
 }
-
-.meet-content img {
-    object-fit: contain;
-    height: 100%;
-}
-#footer {
-    width: 100%;
+.part3 .section-left{
+    width: 50%;
+    height: 50rem;
+    /* border: 1px solid black; */
     position: relative;
-    top: -40rem;
+    top: -19rem;
 }
+.part3 .section-left img{
+    position: relative;
+    top: 5rem;
+}
+.part3 .section-right{
+    width: 50%;
+    height: 50rem;
+    position: relative;
+    top: -20rem;
+}
+.part3 .section-right p{
+    font-size: 2rem;
+}
+.part4{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-direction: row;
 
+}
+.part4 .section-left{
+    width: 50%;
+    height: 50rem;
+    position: relative;
+    top: 110rem;
+    overflow: scroll;
+}
+.part4 .section-right {
+    width: 50%;
+    height: 50rem;
+    /* border: 1px solid black; */
+    position: relative;
+}
+.part4 .section-right img{
+    width: 50%;
+    height: 50rem;
+    object-fit: cover;
+    position: relative;
+    top: 110rem;
+}
+#footer{
+    position: relative;
+    top: -50rem;
+}
 .footer {
     width: 100%;
     height: 35rem;
@@ -668,8 +646,8 @@ blockquote p {
     flex-wrap: no-wrap;
     justify-content: space-around;
     margin-bottom: 2rem;
-    position: relative;
-    top: -10rem;
+    position: absolute;
+    top: 5rem;
     background-color: var(--primary-color);
 }
 
@@ -758,5 +736,6 @@ blockquote p {
 .iframe {
     width: 40rem;
     display: flex;
+}
 }
 }
