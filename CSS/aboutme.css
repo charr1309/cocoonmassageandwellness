@@ -435,14 +435,18 @@ html,
     width: 100%;
     height: 55rem;
     object-fit: cover;
+    position: relative;
+    left: -1rem;
 }
 .right-side{
     width: 100%;
+    position: relative;
+    left: -3rem;
 }
 .top .right-side .header h2{
     font-size: 1.5rem;
     position: absolute;
-    top: 1rem;
+    top: -70rem;
 }
 .right-side h1{
     font-size: 6rem;
@@ -468,8 +472,8 @@ html,
     width: 100%;
     height: 50rem;
     position: relative;
-    top: 135rem;
-    /* left: -20rem; */
+    top: 59rem;
+    left: 1rem;
     overflow: scroll;   
 }
 .part2 .section-right{
@@ -481,6 +485,7 @@ html,
 .part2 .section-right img{
     position: relative;
     /* top: -20rem; */
+    left: -1rem;
 }
 .part3{
     width: 100%;
@@ -498,6 +503,7 @@ html,
 .part3 .section-left img{
     position: relative;
     top: 45rem;
+    left: 5rem;
 }
 .part3 .section-right{
     width: 100%;
@@ -519,7 +525,7 @@ html,
     width: 100%;
     height: 50rem;
     position: relative;
-    top: 185rem;
+    top: 125rem;
     overflow: scroll;
 }
 .part4 .section-right {
@@ -527,6 +533,7 @@ html,
     height: 50rem;
     /* border: 1px solid black; */
     position: relative;
+    left: -10rem;
 }
 .part4 .section-right img{
     width: 100%;
@@ -535,109 +542,71 @@ html,
     position: relative;
     top: 70rem;
 }
-#footer{
+#footer {
+    width: 100%;
+    height: 10rem;
     position: relative;
-    top: 100rem;
+    top: 10rem;
 }
+
 .footer {
     width: 100%;
     height: 35rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: no-wrap;
     justify-content: space-around;
     margin-bottom: 2rem;
-    position: absolute;
-    top: 5rem;
+    position: relative;
+    top: 100rem;
     background-color: var(--primary-color);
 }
-
+.left{
+    border: none;
+}
 .left .footerNav {
-    width: 20rem;
-    height: 30rem;
+    width: 37rem;
+    height: 5rem;
     display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     margin-left: -6rem;
 }
 
 .left .footerNav a {
     color: black;
+    font-size: 1rem;
 }
 
 .footer .left {
-    width: 30%;
+    width: 20%;
     height: 35rem;
 
-    border-right: 1px solid black;
+    /* border-right: 1px solid black; */
 }
 
 .footer .middle {
-    width: 50%;
+    width: 10%;
     height: 35rem;
-    padding-left: 2rem;
 
 }
 
-.footer .right {
-    width: 40%;
-    height: 35rem;
-    border-left: 1px solid black;
-}
+
 
 .footer .right img {
-    width: 90%;
-    position: relative;
-    right: 8rem;
+    display: none;
 }
 
 .footer ul {
     height: 5rem;
     width: 100vw;
-    font-size: 1.75rem;
-    /* text-align: center; */
+    /* font-size: 1.75rem; */
+    text-align: center;
     position: relative;
     top: 15px;
-    left: 7rem;
     display: flex;
     justify-content: space-around;
-}
-
-.footer a {
-    /* width: 11rem; */
-    height: 5rem;
-    font-size: 1.75rem;
-    text-align: center;
-    color: var(--secondary-color);
-    position: relative;
-    top: -1rem;
-}
-
-.iframe p {
-    font-size: 1.25rem;
-    width: 25rem;
-
-    /* border-radius: 6px; */
-    float: right;
-    position: relative;
-    top: 1rem;
-}
-
-.footer span {
-    font-weight: bold;
-}
-
-.borderiframe {
-    background-color: var(--secondary-color);
-    width: 40rem;
-    height: 35rem;
-}
-
-.iframe {
-    width: 40rem;
-    display: flex;
-}
 }
 
 
