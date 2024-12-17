@@ -80,7 +80,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    right: 15rem;
+    right: 20rem;
     top: 5px;
 }
 
@@ -455,6 +455,7 @@ body {
     background: black;
     cursor: pointer;
     position: relative;
+    left: 20rem;
     z-index: 0;
     border-radius: 10px;
 }
@@ -763,6 +764,7 @@ form {
 
 .card3 {
     width: 300px;
+    width: 300px;
     perspective: 1000px;
     cursor: pointer;
     margin: auto;
@@ -779,6 +781,7 @@ form {
 }
 
 .back-face {
+    width: 100%;
     backface-visibility: hidden;
     transform: rotateY(180deg);
 }
