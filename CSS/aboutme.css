@@ -470,22 +470,23 @@ html,
 }
 .part2 .section-left{
     width: 100%;
-    height: 50rem;
-    position: relative;
-    top: 59rem;
-    left: 1rem;
+    height: 40rem;
+    position: absolute;
+    top: 69rem;
+    left: .5rem;
     overflow: scroll;   
 }
 .part2 .section-right{
     width: 100%;
-    height: 50rem;
+    height: 60rem;
     position: relative;
+    top: 9rem;
     
 }
 .part2 .section-right img{
     position: relative;
-    /* top: -20rem; */
     left: -1rem;
+    object-fit: cover;
 }
 .part3{
     width: 100%;
@@ -498,18 +499,18 @@ html,
     height: 50rem;
     /* border: 1px solid black; */
     position: relative;
-    top: 19rem;
+    top: 55rem;
 }
 .part3 .section-left img{
+    object-fit: cover;
     position: relative;
-    top: 45rem;
     left: 5rem;
 }
 .part3 .section-right{
     width: 100%;
     height: 50rem;
     position: relative;
-    top: 60rem;
+    top: 73rem;
 }
 .part3 .section-right p{
     font-size: 2rem;
@@ -524,8 +525,8 @@ html,
 .part4 .section-left{
     width: 100%;
     height: 50rem;
-    position: relative;
-    top: 125rem;
+    position: absolute;
+    top: 300rem;
     overflow: scroll;
 }
 .part4 .section-right {
@@ -534,19 +535,20 @@ html,
     /* border: 1px solid black; */
     position: relative;
     left: -10rem;
+    top: 40rem;
 }
 .part4 .section-right img{
     width: 100%;
     height: 50rem;
     object-fit: cover;
-    position: relative;
-    top: 70rem;
+    /* position: relative; */
+    /* top: 95rem; */
 }
 #footer {
     width: 100%;
     height: 10rem;
     position: relative;
-    top: 10rem;
+    top: 50rem;
 }
 
 .footer {
