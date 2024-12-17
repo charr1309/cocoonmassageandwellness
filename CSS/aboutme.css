@@ -36,6 +36,12 @@ html {
     scroll-behavior: smooth;
     width: 100vw;
 }
+.container {
+    max-width: 1500px;
+    margin-inline: auto;
+    height: 100vh;
+
+}
 
 body {
     width: 100%;
