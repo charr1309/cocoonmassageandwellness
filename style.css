@@ -910,11 +910,32 @@ form {
         width: 400px;
         overflow: hidden;
     } */
+     
     .container {
         max-width: 400px;
         margin-inline: auto;
         /* padding: 8px; */
         overflow-x: hidden;
+    }
+    .glow-on-hover {
+        width: 220px;
+        height: 30px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: black;
+        cursor: pointer;
+        position: relative;
+        left: 25rem;
+        z-index: 0;
+        border-radius: 10px;
+    }
+    .moveCenter {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right: 25rem;
+        top: 5px;
     }
 
     .landing {
@@ -979,7 +1000,7 @@ form {
         flex-direction: column;
         max-width: 300px;
         top: 2rem;
-        right: 125px;
+        right: -19px;
         /* margin-top: 10rem; */
     }
 
@@ -1138,14 +1159,14 @@ form {
     }
 
     .back {
-        width: 300px;
+        width: 30rem;
         height: 10rem;
 
 
     }
 
     .back p {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .offerContainer {
@@ -1154,7 +1175,10 @@ form {
         position: relative;
         top: -200px;
     }
-
+    .offerings-header{
+        position: relative;
+        left: 4rem;
+    }
     .offerContainer img {
         float: left;
         margin-top: 20rem;
@@ -1172,7 +1196,7 @@ form {
 
     .border {
         position: relative;
-        left: -5rem;
+        /* left: -5rem; */
         top: -15rem
     }
 
@@ -1203,7 +1227,7 @@ form {
         width: 300px;
         height: 200px;
         position: relative;
-        left: -4rem;
+        left: 1rem;
 
 
     }
@@ -1236,7 +1260,7 @@ form {
     }
 
     .inspiration {
-        max-width: 400px;
+        max-width: 500px;
         top: -50rem;
     }
 
@@ -1248,7 +1272,7 @@ form {
     }
 
     .inspiration .innerText {
-        width: 300px;
+        width: 450px;
         padding-right: 50px;
         position: relative;
         top: -1rem;
@@ -1280,14 +1304,14 @@ form {
     }
 
     .contact {
-        width: 300px;
+        width: 400px;
         margin-left: -10rem;
         position: relative;
-        top: -30rem;
+        top: -40rem;
     }
 
     .love {
-        width: 300px;
+        width: 400px;
         margin-left: 5rem;
         display: flex;
         flex-direction: column;
@@ -1301,7 +1325,15 @@ form {
     #love p {
         font-size: 4rem;
     }
-
+    .card4 {
+        width: 35rem;
+        height: 40rem;
+        background-color: white;
+        filter: drop-shadow(16px 16px 16px);
+        position: relative;
+        left: 2rem;
+        margin-bottom: 7px;
+    }
     .cards {
         margin-bottom: 5px;
         width: 30rem;
@@ -1315,6 +1347,7 @@ form {
     .main-content {
         position: relative;
         top: -35rem;
+        left: 5rem;
         
     }
 
@@ -1334,7 +1367,11 @@ form {
         margin-left: -345px;
     }
 
-    
+    .footer{
+        position: relative;
+        top: 120rem;
+        left: -5rem;
+    }
     .footer p {
         font-size: .75rem;
     }
