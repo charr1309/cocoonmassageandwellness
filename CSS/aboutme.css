@@ -163,7 +163,6 @@ html,
     position: relative;
     top: 30rem;
     overflow: scroll;
-    overflow-x: hidden;
 }
 .part3 .section-right p{
     font-size: 2rem;
