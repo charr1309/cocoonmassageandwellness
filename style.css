@@ -378,6 +378,7 @@ body {
 .offerContainer img {
     width: 50%;
     float: right;
+    /* opacity: 0; */
 }
 
 .offerContainer p {
