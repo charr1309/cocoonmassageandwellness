@@ -1,51 +1,117 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
+const tla = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.offerings',
+    start: 'top 70%',
+    end: 'bottom ',
+    toggleActions: 'play none play none'
+    // scrub: 1
+    // markers: true
+  }
+})
+
+tla.from(".offerings-header h2", {
+  autoAlpha: 0,
+  x: 200,
+  duration: 1
+
+})
+tla.from(".diana", {
+  autoAlpha: 0,
+  x: 200,
+  duration: 1
+
+})
+
+const tlb = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.offerings',
+    start: 'top 70%',
+    end: 'bottom ',
+    toggleActions: 'play none play none'
+    // scrub: 1
+    // markers: true
+  }
+})
+
+
 const tl = gsap.timeline({
   scrollTrigger: {
     trigger: '.offerContainer',
     start: 'top 70%',
-    markers: true
+    end: 'bottom ',
+    toggleActions: 'play none play none'
+    // scrub: 1
+    // markers: true
   }
 })
+
 tl.from(".pregnant", {
   autoAlpha: 0,
-  y: 200,
-  duration: 3
+  x: 200,
+  duration: 1
 })
+tl.from(".offerContainer p", {
+  autoAlpha: 0,
+  x: 200,
+  duration: 1
+})
+tl.from(".addOnContainer p", {
+  autoAlpha: 0,
+  x: 200,
+  duration: 1
+})
+
 tl.from(".fade", {
   autoAlpha: 0,
   y: 200,
-  duration: 3
+  duration: 1
 })
 tl.from(".listPosition", {
   autoAlpha: 0,
   y: 200,
-  duration: 2
+  duration: 1
 })
+
+
 const tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: '.inspiration',
     start: 'top 70%',
-    markers: true
+    end: 'bottom bottom',
+    toggleActions: 'play none none none'
+    // markers: true
   }
 })
-tl2.from(".wrap", {
+
+
+tl2.from(".innerText", {
   autoAlpha: 0,
   y: 200,
-  duration: 2
+  duration: 1,
+  // delay: 0.2
+});
+
+tl2.from(".wrap", {
+  autoAlpha: 0,
+  x: 200,
+  duration: 1
 })
 const tl3 = gsap.timeline({
   scrollTrigger: {
     trigger: '.contact',
     start: 'top 70%',
-    markers: true
+    end: 'bottom bottom',
+    toggleActions: 'play none none none'
+    // markers: true
   }
 })
 tl3.from(".rounded-input", {
   autoAlpha: 0,
   y: 200,
-  duration: 2
+  duration: 1
 })
 
 const submit = document.getElementById("submit-btn");
@@ -101,5 +167,4 @@ function myFunction() {
     navbar.classList.remove('sticky');
   }
 }
-
 
