@@ -36,7 +36,7 @@ html {
     scroll-behavior: smooth;
     width: 100vw;
 }
-.container {
+.aboutcontainer {
     max-width: 1500px;
     margin-inline: auto;
     height: 100vh;
