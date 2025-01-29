@@ -58,13 +58,13 @@ html,
         margin: 0;
         padding: 0;
     }
-.aboutContainer{
+/* .aboutContainer{
     width: 1500px;
     height: 100vh;
     padding: 8px;
     overflow-X: hidden;
     position: relative;
-}
+} */
 .centerHeading{
     width: 40%;
     
