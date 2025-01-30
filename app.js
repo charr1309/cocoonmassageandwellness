@@ -76,32 +76,60 @@ tl.from(".listPosition", {
   y: 200,
   duration: 1
 })
-tl.from(".part2 .section-left", {
+const tl6 = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.wisdomMain-content',
+    start: 'top 70%',
+    end: 'bottom 50%',
+    toggleActions: 'play reverse play restart'
+    // scrub: 1
+    
+  }
+})
+tl6.from(".part2 .section-left", {
   autoAlpha: 0,
   x: 200,
   duration: 1
 })
-tl.from(".part2 .section-right", {
+tl6.from(".part2 .section-right", {
   autoAlpha: 0,
   x: 200,
   duration: 1
 })
-tl.from(".part3 .section-left", {
+const tl7 = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.wisdomMain2-content',
+    start: 'top 70%',
+    end: 'bottom 50%',
+    toggleActions: 'play reverse play restart'
+    // scrub: 1
+    
+  }
+})
+tl7.from(".part3 .section-left", {
   autoAlpha: 0,
   x: 200,
   duration: 1
 })
-tl.from(".part3 .section-right", {
+tl7.from(".part3 .section-right", {
   autoAlpha: 0,
   x: 200,
   duration: 1
 })
-tl.from(".part4 .section-left", {
+const tl8 = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.wisdomMain3-content',
+    start: 'top 70%',
+    end: 'bottom 50%',
+    toggleActions: 'play reverse play restart'
+  }
+})
+tl8.from(".part4 .section-left", {
   autoAlpha: 0,
   x: 200,
   duration: 1
 })
-tl.from(".part4 .section-right", {
+tl8.from(".part4 .section-right", {
   autoAlpha: 0,
   x: 200,
   duration: 1
