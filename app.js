@@ -1,4 +1,5 @@
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const tla = gsap.timeline({
@@ -53,6 +54,7 @@ tl.from(".pregnant", {
   x: 200,
   duration: 1
 })
+
 tl.from(".offerContainer p", {
   autoAlpha: 0,
   x: 200,
@@ -72,6 +74,36 @@ tl.from(".fade", {
 tl.from(".listPosition", {
   autoAlpha: 0,
   y: 200,
+  duration: 1
+})
+tl.from(".part2 .section-left", {
+  autoAlpha: 0,
+  x: 200,
+  duration: 1
+})
+tl.from(".part2 .section-right", {
+  autoAlpha: 0,
+  x: 200,
+  duration: 1
+})
+tl.from(".part3 .section-left", {
+  autoAlpha: 0,
+  x: 200,
+  duration: 1
+})
+tl.from(".part3 .section-right", {
+  autoAlpha: 0,
+  x: 200,
+  duration: 1
+})
+tl.from(".part4 .section-left", {
+  autoAlpha: 0,
+  x: 200,
+  duration: 1
+})
+tl.from(".part4 .section-right", {
+  autoAlpha: 0,
+  x: 200,
   duration: 1
 })
 
@@ -142,6 +174,13 @@ scrubTL.from('.clientLove h3', {
   x: 0,
   yPercent: 0
 }, "<")
+
+// const lenis = new Lenis()
+
+// function raf(time){
+//   lenis.raf(time)
+//   requestAnimationFrame(raf)
+// }
 
 const submit = document.getElementById("submit-btn");
 const recipientEmail = "shanna@cocoonmassageandwellness.com";
