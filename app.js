@@ -118,7 +118,7 @@ const tl4 = gsap.timeline({
     trigger: '.clientLove',
     start: 'top 20%',
     end: 'bottom center',
-    toggleActions: 'play reverse restart reverse'
+    toggleActions: 'play reverse restart pause'
   },
   defaults: {
     ease: "power3.out",
