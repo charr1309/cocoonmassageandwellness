@@ -123,14 +123,14 @@ body {
 .navbar {
     max-width: 1500px;
     height: 5rem;
-    background: var(--primary-color);
+    /* background: var(--primary-color); */
     display: flex;
     flex-direction: row;
     flex-wrap: no-wrap;
     margin-bottom: 2rem;
     position: relative;
     top: 5rem;
-    filter: drop-shadow(1px 1px 1px);
+    /* filter: drop-shadow(1px 1px 1px); */
     /* visibility: hidden; */
     /* opacity: 0; */
     /* transform: translateY(-100px); */
@@ -171,7 +171,8 @@ body {
 
     width: 20rem;
     /* text-decoration: none; */
-
+    border-right: 1px solid var(--secondary-color);
+    border-left: 1px solid var(--secondary-color);
     display: flex;
     word-spacing: 5px;
     align-items: center;
@@ -192,7 +193,7 @@ body {
 }
 
 .navbar-links li a:not(:hover) {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     transition: .5s linear;
     color: var(--secondary-color);
 }
