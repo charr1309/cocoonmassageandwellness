@@ -126,6 +126,7 @@ html,
     height: 50rem;
     position: relative;
     font-size: 1.85rem;
+    padding-left: 4rem;
     /* top: -17rem; */
     /* left: -20rem; */
     overflow: hidden;
@@ -133,6 +134,7 @@ html,
 }
 .part2 .right-side{
     width: 40%;
+    left: -5rem;
     height: 50rem;
     position: relative;
     
@@ -170,6 +172,8 @@ html,
     top: 30rem;
     /* overflow: scroll; */
     overflow-x: hidden;
+    scrollbar-color: var(--secondary-color) var(--primary-color);
+    scrollbar-width: thin;
 }
 .part3 .right-side p{
     font-size: 1.85rem;
@@ -186,12 +190,14 @@ html,
 
 }
 .part4 .left-side{
-    width: 60%;
+    width: 50%;
     height: 50rem;
     position: relative;
     top: 38rem;
     /* overflow: scroll; */
     overflow-x: hidden;
+    scrollbar-color: var(--secondary-color) var(--primary-color);
+    scrollbar-width: thin;
     font-size: 1.85rem;
 }
 .part4 .right-side {

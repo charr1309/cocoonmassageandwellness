@@ -154,7 +154,7 @@ tl9.from(".left-side", {
 })
 // const tl10 = gsap.timeline({
 //   scrollTrigger: {
-//     trigger: '.gsap',
+//     trigger: '.gsap1',
 //     start: 'top 70%',
 //     end: 'bottom 50%',
 //     // toggleActions: 'play reverse play restart'
