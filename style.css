@@ -729,17 +729,49 @@ form {
     top: 1rem;
     background-color: rgb(70, 36, 57);
 } */
+ #love h2{
+    color: var(--secondary-color);
+ }
+
 .clientLove {
     width: 80%;
     height: 50rem;
-    overflow: scroll;
-    scrollbar-color: var(--secondary-color) var(--primary-color);
+    /* overflow: scroll; */
+    /* scrollbar-color: var(--secondary-color) var(--primary-color);
     scrollbar-width: thin;
-    overflow-x: hidden;
+    overflow-x: hidden; */
     margin: auto;
     /* display: flex;
     justify-content: space-around;
     align-items: center; */
+}
+.loveHeader h3{
+    font-size: 15rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    color: var(--secondary-color);
+    transform: translateX(53%);
+    float: right;
+    position: absolute;
+    top: 15rem;
+    left: 10rem;
+    opacity: 0.17;
+}
+.loveCards {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+.loveCards p{
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+    position: relative;
+    top: 10rem;
 }
 /* .card4 {
     width: 30rem;

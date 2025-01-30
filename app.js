@@ -113,6 +113,35 @@ tl3.from(".rounded-input", {
   y: 200,
   duration: 1
 })
+const tl4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.clientLove',
+    start: 'top 20%',
+    end: 'bottom center',
+    toggleActions: 'play reverse restart reverse'
+  },
+  defaults: {
+    ease: "power3.out",
+    duration: 1
+  }
+})
+const scrubTL = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.clientLove',
+    start: 'top 20%',
+    end: '40% top',
+    scrub: 3
+  }
+})
+tl4.from(".clientLove p", {
+  yPercent: 190,
+  opacity: 0
+})
+
+scrubTL.from('.clientLove h3', {
+  x: 0,
+  yPercent: 0
+}, "<")
 
 const submit = document.getElementById("submit-btn");
 const recipientEmail = "shanna@cocoonmassageandwellness.com";
