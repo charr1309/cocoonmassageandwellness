@@ -121,7 +121,7 @@ html,
     justify-content: center;
     top: 10rem;
 }
-.part2 .section-left{
+.part2 .left-side{
     width: 60%;
     height: 50rem;
     position: relative;
@@ -131,13 +131,13 @@ html,
     overflow: hidden;
     overflow-x: hidden;
 }
-.part2 .section-right{
+.part2 .right-side{
     width: 40%;
     height: 50rem;
     position: relative;
     
 }
-.part2 .section-right img{
+.part2 .right-side img{
     position: relative;
     /* top: -20rem; */
 }
@@ -149,21 +149,21 @@ html,
     align-items: center;
     justify-content: center;
 }
-.part3 .section-left{
+.part3 .left-side{
     width: 30%;
     height: 50rem;
     /* border: 1px solid black; */
     position: relative;
     top: 19rem;
 }
-.part3 .section-left img{
+.part3 .left-side img{
     width: 70%;
     height: 70%;
     object-fit: cover;
     position: relative;
     top: 19rem;
 }
-.part3 .section-right{
+.part3 .right-side{
     width: 60%;
     height: 50rem;
     position: relative;
@@ -171,7 +171,7 @@ html,
     /* overflow: scroll; */
     overflow-x: hidden;
 }
-.part3 .section-right p{
+.part3 .right-side p{
     font-size: 1.85rem;
     position: relative;
     /* top: 175rem; */
@@ -185,7 +185,7 @@ html,
     justify-content: center;
 
 }
-.part4 .section-left{
+.part4 .left-side{
     width: 60%;
     height: 50rem;
     position: relative;
@@ -194,13 +194,13 @@ html,
     overflow-x: hidden;
     font-size: 1.85rem;
 }
-.part4 .section-right {
+.part4 .right-side {
     width: 40%;
     height: 50rem;
     /* border: 1px solid black; */
     position: relative;
 }
-.part4 .section-right img{
+.part4 .right-side img{
     width: 50%;
     height: 50rem;
     object-fit: cover;

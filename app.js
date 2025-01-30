@@ -134,7 +134,78 @@ tl8.from(".part4 .section-right", {
   x: 200,
   duration: 1
 })
-
+const tl9 = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.top',
+    start: 'top 70%',
+    end: 'bottom 50%',
+    // toggleActions: 'play reverse play restart'
+  }
+})
+tl9.from(".right-side", {
+  autoAlpha: 0,
+  x: 200,
+  duration: 1
+})
+tl9.from(".left-side", {
+  autoAlpha: 0,
+  y: 200,
+  duration: 1
+})
+// const tl10 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.gsap',
+//     start: 'top 70%',
+//     end: 'bottom 50%',
+//     // toggleActions: 'play reverse play restart'
+//   }
+// })
+// tl10.from(".right-side", {
+//   autoAlpha: 0,
+//   x: 200,
+//   duration: 1
+// })
+// tl10.from(".left-side", {
+//   autoAlpha: 0,
+//   x: 200,
+//   duration: 1
+// })
+// const tl11 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.part3',
+//     start: 'top 70%',
+//     end: 'bottom 50%',
+//     // toggleActions: 'play reverse play restart'
+//   }
+// })
+// tl11.from(".right-side", {
+//   autoAlpha: 0,
+//   x: 200,
+//   duration: 1
+// })
+// tl11.from(".left-side", {
+//   autoAlpha: 0,
+//   y: 200,
+//   duration: 1
+// })
+// const tl12 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.part4',
+//     start: 'top 70%',
+//     end: 'bottom 50%',
+//     // toggleActions: 'play reverse play restart'
+//   }
+// })
+// tl12.from(".right-side", {
+//   autoAlpha: 0,
+//   x: 200,
+//   duration: 1
+// })
+// tl12.from(".left-side", {
+//   autoAlpha: 0,
+//   y: 200,
+//   duration: 1
+// })
 
 const tl2 = gsap.timeline({
   scrollTrigger: {
