@@ -2,7 +2,8 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-ScrollTrigger.matchMedia({
+gsap.matchMedia({
+  
 "(min-width: 800px)": function() {
 const tla = gsap.timeline({
   scrollTrigger: {
@@ -222,6 +223,7 @@ scrubTL.from('.clientLove h3', {
   x: 0,
   yPercent: 0
 }, "<")
+}
 },
 
 
@@ -445,7 +447,7 @@ scrubTL.from('.clientLove h3', {
     x: 0,
     yPercent: 0
   }, "<")
-  const scrubTL = gsap.timeline({
+  var scrubTL = gsap.timeline({
     scrollTrigger: {
       trigger: '.clientLove',
       start: 'top 20%',
