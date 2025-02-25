@@ -391,7 +391,7 @@ body {
 .addOnContainer {
     width: 100rem;
     height: 50rem;
-    
+
     margin: auto;
 
 }
@@ -579,7 +579,7 @@ span:hover {
     height: 50rem;
     font-size: 2.5rem;
     position: relative;
-    
+
     font-weight: 100;
 }
 
@@ -730,9 +730,9 @@ form {
     top: 1rem;
     background-color: rgb(70, 36, 57);
 } */
- #love h2{
+#love h2 {
     color: var(--secondary-color);
- }
+}
 
 .clientLove {
     width: 80%;
@@ -746,7 +746,8 @@ form {
     justify-content: space-around;
     align-items: center; */
 }
-.loveHeader h3{
+
+.loveHeader h3 {
     font-size: 15rem;
     font-family: 'Playfair Display', serif;
     font-weight: 100;
@@ -758,6 +759,7 @@ form {
     left: 10rem;
     opacity: 0.17;
 }
+
 .loveCards {
     width: 100%;
     height: 10rem;
@@ -767,13 +769,15 @@ form {
     align-items: center;
     margin: auto;
 }
-.loveCards p{
+
+.loveCards p {
     font-size: 1.5rem;
     font-weight: 100;
     text-align: center;
     position: relative;
     top: 10rem;
 }
+
 /* .card4 {
     width: 30rem;
     height: 40rem;
@@ -886,7 +890,7 @@ form {
 .left .footerNav a {
     color: black;
     font-size: 1rem;
-    
+
 }
 
 .footer .left {
@@ -955,19 +959,21 @@ form {
     width: 40rem;
     display: flex;
 }
+
 @media screen and (max-width: 600px) {
 
     /* html{
         width: 400px;
         overflow: hidden;
     } */
-     
+
     .container {
         max-width: 400px;
         margin-inline: auto;
         /* padding: 8px; */
         overflow-x: hidden;
     }
+
     .glow-on-hover {
         width: 220px;
         height: 30px;
@@ -981,6 +987,7 @@ form {
         z-index: 0;
         border-radius: 10px;
     }
+
     .moveCenter {
         display: flex;
         justify-content: center;
@@ -1115,7 +1122,7 @@ form {
         transform: translate(-50%, -50%) rotate(-45deg);
     }
 
-    
+
     .landing {
         width: 100%;
         background-size: cover;
@@ -1157,7 +1164,7 @@ form {
         width: 350px;
         height: 300px;
         flex-direction: column;
-        
+
         margin-left: 42rem;
 
     }
@@ -1183,7 +1190,7 @@ form {
 
     }
 
-    
+
     .card {
         width: 13rem;
         height: 6rem;
@@ -1226,10 +1233,12 @@ form {
         position: relative;
         top: -200px;
     }
-    .offerings-header{
+
+    .offerings-header {
         position: relative;
         left: 4rem;
     }
+
     .offerContainer img {
         float: left;
         margin-top: 20rem;
@@ -1301,7 +1310,7 @@ form {
 
     }
 
-    
+
     .inner {
         width: 100%;
         margin: auto;
@@ -1362,6 +1371,7 @@ form {
         position: relative;
         top: -40rem;
     }
+
     /* #love{
         position: relative;
         top: 50rem;
@@ -1383,6 +1393,7 @@ form {
         top: -50rem;
         font-size: 1rem;
     }
+
     #love h2 {
         position: relative;
         top: -55rem;
@@ -1390,6 +1401,7 @@ form {
         font-size: 5rem;
         color: var(--secondary-color);
     }
+
     .card3 {
         width: 25rem;
         height: 20rem;
@@ -1399,16 +1411,18 @@ form {
         right: 3rem;
         margin-bottom: 7px;
     }
+
     .loveCards {
         margin-bottom: 5px;
         width: 30rem;
         height: 12rem;
     }
+
     /* .loveCards span{
         font-size: 3rem;
         font-family:Verdana, Geneva, Tahoma, sans-serif
     } */
-    .clientLove h3{
+    .clientLove h3 {
         font-size: 4rem;
         font-weight: bold;
         position: relative;
@@ -1424,7 +1438,7 @@ form {
         position: relative;
         top: -45rem;
         left: 5rem;
-        
+
     }
 
     .main-content p {
@@ -1443,40 +1457,45 @@ form {
         margin-left: -345px;
     }
 
-    .footer{
+    .footer {
         position: relative;
         width: 100vw;
         height: 15rem;
         top: 70rem;
         left: -5rem;
     }
+
     .footer a {
         font-size: .75rem;
     }
+
     .footer .left {
         width: 15rem;
         height: 15rem;
     }
+
     .footer .right {
         width: 15rem;
         height: 15rem;
     }
+
     .footer .right img {
         width: 70%;
         height: 10rem;
     }
-    
+
     /* .footer ul{
         display: flex;
         justify-content: center;
         align-items: center;
         
     } */
-    
+
     .iframe {
         width: 28rem;
         height: 5rem;
     }
+
     .iframe p {
         font-size: .5rem;
         width: 5rem;
@@ -1484,6 +1503,7 @@ form {
         position: relative;
         top: 1rem;
     }
+
     iframe {
         height: 44;
     }
@@ -1513,7 +1533,7 @@ form {
 
     .info {
         display: none;
-       
+
     }
 
     .landing {
@@ -1723,7 +1743,7 @@ form {
         font-size: 1.5rem;
     }
 
-    
+
 
     .middle .iframe p {
         font-size: 1rem;
@@ -1749,6 +1769,6 @@ form {
         width: 15rem;
         height: 7rem;
     }
-    
+
 
 }
