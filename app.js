@@ -22,8 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
       entries.forEach(entry => {
           if (entry.isIntersecting) {
               entry.target.classList.add('visible');
-              observer.unobserve(entry.target);
-          }
+              entry.target.classList.remove('not-visible');
+            } else {
+                entry.target.classList.add('not-visible');
+                entry.target.classList.remove('visible');
+            }
       });
   }, {
       threshold: 0.5
