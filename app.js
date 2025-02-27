@@ -15,6 +15,24 @@ hamMenu.addEventListener('click', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const elements = document.querySelectorAll('.element-to-animate');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+          }
+      });
+  }, {
+      threshold: 0.5
+  });
+
+  elements.forEach(el => {
+      observer.observe(el);
+  });
+});
 
 window.onscroll = function () {
   myFunction()
