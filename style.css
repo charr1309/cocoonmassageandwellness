@@ -171,6 +171,21 @@ body {
     opacity: 0;
     transform: translateX(-100px);
 }
+.text-to-animate {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: transform 1s, opacity 1s;
+}
+
+.text-to-animate.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.text-to-animate.not-visible {
+    opacity: 0;
+    transform: translateX(100px);
+}
 /* .loaded {
     opacity: 1;
     visibility: visible;
@@ -759,6 +774,12 @@ form {
 #love h2 {
     color: var(--secondary-color);
 }
+.absolute-element {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the element */
+}
 
 .clientLove {
     width: 80%;
@@ -773,12 +794,12 @@ form {
     align-items: center; */
 }
 
-.loveHeader h3 {
+.clientLove h3 {
     font-size: 15rem;
     font-family: 'Playfair Display', serif;
     font-weight: 100;
     color: var(--secondary-color);
-    transform: translateX(53%);
+    /* transform: translateX(53%); */
     float: right;
     position: absolute;
     top: 15rem;
