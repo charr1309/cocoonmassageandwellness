@@ -948,7 +948,7 @@ form {
 }
 
 .footer .middle {
-    width: 30%;
+    width: 35%;
     height: 20rem;
 
 }
@@ -961,6 +961,7 @@ form {
 
 .footer .right img {
     width: 100%;
+    height: 20rem;
 }
 
 .footer ul {
@@ -986,7 +987,7 @@ form {
 .iframe p {
     font-size: 1.25rem;
     width: 25rem;
-
+    
     float: right;
     position: relative;
     top: 1rem;
@@ -1563,8 +1564,14 @@ form {
     }
 
 }
-
+@media (orientation: landscape) {
+  .animated-text {
+    transform: translateY(30px);
+    transition: opacity 3s ease, transform 3s ease; /* Slower animation */
+  }
+}
 @media only screen and (max-device-width: 915px) and (orientation: landscape) {
+
 
     html,
     body {
@@ -1704,7 +1711,7 @@ form {
 
     .addOnContainer {
         width: 100%;
-        height: 50rem;
+        height: 60rem;
         margin: auto;
         position: relative;
         top: -8rem;
@@ -1712,7 +1719,7 @@ form {
     }
 
     .addOnContainer img {
-        height: 40rem;
+        height: 30rem;
     }
 
     .inspiration {
@@ -1733,7 +1740,7 @@ form {
     }
 
     .contact {
-        width: 80%;
+        width: 50%;
         height: 20rem;
         top: -30rem;
         left: -2rem;
@@ -1757,8 +1764,18 @@ form {
         font-size: 1rem;
         position: relative;
         top: -15rem;
+        z-index: 900;
     }
-
+    .clientLove h3{
+        font-size: 10rem;
+        font-weight: 100;
+        text-align: center;
+        position: absolute;
+        top: 10rem;
+        left: -2rem;
+        z-index: -1;
+    }
+    
     .card4 {
         width: 50rem;
         margin-bottom: 10px;
