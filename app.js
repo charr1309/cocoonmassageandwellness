@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
           if (entry.isIntersecting) {
               entry.target.classList.add('visible');
               entry.target.classList.remove('not-visible');
-            } else {
-                entry.target.classList.add('not-visible');
-                entry.target.classList.remove('visible');
+            // } else {
+            //     entry.target.classList.add('not-visible');
+            //     entry.target.classList.remove('visible');
             }
       });
   }, {
