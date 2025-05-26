@@ -37,6 +37,16 @@ html {
     width: 100vw;
     height: 100vh;
 }
+.element-to-animate {
+    opacity: 0;
+    transform: translateY(50px); /* Start off-screen */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.element-to-animate.visible {
+    opacity: 1;
+    transform: translateY(0); /* Slide into place */
+}
 .wisdomContainer{
     max-width: 1500px;
     height: 100vh;

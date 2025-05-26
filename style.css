@@ -794,17 +794,18 @@ form {
     align-items: center; */
 }
 
-.clientLove h3 {
+.clientLove  h3 {
     font-size: 15rem;
     font-family: 'Playfair Display', serif;
     font-weight: 100;
     color: var(--secondary-color);
-    /* transform: translateX(53%); */
+    transform: translateX(53%);
     float: right;
     position: absolute;
-    top: 15rem;
+    top: 25rem;
     left: 10rem;
-    opacity: 0.17;
+    opacity: 0.3 !important;
+    z-index: -1;
 }
 
 .loveCards {
