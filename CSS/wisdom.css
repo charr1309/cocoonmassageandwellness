@@ -76,6 +76,33 @@ html {
     height: 100vh;
     margin-inline: auto;
 }
+.wisdomMain-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 10rem;
+}
+.wisdomMain2-content .section-right{
+    width: 30%;
+    height: 30rem;
+    position: relative;
+    top: -2rem;
+    right: 5rem
+}
+.wisdomMain3-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 10rem;
+}
 .wisdomContainer h1{
     font-size: 8rem;
     text-align: center;
@@ -202,15 +229,17 @@ html {
 }
 
 .footer .left {
-    width: 30%;
+    width: 40%;
     height: 35rem;
 
     border-right: 1px solid black;
 }
 
 .footer .middle {
-    width: 30%;
+    width: 45%;
     height: 35rem;
+    padding-left: 2rem;
+    position: relative;     
 
 }
 
@@ -221,7 +250,9 @@ html {
 }
 
 .footer .right img {
-    width: 100%;
+    width: 10%;
+    position: relative;
+    margin-left: 11rem;
 }
 
 .footer ul {
@@ -265,10 +296,10 @@ html {
     height: 35rem;
 }
 
-.iframe {
+/* .iframe {
     width: 40rem;
     display: flex;
-}
+} */
 
 /* iframe{
     float: right;
