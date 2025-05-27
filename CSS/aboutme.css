@@ -498,11 +498,11 @@ html,
     flex-direction: column;
     /* top: 40rem; */
 }
-.part2 .section-left{
+.part2 .left-side{
     width: 100%;
     height: 40rem;
     position: absolute;
-    top: 69rem;
+    top: 42rem;
     left: .5rem;
     overflow: scroll;   
 }
@@ -513,10 +513,12 @@ html,
     top: 9rem;
     
 }
-.part2 .section-right img{
+.part2 .right-side img{
     position: relative;
-    left: -1rem;
-    object-fit: cover;
+    left: -8rem;
+    top: 10rem;
+    height: 300px;
+    width: 300px;
 }
 .part3{
     width: 100%;
@@ -531,19 +533,21 @@ html,
     position: relative;
     top: 55rem;
 }
-.part3 .section-left img{
-    object-fit: cover;
+.part3 .left-side img{
+    /* object-fit: cover; */
     position: relative;
     left: 5rem;
+    top: 30rem;
 }
-.part3 .section-right{
+.part3 .right-side  {
     width: 100%;
     height: 50rem;
     position: relative;
-    top: 73rem;
+    top: 43rem;
 }
-.part3 .section-right p{
+.part3 .right-side p{
     font-size: 2rem;
+    
 }
 .part4{
     width: 100%;
@@ -552,27 +556,27 @@ html,
     flex-direction: column;
     
 }
-.part4 .section-left{
-    width: 100%;
+.part4 .left-side   {
+    width: 90%;
     height: 50rem;
     position: absolute;
-    top: 300rem;
+    top: 280rem;
     overflow: scroll;
 }
-.part4 .section-right {
+.part4 .right-side {
     width: 100%;
     height: 50rem;
     /* border: 1px solid black; */
     position: relative;
-    left: -10rem;
-    top: 40rem;
+    left: -15rem;
+    /* top: 40rem; */
 }
-.part4 .section-right img{
+.part4 .right-side img{
     width: 100%;
     height: 50rem;
     object-fit: cover;
-    /* position: relative; */
-    /* top: 95rem; */
+    position: relative;
+    top: 55rem;
 }
 #footer {
     width: 100%;
@@ -582,63 +586,61 @@ html,
 }
 
 .footer {
-    width: 100%;
-    height: 35rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: no-wrap;
-    justify-content: space-around;
-    margin-bottom: 2rem;
-    position: relative;
-    top: 100rem;
-    background-color: var(--primary-color);
-}
-.left{
-    border: none;
-}
-.left .footerNav {
-    width: 37rem;
-    height: 5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: -6rem;
-}
+        position: relative;
+        width: 110vw;
+        height: 15rem;
+        
+        top: 75rem;
+        left: -5rem;
+    }
 
-.left .footerNav a {
-    color: black;
-    font-size: 1rem;
-}
+    .footer a {
+        font-size: .75rem;
+    }
 
-.footer .left {
-    width: 20%;
-    height: 35rem;
+    .footer .left {
+        width: 15rem;
+        height: 15rem;
+        overflow: scroll;
+        position: relative;
+    }
 
-    /* border-right: 1px solid black; */
-}
+    .footer .right {
+        width: 10rem;
+        height: 15rem;
+    }
 
-.footer .middle {
-    width: 10%;
-    height: 35rem;
+    .footer .right img {
+        width: 100%;
+        height: 10rem;
+        position: relative;
+        left: 2rem;
+    }
 
-}
+    /* .footer ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    } */
 
+    .iframe {
+        width: 28rem;
+        height: 5rem;
+    }
 
+    .iframe p {
+        font-size: .5rem;
+        width: 5rem;
+        float: right;
+        position: relative;
+        top: 1rem;
+    }
 
-.footer .right img {
-    display: none;
-}
+    iframe {
+        height: 44;
+    }
 
-.footer ul {
-    height: 5rem;
-    width: 100vw;
-    /* font-size: 1.75rem; */
-    text-align: center;
-    position: relative;
-    top: 15px;
-    display: flex;
-    justify-content: space-around;
 }
 
 

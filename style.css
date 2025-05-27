@@ -1420,18 +1420,23 @@ form {
         width: 4rem;
 
     }
-
+    #contact {
+        width: 400px;
+        margin-left: -10rem;
+        position: relative;
+        top: -15rem;
+    }
     .contact {
         width: 400px;
         margin-left: -10rem;
         position: relative;
-        top: -40rem;
+        top: 40rem;
     }
 
-    /* #love{
+    #love{
         position: relative;
-        top: 50rem;
-    } */
+        top: 110rem;
+    }
     .love {
         width: 400px;
         margin-left: 5rem;
@@ -1439,9 +1444,9 @@ form {
         flex-direction: column;
 
 
-        /* position: relative;
-        top: 50rem;
-        left: -4rem; */
+        position: relative;
+        top: 60rem;
+        left: -4rem;
     }
 
     #love p {
@@ -1468,11 +1473,11 @@ form {
         margin-bottom: 7px;
     }
 
-    .loveCards {
+    /* .loveCards {
         margin-bottom: 5px;
         width: 30rem;
         height: 12rem;
-    }
+    } */
 
     /* .loveCards span{
         font-size: 3rem;
@@ -1515,7 +1520,7 @@ form {
 
     .main-content .giftText p {
         font-size: 1.5rem;
-        margin-left: -345px;
+        margin-left: 5px;
     }
 
     .footer {
@@ -1778,7 +1783,7 @@ form {
         font-weight: 100;
         text-align: center;
         position: absolute;
-        top: 10rem;
+        top: 5rem;
         left: -2rem;
         z-index: -1;
     }
