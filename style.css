@@ -1679,15 +1679,21 @@ form {
     .back {
         display: inline-block;
         overflow-wrap: break-word;
-        width: 25rem;
-        height: 15rem;
+        width: 2rem;
+        height: 10rem;
         overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: scroll;
         margin-left: -35px;
         z-index: 900;
     }
-
+    .front {
+        z-index: -1;
+    }
     .flex-container {
-        width: 90%;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
         margin: auto;
     }
 
