@@ -66,6 +66,11 @@ html {
     top: 10px;
     transition: all 0.3s ease-in-out;
 }
+#backward:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    transform: scale(1.05);
+}
 .wisdomContainer{
     max-width: 1500px;
     height: 100vh;
@@ -146,6 +151,8 @@ html {
     height: 30rem;
     /* margin: auto; */
     padding-left: 20rem;
+    position: relative;
+    top: -2rem;
 }
 .part4 .section-left p{
     font-size: 1.5rem;
