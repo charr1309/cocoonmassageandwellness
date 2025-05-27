@@ -1658,7 +1658,7 @@ form {
     }
 
     .card {
-        width: 125px;
+        width: 90px;
         height: 80px;
         perspective: 1000px;
         transform-style: preserve-3d;
@@ -1681,6 +1681,7 @@ form {
         overflow-wrap: break-word;
         width: 2rem;
         height: 10rem;
+        position: absolute;
         overflow: hidden;
         overflow-x: hidden;
         overflow-y: scroll;
@@ -1691,10 +1692,13 @@ form {
         z-index: -1;
     }
     .flex-container {
-        width: 80%;
+        width: 60%;
         display: flex;
-        justify-content: space-around;
-        margin-left: -10px;
+        position: relative;
+        justify-content: space-between;
+        /* align-items: center; */
+        flex-direction: row;
+        margin:auto;
     }
 
     .flex-container .card .back p {
