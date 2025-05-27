@@ -47,6 +47,25 @@ html {
     opacity: 1;
     transform: translateY(0); /* Slide into place */
 }
+.wisdomTop{
+    width: 10rem;
+    height: 20rem;
+    position: relative;
+}
+#backward {
+    width: 10rem;
+    height: 3rem;
+    background-color: var(--secondary-color);
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    border: none;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    transition: all 0.3s ease-in-out;
+}
 .wisdomContainer{
     max-width: 1500px;
     height: 100vh;

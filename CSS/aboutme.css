@@ -80,6 +80,26 @@ html,
     width: 40%;
     
 }
+.wisdomTop{
+    width: 10rem;
+    height: 20rem;
+    position: relative;
+}
+#backward {
+    width: 10rem;
+    height: 3rem;
+    background-color: var(--secondary-color);
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    border: none;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
 .top {
     width: 100vw;
     height: 60rem;
