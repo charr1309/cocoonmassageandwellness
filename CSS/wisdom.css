@@ -614,30 +614,31 @@ html {
         }
         #footer {
             width: 100%;
+            height: 2rem;
         }
         
         .footer {
             width: 900px;
-            height: 35rem;
+            height: 19rem;
             display: flex;
             flex-direction: row;
             flex-wrap: no-wrap;
-            justify-content: space-around;
-            margin-bottom: 2rem;
+            /* justify-content: space-around; */
+            /* margin-bottom: 2rem; */
             position: relative;
             top: -10rem;
             background-color: var(--primary-color);
         }
         
-        .left .footerNav {
+        /* .left .footerNav {
             width: 25rem;
             height: 30rem;
             display: flex;
             flex-direction: column;
-            /* justify-content: center; */
+            justify-content: center;
             align-items: center;
             margin-left: -14rem;
-        }
+        } */
         
         .left .footerNav a {
             color: black;
@@ -645,30 +646,30 @@ html {
         
         .footer .left {
             width: 30%;
-            height: 35rem;
+            height: 15rem;
         
             border-right: 1px solid black;
         }
         .footer .left .footerNav {
             width: 25rem;
-            height: 35rem;
+            height: 15rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-left: -10rem;
+            margin-left: -11rem;
         }
             
         .footer .middle {
             width: 50%;
-            height: 35rem;
+            height: 15rem;
             padding-left: 2rem;
         
         }
         
         .footer .right {
             width: 40%;
-            height: 35rem;
+            height: 15rem;
             border-left: 1px solid black;
         }
         
