@@ -518,6 +518,9 @@ html {
             height: 50rem;
             display: flex;
             flex-direction: row;
+            position: relative;
+            top: 10rem;
+            left: 5rem;
             
         }
         .part2 .section-left{
@@ -548,7 +551,8 @@ html {
             display: flex;
             flex-direction: row;
             position: relative;
-            top: -5rem;
+            top: 5rem;
+            left: -5rem;
         }
         .part3 .section-left{
             width: 50%;
@@ -581,7 +585,8 @@ html {
             display: flex;
             flex-direction: row;
             position: relative;
-            top: -5rem;
+            top: 5rem;
+            left: 5rem;
         }
         .part4 .section-left{
             width: 50%;
@@ -644,7 +649,16 @@ html {
         
             border-right: 1px solid black;
         }
-        
+        .footer .left .footerNav {
+            width: 25rem;
+            height: 35rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: -10rem;
+        }
+            
         .footer .middle {
             width: 50%;
             height: 35rem;
