@@ -704,7 +704,7 @@ span:hover {
 #contact {
 
     position: relative;
-    top: 60rem;
+    top: 80rem;
 }
 
 .contact {
@@ -758,7 +758,7 @@ form {
 
 #love {
     position: relative;
-    top: 105rem;
+    top: 120rem;
 }
 
 /* #love p {
@@ -805,11 +805,10 @@ form {
     font-family: 'Playfair Display', serif;
     font-weight: 100;
     color: var(--secondary-color);
-    transform: translateX(53%);
-    float: right;
-    position: absolute;
-    top: 25rem;
-    left: 10rem;
+    text-align: center;
+    position: relative;
+    top: -5rem;
+    margin-bottom: 2rem;
     opacity: 0.3 !important;
     z-index: -1;
 }
