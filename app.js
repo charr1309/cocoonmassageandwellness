@@ -69,19 +69,19 @@ class CocoonChatbot {
         this.userData = {};
         this.steps = [
             {
-                message: "Hello! I'm the Cocoon AI Agent. I'm here to help you learn about our massage therapy services. What's your name?",
+                message: "Hello, I'm the Cocoon AI Agent. May I have your name?",
                 field: "name",
                 validation: (input) => input.trim().length > 0
             },
             {
-                message: "Nice to meet you, {name}! Could you please share your email address so we can follow up with you?",
+                message: "Please enter your email address:",
                 field: "email",
                 validation: (input) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input)
             },
             {
-                message: "Perfect! Now, are you experiencing any specific areas of tension, pain, or discomfort that you'd like our massage therapy to address? Or do you have any questions about our services?",
+                message: "Are there any therapy concerns you would like to share? (Optional - press Enter to skip)",
                 field: "concerns",
-                validation: (input) => input.trim().length > 0
+                validation: (input) => true // Always valid since it's optional
             }
         ];
         
@@ -111,6 +111,7 @@ class CocoonChatbot {
         this.chatInput.disabled = false;
         this.chatSend.disabled = false;
         this.addBotMessage(this.steps[0].message);
+        this.chatInput.focus();
     }
 
     addBotMessage(message) {
@@ -135,15 +136,18 @@ class CocoonChatbot {
 
     handleSend() {
         const input = this.chatInput.value.trim();
-        if (!input) return;
 
         this.addUserMessage(input);
         this.chatInput.value = '';
+        
+        // Keep focus on input
+        this.chatInput.focus();
 
         const currentStepData = this.steps[this.currentStep];
         
-        if (currentStepData.validation(input)) {
-            this.userData[currentStepData.field] = input;
+        // For optional fields, allow empty input
+        if (currentStepData.validation(input) && (input || currentStepData.field === 'concerns')) {
+            this.userData[currentStepData.field] = input || 'No specific concerns mentioned';
             this.currentStep++;
 
             if (this.currentStep < this.steps.length) {
@@ -155,6 +159,7 @@ class CocoonChatbot {
                         nextMessage = nextMessage.replace(`{${key}}`, this.userData[key]);
                     });
                     this.addBotMessage(nextMessage);
+                    this.chatInput.focus();
                 }, 1000);
             } else {
                 // Conversation complete
@@ -166,6 +171,7 @@ class CocoonChatbot {
             // Invalid input
             setTimeout(() => {
                 this.addBotMessage("I'm sorry, that doesn't look quite right. Could you please try again?");
+                this.chatInput.focus();
             }, 500);
         }
     }
@@ -175,7 +181,7 @@ class CocoonChatbot {
         const subject = "New Inquiry from Cocoon AI Agent";
         const body = `Name: ${this.userData.name}\nEmail: ${this.userData.email}\nConcerns: ${this.userData.concerns}`;
         
-        this.addBotMessage(`Thank you, ${this.userData.name}! I've collected your information. Shanna will reach out to you soon at ${this.userData.email} to discuss your massage therapy needs. Have a wonderful day!`);
+        this.addBotMessage(`Thank you, ${this.userData.name}! Shanna will reach out to you soon. Have a wonderful day!`);
         
         // Open email client
         setTimeout(() => {
