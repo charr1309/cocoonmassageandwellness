@@ -268,20 +268,14 @@
                 <section-10 id="contact">
                     <div class="contact element-to-animate">
                         <fieldset>
-                            <legend>Let's Talk</legend>
-                            <form class="rounded-input" accept-charset="UTF-8"
-                                action="https://www.formbackend.com/f/05a1d04196f3dca8" method="POST">
-                                <label for="name"></label>
-                                <input type="text" id="name" placeholder="Name" name="name" required>
-                                <label for="email"></label>
-                                <input type="email" id="email" placeholder="Email" name="email">
-                                <lable for="phone"></lable>
-                                <input type="tel" id="phone" placeholder="Phone" name="phone" required>
-                                <lable for="message"></lable>
-                                <textarea rows="18" id="message" placeholder="Areas of concern"
-                                    name="message"></textarea>
-                                <button id="submit-btn" class="stlbtn" type="submit">Submit</button>
-                            </form>
+                            <legend>Cocoon AI Agent</legend>
+                            <div id="chatbot-container">
+                                <div id="chat-messages"></div>
+                                <div id="chat-input-container">
+                                    <input type="text" id="chat-input" placeholder="Type your message..." disabled>
+                                    <button id="chat-send" class="stlbtn" disabled>Send</button>
+                                </div>
+                            </div>
                         </fieldset>
                     </div>
                 </section-10>
