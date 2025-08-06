@@ -785,15 +785,11 @@ form {
 }
 
 .bot-message {
-    background-color: var(--primary-color);
-    color: #333;
     align-self: flex-start;
     margin-right: auto;
 }
 
 .user-message {
-    background-color: var(--secondary-color);
-    color: white;
     align-self: flex-end;
     margin-left: auto;
     text-align: right;

@@ -177,20 +177,42 @@ class CocoonChatbot {
     }
 
     completeConversation() {
-        const recipientEmail = "shanna@cocoonmassageandwellness.com";
-        const subject = "New Inquiry from Cocoon AI Agent";
-        const body = `Name: ${this.userData.name}\nEmail: ${this.userData.email}\nConcerns: ${this.userData.concerns}`;
-        
         this.addBotMessage(`Thank you, ${this.userData.name}! Shanna will reach out to you soon. Have a wonderful day!`);
         
-        // Open email client
-        setTimeout(() => {
-            window.location.href = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        }, 2000);
+        // Send data to Formspree
+        this.sendToFormspree();
         
         // Disable input
         this.chatInput.disabled = true;
         this.chatSend.disabled = true;
+    }
+
+    async sendToFormspree() {
+        try {
+            const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: this.userData.name,
+                    email: this.userData.email,
+                    message: `Therapy concerns: ${this.userData.concerns}`,
+                    _subject: 'New Inquiry from Cocoon AI Agent'
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to send message');
+            }
+        } catch (error) {
+            console.error('Error sending to Formspree:', error);
+            // Fallback to mailto if Formspree fails
+            const recipientEmail = "shanna@cocoonmassageandwellness.com";
+            const subject = "New Inquiry from Cocoon AI Agent";
+            const body = `Name: ${this.userData.name}\nEmail: ${this.userData.email}\nConcerns: ${this.userData.concerns}`;
+            window.location.href = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        }
     }
 }
 
