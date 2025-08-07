@@ -189,7 +189,7 @@ class CocoonChatbot {
 
     async sendToFormspree() {
         try {
-            const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+            const response = await fetch('https://formspree.io/f/mgvzzqzo', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
