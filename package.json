@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "echo 'No specific build step required for this static site. Files are ready for deployment.'"
+  },
   "dependencies": {
     "gsap": "^3.12.7",
     "split-type": "^0.3.4"
